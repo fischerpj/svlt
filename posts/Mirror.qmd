@@ -1,0 +1,16 @@
+---
+title: MirrorIndex
+filters:
+  - quarto-svelte
+quarto-svelte:
+  use:
+    - ../components/Mirror.svelte
+---
+
+This document shows you how to use a basic example Svelte component called `Circles.svelte`.
+
+Create one using an HTML template:
+
+```{ojs}
+myMirror = html`<my-mirror></my-mirror>`
+```

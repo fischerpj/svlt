@@ -1,0 +1,68 @@
+---
+title: Buttons
+subtitle: "Zero Style Hybrid Input"
+filters:
+  - quarto-svelte
+quarto-svelte:
+  use:
+    - ../components/Mirror.svelte
+format: 
+  html:
+    theme: none
+---
+
+<label for="h-in">HTML Input:</label>
+<input type="text" id="h-in">
+<button id="h-btn">HTML Button</button>
+<p>HTML Output: <span id="h-out"></span></p>
+
+----------------
+
+## What is happening in this file:
+
+- **HTML Input/Button**: These are "dumb" elements. They do nothing until the `htmlBtn.onclick` function in the OJS block manually pulls the value from the input and pushes it into the span.
+- **OJS Input (`Inputs.text`)**: This is "smart." Because of the `viewof` keyword, the variable `ojs_text` is globally available to the OJS runtime.
+- **OJS Button (`Inputs.button`)**: Unlike the HTML button, this one returns a value (an incrementing integer). By simply mentioning `ojs_btn` in a code block, you tell OJS to re-run that specific block every time the button is pressed.
+
+<label for="h-in">HTML Input:</label>
+<input type="text" id="h-in">
+<button id="h-btn">HTML Button</button>
+<p>HTML Output: <span id="h-out"></span></p>
+
+```{ojs}
+// Logic for the HTML Elements above
+// We grab the elements by ID and attach a manual event listener
+htmlBtn = document.getElementById('h-btn');
+htmlInput = document.getElementById('h-in');
+htmlOutput = document.getElementById('h-out');
+```
+
+
+
+```{ojs}
+
+
+
+htmlBtn.onclick = () => {
+  htmlOutput.innerText = htmlInput.value;
+};
+
+// --- OJS Native Components ---
+// 'viewof' creates a reactive variable that other cells can "see"
+viewof ojs_text = Inputs.text({
+  label: "OJS Input"
+})
+
+// This button yields a value (the number of clicks)
+viewof ojs_btn = Inputs.button("OJS Button")
+
+// --- OJS Reactive Output ---
+// This markdown block updates automatically whenever ojs_text changes
+md`OJS Text Value: ${ojs_text}`
+
+// This block updates only when the OJS button is clicked
+{
+  ojs_btn; // Referencing the button makes this block depend on it
+  return md`OJS Button was clicked!`;
+}
+```

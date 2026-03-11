@@ -1,0 +1,59 @@
+{
+  "about.qmd": {
+    "about.html": "9ecda81a"
+  },
+  "posts/post-with-code/index.qmd": {
+    "index.html": "5cfc224b"
+  },
+  "posts/welcome/index.qmd": {
+    "index.html": "21ffb646"
+  },
+  "index.qmd": {
+    "index.html": "38f6a4e5"
+  },
+  "example.qmd": {
+    "example.html": "0f07e67e"
+  },
+  "Mirror-index.qmd": {
+    "Mirror-index.html": "da9300c0"
+  },
+  "posts/Mirror-index.qmd": {
+    "Mirror-index.html": "b4b9cc53"
+  },
+  "posts/Circle-example.qmd": {
+    "Circle-example.html": "6644d68b"
+  },
+  "posts/PureSvelteMirror.qmd": {
+    "PureSvelteMirror.html": "9e874deb"
+  },
+  "posts/OjsMirror.qmd": {
+    "OjsMirror.html": "9c56771c"
+  },
+  "posts/MirrorFull.qmd": {
+    "MirrorFull.html": "24d06cb0"
+  },
+  "posts/MirrorIndex.qmd": {
+    "MirrorIndex.html": "89d35066"
+  },
+  "posts/MirrorGemini.qmd": {
+    "MirrorGemini.html": "38cde748"
+  },
+  "posts/Buttons.qmd": {
+    "Buttons.html": "aca40337"
+  },
+  "posts/Mirror.qmd": {
+    "Mirror.html": "219ebe9c"
+  },
+  "posts/ButtonsUp.qmd": {
+    "ButtonsUp.html": "a6bc7556"
+  },
+  "posts/buttonRow.qmd": {
+    "buttonRow.html": "640597ba"
+  },
+  "posts/MirrorFullReset.qmd": {
+    "MirrorFullReset.html": "13474f51"
+  },
+  "posts/MirrorReset.qmd": {
+    "MirrorReset.html": "b989a2f9"
+  }
+}

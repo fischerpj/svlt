@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "svlt",
+    "section": "",
+    "text": "MirrorFull\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nquarto-svelte example\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMirrorReset\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMirrorIndex\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nButtonsUp\n\n\nElaboration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nButtons\n\n\nZero Style Hybrid Input\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMirrorGemini\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Grid\n\n\n\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 8, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMar 5, 2026\n\n\nTristan O’Malley\n\n\n\n\n\n\n\n\n\n\n\n\nbuttonRow\n\n\n\n\n\n\n\n\n\n\n\nSep 8, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/Buttons.html",
+    "href": "posts/Buttons.html",
+    "title": "Buttons",
+    "section": "",
+    "text": "HTML Input:\nHTML Output:"
+  },
+  {
+    "objectID": "posts/Buttons.html#what-is-happening-in-this-file",
+    "href": "posts/Buttons.html#what-is-happening-in-this-file",
+    "title": "Buttons",
+    "section": "What is happening in this file:",
+    "text": "What is happening in this file:\n\nHTML Input/Button: These are “dumb” elements. They do nothing until the htmlBtn.onclick function in the OJS block manually pulls the value from the input and pushes it into the span.\nOJS Input (Inputs.text): This is “smart.” Because of the viewof keyword, the variable ojs_text is globally available to the OJS runtime.\nOJS Button (Inputs.button): Unlike the HTML button, this one returns a value (an incrementing integer). By simply mentioning ojs_btn in a code block, you tell OJS to re-run that specific block every time the button is pressed.\n\nHTML Input:  HTML Button\n\nHTML Output: \n\n\nhtmlBtn = document.getElementById('h-btn');\nhtmlInput = document.getElementById('h-in');\nhtmlOutput = document.getElementById('h-out');\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhtmlBtn.onclick = () =&gt; {\n  htmlOutput.innerText = htmlInput.value;\n};\n\n\n\n\n\n\n\nviewof ojs_text = Inputs.text({\n  label: \"OJS Input\"\n})\n\n// This button yields a value (the number of clicks)\nviewof ojs_btn = Inputs.button(\"OJS Button\")\n\n// --- OJS Reactive Output ---\n// This markdown block updates automatically whenever ojs_text changes\nmd`OJS Text Value: ${ojs_text}`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n{\n  ojs_btn; // Referencing the button makes this block depend on it\n  return md`OJS Button was clicked!`;\n}"
+  },
+  {
+    "objectID": "posts/Mirror.html",
+    "href": "posts/Mirror.html",
+    "title": "MirrorIndex",
+    "section": "",
+    "text": "This document shows you how to use a basic example Svelte component called Circles.svelte.\nCreate one using an HTML template:\n\nmyMirror = html`&lt;my-mirror&gt;&lt;/my-mirror&gt;`"
+  },
+  {
+    "objectID": "posts/MirrorReset.html",
+    "href": "posts/MirrorReset.html",
+    "title": "MirrorReset",
+    "section": "",
+    "text": "This document shows you how to use a basic example Svelte component called Circles.svelte.\nCreate one using an HTML template:\n\nmyMirrorReset = html`&lt;my-mirrorreset&gt;&lt;/my-mirrorreset&gt;`"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Grid",
+    "section": "",
+    "text": "This is a post with executable code. border-bottom\n\n\n\n  \n\n    \n    \n      \n\n      Go\n      Run\n      Exec\n    \n\n    \n    \n      Output appears here…\n    \n\n  \n\n\nBest Cards\n\n\n\n  \n\n    \n    \n      \n\n      Go\n      Run\n      Exec\n    \n\n    \n    \n      Output appears here…"
+  },
+  {
+    "objectID": "posts/MirrorFull.html",
+    "href": "posts/MirrorFull.html",
+    "title": "MirrorFull",
+    "section": "",
+    "text": "This document shows you how to use a basic example Svelte component called Circles.svelte.\nCreate one using an HTML template:\n\nmyMirrorReset = html`&lt;my-mirrorfull&gt;&lt;/my-mirrorfull&gt;`"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog\nwebsite: search: false\n\nfix search disabled\nfix posts & components\nssh-keygen -t ed25519 -C “fischer.pj@gmail.com”"
+  },
+  {
+    "objectID": "posts/Circle-example.html",
+    "href": "posts/Circle-example.html",
+    "title": "quarto-svelte example",
+    "section": "",
+    "text": "This document shows you how to use a basic example Svelte component called Circles.svelte.\nCreate one using an HTML template:\n\nmyCircles = html`&lt;my-circles&gt;&lt;/my-circles&gt;`\n\n\n\n\n\n\nNow the fun part - updating our visual when our document changes. It’s as simple as changing the prop using componentName.propName =.\nFor example, here are three datasets and an Observable Inputs dropdown menu that lets you select one of three datasets:\n\n// here are some datasets...\nallDatasets = new Map([\n    [\"Dataset A\", [5, 15, 25, 17, 8]],\n    [\"Dataset B\", [25, 5, 5]],\n    [\"Dataset C\", [12, 5, 8, 21, 5]]\n  ]);\n\n\n\n\n\n\n\nviewof selectedDataset =\n  Inputs.select(allDatasets, { label: \"Selected dataset\" });\n\n\n\n\n\n\nNow we can update the prop data of the visual myCircles using:\n\nmyCircles.data = selectedDataset\n\n\n\n\n\n\nAnd there you go! 🚀\nFor more help writing Svelte components, check out the Svelte tutorial or take look at some of the examples in the quarto-svelte documentation."
+  },
+  {
+    "objectID": "posts/buttonRow.html",
+    "href": "posts/buttonRow.html",
+    "title": "buttonRow",
+    "section": "",
+    "text": "Best canonical method, very clean OJS input & buttons, boostrap-styled and filled in-a-row.\n\n\n\n\n\n\n// static DIV container with .button-row class that will programmatically trigger effective row and children styling\ncontainer = html`&lt;div id=\"row_container\" class=\"button-row\"&gt;\nplaceholder container text will be overwritten\n &lt;/div&gt;`\n\n\n\n\n\n\n\nviewof RefInput = {\n  const inputText = Inputs.text({\n  value: \"Gen1:1\",\n  style: \"width: 80px;\",\n  })\n  return inputText\n}\n\n// YIELD BOOSTRAP STYLING via classes added to its &lt;input&gt; element\nrestyl = {\n const IS = viewof RefInput.querySelector('input');\n if (IS) {\n    IS.classList.add(\"form-control\", \"form-control-lg\");\n  };\n};\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nviewof btnA = Inputs.button(\"Store\");\nviewof btnB = Inputs.button(\"Clip\");\nviewof btnC = Inputs.button(\"Help\");\n\n// SIDE-EFFECT DOM operations\n// \nresult = {\n  const midiv = document.querySelector(\"#row_container\");\n  midiv.replaceChildren(viewof RefInput, viewof btnA, viewof btnB, viewof btnC);\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n// RESTYLE OJS viewof buttons\nrestyle = {\n  // APPLY STYLE to PARENT button-row container\n  const mirow = document.querySelector(\"div.button-row\");\n    mirow.style.display = \"flex\";\n    mirow.style.width = \"100%\";\n    mirow.style.gap = \"3px\"; // between children spacing\n\n const AS = viewof btnA.querySelector('button.btn.btn-quarto');\n if (AS) {\n    AS.classList.add('btn-warning');\n    AS.classList.remove('btn-quarto');\n  };\n  \n  const HB = viewof btnB.querySelector('button.btn.btn-quarto');\n  if (HB) {\n    HB.classList.add('btn-info');\n    HB.classList.remove('btn-quarto');\n  }\n  \n  const CB = viewof btnC.querySelector('button.btn.btn-quarto');\n   if (CB) {\n//     CB.style.color = \"black\";\n     CB.classList.add('btn-success');\n     CB.classList.remove('btn-quarto');\n//   addmib.style.cssText = \"color: white; background-color: red;\";\n  }\n\n// this is inoperative here !? let mini_styles.css do it \n/*  mirow.querySelectorAll(\"button\").forEach(btn =&gt; {\n    btn.style.flex = \"1\";\n    btn.style.margin = \"20px\";\n  });\n*/  \n}\n\n\n\n\n\n\n\nNB Quarto Bootstrap buttons\n\n\n\n  Primary\n  Secondary\n  Success\n  Danger\n  Warning\n  Info\n  Light\n  Dark\n  Link"
+  },
+  {
+    "objectID": "posts/ButtonsUp.html",
+    "href": "posts/ButtonsUp.html",
+    "title": "ButtonsUp",
+    "section": "",
+    "text": "Store\n\n\n\nHTML Buttons Naked (no-attributes, no-styling)\nHTML Input:  HTML Button\n\n\nHTML Buttons with .btn.btn-primary (yields Bootstrap styling)\n\nPrimary Secondary Success Danger Warning Info Light Dark Link\n\n\nHTML Output: placeholder output area"
+  },
+  {
+    "objectID": "posts/MirrorGemini.html",
+    "href": "posts/MirrorGemini.html",
+    "title": "MirrorGemini",
+    "section": "",
+    "text": "This document shows you how to use a basic example Svelte component called Circles.svelte.\nCreate one using an HTML template:\n\nmyMirror = html`&lt;my-mirrorgemini&gt;&lt;/my-mirrorgemini&gt;`"
+  }
+]

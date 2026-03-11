@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>svlt</title>
+<link>https://your-website-url.example.com/</link>
+<atom:link href="https://your-website-url.example.com/index.xml" rel="self" type="application/rss+xml"/>
+<description>A blog built with Quarto</description>
+<generator>quarto-1.8.25</generator>
+<lastBuildDate>Sun, 08 Mar 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Post With Grid</title>
+  <dc:creator>Harlow Malloc</dc:creator>
+  <link>https://your-website-url.example.com/posts/post-with-code/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>This is a post with executable code. border-bottom</p>
+<style>
+  /* Remove all padding/margins from the card */
+  .my-card .card-body {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* First row: no gaps, no margins, no padding */
+  .control-row {
+    display: flex;
+    gap: 0;          /* zero space between elements */
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Equal height for all children */
+  .control-row > * {
+    height: 32px;    /* compact height */
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0; /* optional: remove rounding for tighter look */
+  }
+
+  /* Input: keep minimal padding so text is readable */
+  .control-row input.form-control {
+    height: 32px;
+    padding: 0 0.25rem;  /* minimal readable padding */
+    border-radius: 0;
+  }
+
+  /* Buttons: remove padding, keep text centered */
+  .control-row button.btn {
+    padding: 0;
+    border-radius: 0;
+  }
+
+  /* Output row: minimal height, minimal padding */
+  .output-box {
+    min-height: 50px;
+    padding: 0.25rem;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    background: #f8f8f8;
+  }
+</style>
+
+<div class="card my-card">
+  <div class="card-body">
+
+    <!-- ROW 1: input + 3 buttons, zero spacing -->
+    <div class="control-row">
+      <input type="text" class="form-control" placeholder="Input">
+
+      <button class="btn btn-primary w-100">Go</button>
+      <button class="btn btn-secondary w-100">Run</button>
+      <button class="btn btn-success w-100">Exec</button>
+    </div>
+
+    <!-- ROW 2: output -->
+    <div class="output-box">
+      Output appears here…
+    </div>
+
+  </div>
+</div>
+<section id="best-cards" class="level3">
+<h3 class="anchored" data-anchor-id="best-cards">Best Cards</h3>
+<style>
+  /* Remove card padding to the minimum */
+  .my-card .card-body {
+    padding: 0.5rem;
+  }
+
+  /* First row: equal height, minimal spacing */
+  .control-row {
+    display: flex;
+    gap: 0.25rem;          /* minimal gap */
+    margin-bottom: 0.5rem; /* minimal spacing before output */
+  }
+
+  /* Equal height for all children */
+  .control-row > * {
+    height: 36px;          /* reduced height */
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Input needs padding preserved */
+  .control-row input.form-control {
+    height: 36px;
+    padding: 0 0.4rem;
+  }
+
+  /* Output row: minimal padding, clean box */
+  .output-box {
+    min-height: 60px;
+    padding: 0.4rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    background: #fafafa;
+  }
+</style>
+
+<div class="card my-card">
+  <div class="card-body">
+
+    <!-- ROW 1: input + 3 buttons -->
+    <div class="control-row">
+      <input type="text" class="form-control" placeholder="Input">
+
+      <button class="btn btn-primary w-100">Go</button>
+      <button class="btn btn-secondary w-100">Run</button>
+      <button class="btn btn-success w-100">Exec</button>
+    </div>
+
+    <!-- ROW 2: output -->
+    <div class="output-box">
+      Output appears here…
+    </div>
+
+  </div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <category>code</category>
+  <category>analysis</category>
+  <guid>https://your-website-url.example.com/posts/post-with-code/</guid>
+  <pubDate>Sun, 08 Mar 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://your-website-url.example.com/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Welcome To My Blog</title>
+  <dc:creator>Tristan O&#39;Malley</dc:creator>
+  <link>https://your-website-url.example.com/posts/welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://your-website-url.example.com/posts/welcome/</guid>
+  <pubDate>Thu, 05 Mar 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>buttonRow</title>
+  <link>https://your-website-url.example.com/posts/buttonRow.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<blockquote class="blockquote">
+<p>Best canonical method, very clean OJS input &amp; buttons, boostrap-styled and filled in-a-row.</p>
+</blockquote>
+<!--
+// this is classless generated ojs input
+<form class="oi-3a86ea">
+    <div class="oi-3a86ea-input">
+      <input type="text" name="text">
+    </div>
+  </form>
+
+// this is bootstrap styling of input  
+<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" id="inputLarge">  
+  
+-->
+<div id="target">
+
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="31" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 30;"><span id="cb1-31"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">// static DIV container with .button-row class that will programmatically trigger effective row and children styling</span></span>
+<span id="cb1-32">container <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;div id="row_container" class="button-row"&gt;</span></span>
+<span id="cb1-33"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">placeholder container text will be overwritten</span></span>
+<span id="cb1-34"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;"> &lt;/div&gt;`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="42" data-source-offset="-51" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 41;"><span id="cb2-42">viewof RefInput <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> {</span>
+<span id="cb2-43">  <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> inputText <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Inputs<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">text</span>({</span>
+<span id="cb2-44">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">value</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Gen1:1"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb2-45">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">style</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"width: 80px;"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb2-46">  })</span>
+<span id="cb2-47">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> inputText</span>
+<span id="cb2-48">}</span>
+<span id="cb2-49"></span>
+<span id="cb2-50"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">// YIELD BOOSTRAP STYLING via classes added to its &lt;input&gt; element</span></span>
+<span id="cb2-51">restyl <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> {</span>
+<span id="cb2-52"> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> IS <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> viewof RefInput<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">querySelector</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'input'</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb2-53"> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> (IS) {</span>
+<span id="cb2-54">    IS<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">classList</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">add</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"form-control"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"form-control-lg"</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb2-55">  }<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb2-56">}<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="62" data-source-offset="-28" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 61;"><span id="cb3-62">viewof btnA <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Inputs<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">button</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Store"</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb3-63">viewof btnB <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Inputs<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">button</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Clip"</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb3-64">viewof btnC <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Inputs<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">button</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Help"</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb3-65"></span>
+<span id="cb3-66"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">// SIDE-EFFECT DOM operations</span></span>
+<span id="cb3-67"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">// </span></span>
+<span id="cb3-68">result <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> {</span>
+<span id="cb3-69">  <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> midiv <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">document</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">querySelector</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#row_container"</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb3-70">  midiv<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">replaceChildren</span>(viewof RefInput<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> viewof btnA<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> viewof btnB<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> viewof btnC)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb3-71">}</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="74" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 73;"><span id="cb4-74"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">// RESTYLE OJS viewof buttons</span></span>
+<span id="cb4-75">restyle <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> {</span>
+<span id="cb4-76">  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">// APPLY STYLE to PARENT button-row container</span></span>
+<span id="cb4-77">  <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> mirow <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">document</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">querySelector</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"div.button-row"</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb4-78">    mirow<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">style</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">display</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"flex"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb4-79">    mirow<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">style</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">width</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"100%"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb4-80">    mirow<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">style</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">gap</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"3px"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">// between children spacing</span></span>
+<span id="cb4-81"></span>
+<span id="cb4-82"> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> AS <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> viewof btnA<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">querySelector</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'button.btn.btn-quarto'</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb4-83"> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> (AS) {</span>
+<span id="cb4-84">    AS<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">classList</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">add</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'btn-warning'</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb4-85">    AS<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">classList</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">remove</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'btn-quarto'</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb4-86">  }<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb4-87">  </span>
+<span id="cb4-88">  <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> HB <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> viewof btnB<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">querySelector</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'button.btn.btn-quarto'</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb4-89">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> (HB) {</span>
+<span id="cb4-90">    HB<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">classList</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">add</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'btn-info'</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb4-91">    HB<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">classList</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">remove</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'btn-quarto'</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb4-92">  }</span>
+<span id="cb4-93">  </span>
+<span id="cb4-94">  <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> CB <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> viewof btnC<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">querySelector</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'button.btn.btn-quarto'</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb4-95">   <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> (CB) {</span>
+<span id="cb4-96"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">//     CB.style.color = "black";</span></span>
+<span id="cb4-97">     CB<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">classList</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">add</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'btn-success'</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb4-98">     CB<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">classList</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">remove</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'btn-quarto'</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb4-99"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">//   addmib.style.cssText = "color: white; background-color: red;";</span></span>
+<span id="cb4-100">  }</span>
+<span id="cb4-101"></span>
+<span id="cb4-102"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">// this is inoperative here !? let mini_styles.css do it </span></span>
+<span id="cb4-103"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/*  mirow.querySelectorAll("button").forEach(btn =&gt; {</span></span>
+<span id="cb4-104"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    btn.style.flex = "1";</span></span>
+<span id="cb4-105"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    btn.style.margin = "20px";</span></span>
+<span id="cb4-106"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  });</span></span>
+<span id="cb4-107"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*/</span>  </span>
+<span id="cb4-108">}</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<section id="nb-quarto-bootstrap-buttons" class="level3">
+<h3 class="anchored" data-anchor-id="nb-quarto-bootstrap-buttons">NB Quarto Bootstrap buttons</h3>
+
+<div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
+
+  <button class="btn btn-primary">Primary</button>
+  <button class="btn btn-secondary">Secondary</button>
+  <button class="btn btn-success">Success</button>
+  <button class="btn btn-danger">Danger</button>
+  <button class="btn btn-warning">Warning</button>
+  <button class="btn btn-info">Info</button>
+  <button class="btn btn-light">Light</button>
+  <button class="btn btn-dark">Dark</button>
+  <button class="btn btn-link">Link</button>
+
+</div>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://your-website-url.example.com/posts/buttonRow.html</guid>
+  <pubDate>Mon, 08 Sep 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://your-website-url.example.com/posts/hurdler.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>MirrorFull</title>
+  <link>https://your-website-url.example.com/posts/MirrorFull.html</link>
+  <description><![CDATA[ 
+<script src="../components/MirrorFull.js" type="module"></script>
+
+
+
+
+
+<p>This document shows you how to use a basic example Svelte component called <code>Circles.svelte</code>.</p>
+<p>Create one using an HTML template:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" data-startfrom="14" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 13;"><span id="cb1-14">myMirrorReset <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;my-mirrorfull&gt;&lt;/my-mirrorfull&gt;`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <guid>https://your-website-url.example.com/posts/MirrorFull.html</guid>
+  <pubDate>Tue, 10 Mar 2026 20:49:11 GMT</pubDate>
+</item>
+<item>
+  <title>quarto-svelte example</title>
+  <link>https://your-website-url.example.com/posts/Circle-example.html</link>
+  <description><![CDATA[ 
+<script src="../components/Circles.js" type="module"></script>
+
+
+
+
+
+<p>This document shows you how to use a basic example Svelte component called <code>Circles.svelte</code>.</p>
+<p>Create one using an HTML template:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" data-startfrom="14" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 13;"><span id="cb1-14">myCircles <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;my-circles&gt;&lt;/my-circles&gt;`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<p>Now the fun part - updating our visual when our document changes. It’s as simple as changing the prop using <code>componentName.propName =</code>.</p>
+<p>For example, here are three datasets and an <a href="https://observablehq.com/documentation/inputs/overview">Observable Inputs</a> dropdown menu that lets you select one of three datasets:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" data-startfrom="22" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 21;"><span id="cb2-22"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">// here are some datasets...</span></span>
+<span id="cb2-23">allDatasets <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">new</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">Map</span>([</span>
+<span id="cb2-24">    [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Dataset A"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">25</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">17</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">8</span>]]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb2-25">    [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Dataset B"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">25</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>]]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb2-26">    [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Dataset C"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">8</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">21</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>]]</span>
+<span id="cb2-27">  ])<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" data-startfrom="31" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 30;"><span id="cb3-31">viewof selectedDataset <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span></span>
+<span id="cb3-32">  Inputs<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">select</span>(allDatasets<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> { <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">label</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Selected dataset"</span> })<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<p>Now we can update the prop <code>data</code> of the visual <code>myCircles</code> using:</p>
+<div class="cell hidden">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" data-startfrom="39" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 38;"><span id="cb4-39">myCircles<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> selectedDataset</span></code></pre></div></div>
+<div class="cell-output cell-output-display hidden">
+<div id="ojs-cell-4" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<p>And there you go! 🚀</p>
+<p>For more help writing Svelte components, check out the <a href="https://svelte.dev/tutorial/basics">Svelte tutorial</a> or take look at some of the examples in the <a href="https://quarto-svelte.jamesgoldie.dev">quarto-svelte documentation</a>.</p>
+
+
+
+ ]]></description>
+  <guid>https://your-website-url.example.com/posts/Circle-example.html</guid>
+  <pubDate>Tue, 10 Mar 2026 20:49:11 GMT</pubDate>
+</item>
+<item>
+  <title>MirrorReset</title>
+  <link>https://your-website-url.example.com/posts/MirrorReset.html</link>
+  <description><![CDATA[ 
+<script src="../components/MirrorReset.js" type="module"></script>
+
+
+
+
+
+<p>This document shows you how to use a basic example Svelte component called <code>Circles.svelte</code>.</p>
+<p>Create one using an HTML template:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" data-startfrom="16" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 15;"><span id="cb1-16">myMirrorReset <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;my-mirrorreset&gt;&lt;/my-mirrorreset&gt;`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <guid>https://your-website-url.example.com/posts/MirrorReset.html</guid>
+  <pubDate>Tue, 10 Mar 2026 20:49:11 GMT</pubDate>
+</item>
+<item>
+  <title>MirrorIndex</title>
+  <link>https://your-website-url.example.com/posts/Mirror.html</link>
+  <description><![CDATA[ 
+<script src="../components/Mirror.js" type="module"></script>
+
+
+
+
+
+<p>This document shows you how to use a basic example Svelte component called <code>Circles.svelte</code>.</p>
+<p>Create one using an HTML template:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" data-startfrom="14" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 13;"><span id="cb1-14">myMirror <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;my-mirror&gt;&lt;/my-mirror&gt;`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <guid>https://your-website-url.example.com/posts/Mirror.html</guid>
+  <pubDate>Tue, 10 Mar 2026 20:49:11 GMT</pubDate>
+</item>
+<item>
+  <title>ButtonsUp</title>
+  <link>https://your-website-url.example.com/posts/ButtonsUp.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<form class="oi-3a86ea">
+<button class="btn btn-warning">
+Store
+</button>
+</form>
+<section id="html-buttons-naked-no-attributes-no-styling" class="level3">
+<h3 class="anchored" data-anchor-id="html-buttons-naked-no-attributes-no-styling">HTML Buttons Naked (no-attributes, no-styling)</h3>
+<p><label for="h-in">HTML Input:</label> <input type="text" id="h-in"> <button id="h-btn">HTML Button</button></p>
+</section>
+<section id="html-buttons-with-.btn.btn-primary-yields-bootstrap-styling" class="level3">
+<h3 class="anchored" data-anchor-id="html-buttons-with-.btn.btn-primary-yields-bootstrap-styling">HTML Buttons with .btn.btn-primary (yields Bootstrap styling)</h3>
+<div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
+<p><button class="btn btn-primary">Primary</button> <button class="btn btn-secondary">Secondary</button> <button class="btn btn-success">Success</button> <button class="btn btn-danger">Danger</button> <button class="btn btn-warning">Warning</button> <button class="btn btn-info">Info</button> <button class="btn btn-light">Light</button> <button class="btn btn-dark">Dark</button> <button class="btn btn-link">Link</button></p>
+</div>
+<p>
+HTML Output: <span id="h-out"><em>placeholder output area</em></span>
+</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://your-website-url.example.com/posts/ButtonsUp.html</guid>
+  <pubDate>Tue, 10 Mar 2026 20:49:11 GMT</pubDate>
+</item>
+<item>
+  <title>Buttons</title>
+  <link>https://your-website-url.example.com/posts/Buttons.html</link>
+  <description><![CDATA[ 
+<script src="../components/Mirror.js" type="module"></script>
+
+
+
+
+
+<label for="h-in">HTML Input:</label> <input type="text" id="h-in"> <button id="h-btn">HTML Button</button>
+<p>
+HTML Output: <span id="h-out"></span>
+</p>
+<hr>
+<section id="what-is-happening-in-this-file" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-happening-in-this-file">What is happening in this file:</h2>
+<ul>
+<li><strong>HTML Input/Button</strong>: These are “dumb” elements. They do nothing until the <code>htmlBtn.onclick</code> function in the OJS block manually pulls the value from the input and pushes it into the span.</li>
+<li><strong>OJS Input (<code>Inputs.text</code>)</strong>: This is “smart.” Because of the <code>viewof</code> keyword, the variable <code>ojs_text</code> is globally available to the OJS runtime.</li>
+<li><strong>OJS Button (<code>Inputs.button</code>)</strong>: Unlike the HTML button, this one returns a value (an incrementing integer). By simply mentioning <code>ojs_btn</code> in a code block, you tell OJS to re-run that specific block every time the button is pressed.</li>
+</ul>
+<label for="h-in">HTML Input:</label> <input type="text" id="h-in"> <button id="h-btn">HTML Button</button>
+<p>
+HTML Output: <span id="h-out"></span>
+</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" data-startfrom="35" data-source-offset="-102" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 34;"><span id="cb1-35">htmlBtn <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">document</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">getElementById</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'h-btn'</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-36">htmlInput <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">document</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">getElementById</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'h-in'</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-37">htmlOutput <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">document</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">getElementById</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'h-out'</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" data-startfrom="46" data-source-offset="-3" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 45;"><span id="cb2-46">htmlBtn<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">onclick</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> () <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">=&gt;</span> {</span>
+<span id="cb2-47">  htmlOutput<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">innerText</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> htmlInput<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">value</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb2-48">}<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" data-startfrom="52" data-source-offset="-175" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 51;"><span id="cb3-52">viewof ojs_text <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Inputs<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">text</span>({</span>
+<span id="cb3-53">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">label</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"OJS Input"</span></span>
+<span id="cb3-54">})</span>
+<span id="cb3-55"></span>
+<span id="cb3-56"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">// This button yields a value (the number of clicks)</span></span>
+<span id="cb3-57">viewof ojs_btn <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Inputs<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">button</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"OJS Button"</span>)</span>
+<span id="cb3-58"></span>
+<span id="cb3-59"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">// --- OJS Reactive Output ---</span></span>
+<span id="cb3-60"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">// This markdown block updates automatically whenever ojs_text changes</span></span>
+<span id="cb3-61"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">md</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`OJS Text Value: </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>ojs_text<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-4" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" data-startfrom="64" data-source-offset="-524" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 63;"><span id="cb4-64">{</span>
+<span id="cb4-65">  ojs_btn<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">// Referencing the button makes this block depend on it</span></span>
+<span id="cb4-66">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">md</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`OJS Button was clicked!`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb4-67">}</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-5" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://your-website-url.example.com/posts/Buttons.html</guid>
+  <pubDate>Tue, 10 Mar 2026 20:49:11 GMT</pubDate>
+</item>
+<item>
+  <title>MirrorGemini</title>
+  <link>https://your-website-url.example.com/posts/MirrorGemini.html</link>
+  <description><![CDATA[ 
+<script src="../components/MirrorGemini.js" type="module"></script>
+
+
+
+
+
+<p>This document shows you how to use a basic example Svelte component called <code>Circles.svelte</code>.</p>
+<p>Create one using an HTML template:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" data-startfrom="14" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 13;"><span id="cb1-14">myMirror <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;my-mirrorgemini&gt;&lt;/my-mirrorgemini&gt;`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <guid>https://your-website-url.example.com/posts/MirrorGemini.html</guid>
+  <pubDate>Tue, 10 Mar 2026 20:49:11 GMT</pubDate>
+</item>
+</channel>
+</rss>

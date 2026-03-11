@@ -1,0 +1,18 @@
+---
+title: MirrorReset
+filters:
+  - quarto-svelte
+quarto-svelte:
+  use:
+    - ../components/MirrorReset.svelte
+---
+
+This document shows you how to use a basic example Svelte component called `Circles.svelte`.
+
+Create one using an HTML template:
+
+
+
+```{ojs}
+myMirrorReset = html`<my-mirrorreset></my-mirrorreset>`
+```
