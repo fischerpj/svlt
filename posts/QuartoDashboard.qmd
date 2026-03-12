@@ -1,0 +1,33 @@
+---
+title: QuartoDashboard
+subtitle: "Auto-Height Card Styling"
+format: dashboard
+---
+
+> Quarto Dashboard Syntax, no Svelte
+
+# Page 1
+
+## Row {layout="flow"}
+
+::: {.card-body .d-flex .flow-content .flex-row .gap-2 .mb-0 .p-1 }
+
+<button type="button" class="btn btn-primary flex-fill">
+  Action
+</button>
+<button type="button" class="btn btn-primary flex-fill">
+ Help
+</button>
+<button type="button" class="btn btn-warning flex-fill">
+  RAZ
+</button>
+:::
+
+## Row 
+
+### Main Content
+This row will now take up all the *remaining* space because the row above is set to "flow" (auto-height).
+
+NB: there is bslib::grid gap between cards and no-margin between cards.
+PS: apply Bootstrap mb-0 margin bottom and p-1 padding
+.card-body .p-1 .mb-0 

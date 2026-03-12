@@ -1,0 +1,16 @@
+---
+title: SvelteActionBar
+filters:
+  - quarto-svelte
+quarto-svelte:
+  use:
+    - ../components/ActionBar.svelte
+format: html
+---
+
+> Reusable Svelte component with Styling
+
+```{ojs}
+//| echo: false
+myActionBar = html`<my-actionbar2></my-actionbar2>`
+```

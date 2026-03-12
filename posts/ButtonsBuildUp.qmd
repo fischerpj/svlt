@@ -1,0 +1,32 @@
+---
+title: ButtonsBuildUp
+subtitle: "Elaboration Ladder"
+---
+
+> Buttons from Naked to Bootstrap styling
+
+<form class="oi-3a86ea"><button class="btn btn-warning">Store</button></form>
+
+### HTML Buttons Naked (no-attributes, no-styling)
+
+<label for="h-in">HTML Input:</label>
+<input type="text" id="h-in">
+<button id="h-btn">HTML Button</button>
+
+### HTML Buttons with .btn.btn-primary (yields Bootstrap styling)
+
+<div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
+
+  <button class="btn btn-primary">Primary</button>
+  <button class="btn btn-secondary">Secondary</button>
+  <button class="btn btn-success">Success</button>
+  <button class="btn btn-danger">Danger</button>
+  <button class="btn btn-warning">Warning</button>
+  <button class="btn btn-info">Info</button>
+  <button class="btn btn-light">Light</button>
+  <button class="btn btn-dark">Dark</button>
+  <button class="btn btn-link">Link</button>
+
+</div>
+
+<p>HTML Output: <span id="h-out">_placeholder output area_</span></p>

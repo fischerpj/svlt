@@ -1,1 +1,6 @@
 /* css styles */
+
+/* class to be applied to cards*/
+.no-margin {
+  margin-bottom: 0 !important;
+}

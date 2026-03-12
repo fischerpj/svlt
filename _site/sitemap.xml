@@ -2,50 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://your-website-url.example.com/index.html</loc>
-    <lastmod>2026-03-08T19:26:11.914Z</lastmod>
+    <lastmod>2026-03-11T11:53:07.560Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/Buttons.html</loc>
-    <lastmod>2026-03-09T18:11:58.924Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/QuartoDashboard.html</loc>
+    <lastmod>2026-03-12T19:19:02.117Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/Mirror.html</loc>
-    <lastmod>2026-03-09T14:43:36.172Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/MirrorReset.html</loc>
-    <lastmod>2026-03-09T19:58:23.792Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/post-with-code/index.html</loc>
-    <lastmod>2026-03-10T20:49:10.005Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/MirrorFull.html</loc>
-    <lastmod>2026-03-09T19:44:32.348Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/SvelteActionBar.html</loc>
+    <lastmod>2026-03-12T19:20:43.030Z</lastmod>
   </url>
   <url>
     <loc>https://your-website-url.example.com/about.html</loc>
-    <lastmod>2026-03-09T10:50:46.158Z</lastmod>
+    <lastmod>2026-03-11T11:53:07.560Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/Circle-example.html</loc>
-    <lastmod>2026-03-08T20:14:38.141Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/Historic-Circle-example.html</loc>
+    <lastmod>2026-03-12T19:21:29.764Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/welcome/index.html</loc>
-    <lastmod>2026-03-10T06:23:59.514Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/BootstrapButtonCard.html</loc>
+    <lastmod>2026-03-12T19:16:19.430Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/buttonRow.html</loc>
-    <lastmod>2026-03-09T19:14:17.392Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/ButtonsUp.html</loc>
-    <lastmod>2026-03-09T18:37:00.262Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/MirrorGemini.html</loc>
-    <lastmod>2026-03-09T14:30:46.092Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/ButtonsBuildUp.html</loc>
+    <lastmod>2026-03-12T19:23:30.913Z</lastmod>
   </url>
 </urlset>

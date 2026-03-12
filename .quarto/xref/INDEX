@@ -55,5 +55,41 @@
   },
   "posts/MirrorReset.qmd": {
     "MirrorReset.html": "b989a2f9"
+  },
+  "posts/FuseCard.qmd": {
+    "FuseCard.html": "8a6f3404"
+  },
+  "posts/dash.qmd": {
+    "dash.html": "b915350e"
+  },
+  "posts/QuartoDashboard.qmd": {
+    "QuartoDashboard.html": "ee2ed991"
+  },
+  "posts/QDash2.qmd": {
+    "QDash2.html": "050a4f01"
+  },
+  "posts/BootstrapButtonRow.qmd": {
+    "BootstrapButtonRow.html": "9777d3cb"
+  },
+  "posts/ActionBar.qmd": {
+    "ActionBar.html": "5f7e519d"
+  },
+  "posts/ActionBar2.qmd": {
+    "ActionBar2.html": "514fb27e"
+  },
+  "posts/SveleActionBar.qmd": {
+    "SveleActionBar.html": "b7e9df42"
+  },
+  "posts/BootstrapButtonCard.qmd": {
+    "BootstrapButtonCard.html": "c74be33b"
+  },
+  "posts/Historic-Circle-example.qmd": {
+    "Historic-Circle-example.html": "b97b9fd1"
+  },
+  "posts/SvelteActionBar.qmd": {
+    "SvelteActionBar.html": "7cc65ee2"
+  },
+  "posts/ButtonsBuildUp.qmd": {
+    "ButtonsBuildUp.html": "a61fc3a8"
   }
 }

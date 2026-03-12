@@ -2,16 +2,11 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/MirrorFull.html",
-      "/posts/Circle-example.html",
-      "/posts/MirrorReset.html",
-      "/posts/Mirror.html",
-      "/posts/ButtonsUp.html",
-      "/posts/Buttons.html",
-      "/posts/MirrorGemini.html",
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html",
-      "/posts/buttonRow.html"
+      "/posts/Historic-Circle-example.html",
+      "/posts/SvelteActionBar.html",
+      "/posts/BootstrapButtonCard.html",
+      "/posts/QuartoDashboard.html",
+      "/posts/ButtonsBuildUp.html"
     ]
   }
 ]

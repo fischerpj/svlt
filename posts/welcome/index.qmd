@@ -1,7 +1,0 @@
----
-title: "Welcome To My Blog"
-author: "Tristan O'Malley"
-date: "2026-03-05"
-categories: [news]
----
-
