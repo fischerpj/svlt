@@ -5,3 +5,4 @@ README svlt
 
 TODO
 - AccuClass.js AccuStore.js AccuView.svelte AvccuData.svelte AccuPage.qmd
+- push
