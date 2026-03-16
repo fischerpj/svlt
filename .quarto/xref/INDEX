@@ -91,5 +91,41 @@
   },
   "posts/ButtonsBuildUp.qmd": {
     "ButtonsBuildUp.html": "a61fc3a8"
+  },
+  "posts/SvelteDashboard.qmd": {
+    "SvelteDashboard.html": "3105ed4b"
+  },
+  "posts/SvelteAccu.qmd": {
+    "SvelteAccu.html": "3acef249"
+  },
+  "posts/Accu.qmd": {
+    "Accu.html": "4e2a2877"
+  },
+  "posts/SvelteAccuView.qmd": {
+    "SvelteAccuView.html": "c5f93c34"
+  },
+  "posts/SyncedComponents.qmd": {
+    "SyncedComponents.html": "fb98cbdd"
+  },
+  "posts/SvelteStore.qmd": {
+    "SvelteStore.html": "b585c663"
+  },
+  "posts/SvelteAccuWidget.qmd": {
+    "SvelteAccuWidget.html": "a05a3f8d"
+  },
+  "posts/SharedSvelteCounter.qmd": {
+    "SharedSvelteCounter.html": "574306fd"
+  },
+  "posts/AccuWidget.qmd": {
+    "AccuWidget.html": "bfbe5b1d"
+  },
+  "posts/RefPage.qmd": {
+    "RefPage.html": "e7372c2e"
+  },
+  "posts/RefApp.qmd": {
+    "RefApp.html": "b23c445f"
+  },
+  "posts/RefAppLegacy.qmd": {
+    "RefAppLegacy.html": "2b4a9d9c"
   }
 }

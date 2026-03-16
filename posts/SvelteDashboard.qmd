@@ -1,0 +1,21 @@
+---
+title: Dashboard with Svelte
+filters:
+  - quarto-svelte
+quarto-svelte:
+  use:
+    - ../components/ActionBar.svelte
+format: dashboard
+---
+
+# Page 1
+
+```{ojs}
+//| echo: false
+myActionBar = html`<my-actionbar2></my-actionbar2>`
+```
+
+## Row 
+
+### Main Content
+This row will now take up all the *remaining* space because the row above is set to "flow" (auto-height).

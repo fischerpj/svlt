@@ -10,7 +10,57 @@
 <atom:link href="https://your-website-url.example.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>A blog built with Quarto</description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Thu, 12 Mar 2026 19:23:41 GMT</lastBuildDate>
+<lastBuildDate>Mon, 16 Mar 2026 10:04:23 GMT</lastBuildDate>
+<item>
+  <title>AccuWidget</title>
+  <link>https://your-website-url.example.com/posts/AccuWidget.html</link>
+  <description><![CDATA[ 
+<script src="../components/AccuWidget.js" type="module"></script>
+
+
+
+
+
+<blockquote class="blockquote">
+<p>One Widget, One Store</p>
+</blockquote>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="15" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 14;"><span id="cb1-15">myAccuWidget <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;my-accuwidget&gt;&lt;/my-accuwidget&gt;`</span></span>
+<span id="cb1-16">myAccuWidgetB <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;my-accuwidget&gt;&lt;/my-accuwidget&gt;`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <guid>https://your-website-url.example.com/posts/AccuWidget.html</guid>
+  <pubDate>Mon, 16 Mar 2026 10:04:23 GMT</pubDate>
+</item>
 <item>
   <title>historic quarto-svelte example</title>
   <link>https://your-website-url.example.com/posts/Historic-Circle-example.html</link>
@@ -172,7 +222,58 @@ font-style: inherit;">=</span> selectedDataset</span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/Historic-Circle-example.html</guid>
-  <pubDate>Thu, 12 Mar 2026 19:23:41 GMT</pubDate>
+  <pubDate>Mon, 16 Mar 2026 10:04:23 GMT</pubDate>
+</item>
+<item>
+  <title>RefApp</title>
+  <link>https://your-website-url.example.com/posts/RefApp.html</link>
+  <description><![CDATA[ 
+<script src="../components/RefWidget.js" type="module"></script>
+<script src="../components/RefData.js" type="module"></script>
+
+
+
+
+
+<blockquote class="blockquote">
+<p>One Store, Two Widgets</p>
+</blockquote>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="17" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 16;"><span id="cb1-17">myAccuWidget <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;my-refwidget&gt;&lt;/my-refwidget&gt;`</span></span>
+<span id="cb1-18">myAccuData <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;my-refdata&gt;&lt;/my-refdata&gt;`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <guid>https://your-website-url.example.com/posts/RefApp.html</guid>
+  <pubDate>Mon, 16 Mar 2026 10:04:23 GMT</pubDate>
 </item>
 <item>
   <title>SvelteActionBar</title>
@@ -184,11 +285,22 @@ font-style: inherit;">=</span> selectedDataset</span></code></pre></div></div>
 
 
 
+<style>
+/* Adjust the height of the title block banner */
+quarto-title-banner {
+height: 100px; /* Increase or decrease as needed */
+}
+
+/* Adjust the font size of the title */
+#title-block-header h3 {
+font-size: 1.5rem; /* Adjust font size */
+}
+</style>
 <blockquote class="blockquote">
 <p>Reusable Svelte component with Styling</p>
 </blockquote>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="14" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 13;"><span id="cb1-14">myActionBar <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="26" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 25;"><span id="cb1-26">myActionBar <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -206,7 +318,58 @@ font-style: inherit;">`&lt;my-actionbar2&gt;&lt;/my-actionbar2&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/SvelteActionBar.html</guid>
-  <pubDate>Thu, 12 Mar 2026 19:23:41 GMT</pubDate>
+  <pubDate>Mon, 16 Mar 2026 10:04:23 GMT</pubDate>
+</item>
+<item>
+  <title>RefAppLegacy</title>
+  <link>https://your-website-url.example.com/posts/RefAppLegacy.html</link>
+  <description><![CDATA[ 
+<script src="../components/RefWidget.js" type="module"></script>
+<script src="../components/RefData.js" type="module"></script>
+
+
+
+
+
+<blockquote class="blockquote">
+<p>One Store, Two Widgets</p>
+</blockquote>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="17" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 16;"><span id="cb1-17">myAccuWidget <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;my-refwidget&gt;&lt;/my-refwidget&gt;`</span></span>
+<span id="cb1-18">myAccuData <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;my-refdata&gt;&lt;/my-refdata&gt;`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <guid>https://your-website-url.example.com/posts/RefAppLegacy.html</guid>
+  <pubDate>Mon, 16 Mar 2026 10:04:23 GMT</pubDate>
 </item>
 <item>
   <title>Bootstrap Button Card</title>
@@ -292,14 +455,116 @@ font-style: inherit;">`&lt;my-actionbar2&gt;&lt;/my-actionbar2&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/BootstrapButtonCard.html</guid>
-  <pubDate>Thu, 12 Mar 2026 19:23:41 GMT</pubDate>
+  <pubDate>Mon, 16 Mar 2026 10:04:23 GMT</pubDate>
 </item>
 <item>
   <title></title>
   <link>https://your-website-url.example.com/posts/QuartoDashboard.html</link>
   <description><![CDATA[ undefined ]]></description>
   <guid>https://your-website-url.example.com/posts/QuartoDashboard.html</guid>
-  <pubDate>Thu, 12 Mar 2026 19:23:41 GMT</pubDate>
+  <pubDate>Mon, 16 Mar 2026 10:04:23 GMT</pubDate>
+</item>
+<item>
+  <title>SharedSvelteCounter</title>
+  <link>https://your-website-url.example.com/posts/SharedSvelteCounter.html</link>
+  <description><![CDATA[ 
+<script src="../components/ComponentA.js" type="module"></script>
+<script src="../components/ComponentB.js" type="module"></script>
+
+
+
+
+
+<blockquote class="blockquote">
+<p>Share via window.__shared_counter__;</p>
+</blockquote>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="16" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 15;"><span id="cb1-16">myCompA <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;my-componenta&gt;&lt;/my-componenta&gt;`</span></span>
+<span id="cb1-17">myCompB <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;my-componentb&gt;&lt;/my-componentb&gt;`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <guid>https://your-website-url.example.com/posts/SharedSvelteCounter.html</guid>
+  <pubDate>Mon, 16 Mar 2026 10:04:23 GMT</pubDate>
+</item>
+<item>
+  <title>SharedSvelteAccu</title>
+  <link>https://your-website-url.example.com/posts/Accu.html</link>
+  <description><![CDATA[ 
+<script src="../components/AccuList.js" type="module"></script>
+<script src="../components/AccuData.js" type="module"></script>
+
+
+
+
+
+<blockquote class="blockquote">
+<p>Idea: AccuLogic (and View) + AccuJSON (Data only). Checl subcribe mechanism.</p>
+</blockquote>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="16" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 15;"><span id="cb1-16">myAccuList <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;my-acculist&gt;&lt;/my-acculist&gt;`</span></span>
+<span id="cb1-17">myAccuData <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;my-accudata&gt;&lt;/my-accudata&gt;`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <guid>https://your-website-url.example.com/posts/Accu.html</guid>
+  <pubDate>Mon, 16 Mar 2026 10:04:23 GMT</pubDate>
 </item>
 <item>
   <title>ButtonsBuildUp</title>
@@ -336,7 +601,14 @@ HTML Output: <span id="h-out"><em>placeholder output area</em></span>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/ButtonsBuildUp.html</guid>
-  <pubDate>Thu, 12 Mar 2026 19:23:41 GMT</pubDate>
+  <pubDate>Mon, 16 Mar 2026 10:04:23 GMT</pubDate>
+</item>
+<item>
+  <title></title>
+  <link>https://your-website-url.example.com/posts/SvelteDashboard.html</link>
+  <description><![CDATA[ undefined ]]></description>
+  <guid>https://your-website-url.example.com/posts/SvelteDashboard.html</guid>
+  <pubDate>Mon, 16 Mar 2026 10:04:23 GMT</pubDate>
 </item>
 </channel>
 </rss>

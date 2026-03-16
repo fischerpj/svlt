@@ -1,0 +1,18 @@
+---
+title: SharedSvelteCounter
+format: html
+filters:
+  - quarto-svelte
+quarto-svelte:
+  use:
+    - ../components/ComponentA.svelte
+    - ../components/ComponentB.svelte
+---
+
+> Share via window.__shared_counter__;
+
+```{ojs}
+//| echo: false
+myCompA = html`<my-componenta></my-componenta>`
+myCompB = html`<my-componentb></my-componentb>`
+```

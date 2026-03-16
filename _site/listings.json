@@ -2,11 +2,17 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/AccuWidget.html",
       "/posts/Historic-Circle-example.html",
+      "/posts/RefApp.html",
       "/posts/SvelteActionBar.html",
+      "/posts/RefAppLegacy.html",
       "/posts/BootstrapButtonCard.html",
       "/posts/QuartoDashboard.html",
-      "/posts/ButtonsBuildUp.html"
+      "/posts/SharedSvelteCounter.html",
+      "/posts/Accu.html",
+      "/posts/ButtonsBuildUp.html",
+      "/posts/SvelteDashboard.html"
     ]
   }
 ]
