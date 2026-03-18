@@ -127,5 +127,23 @@
   },
   "posts/RefAppLegacy.qmd": {
     "RefAppLegacy.html": "2b4a9d9c"
+  },
+  "posts/BcvParser.qmd": {
+    "BcvParser.html": "3d8321e8"
+  },
+  "posts/BcvParser2.qmd": {
+    "BcvParser2.html": "1745e717"
+  },
+  "posts/BcvFetch.qmd": {
+    "BcvFetch.html": "ae375320"
+  },
+  "posts/BcvRead.qmd": {
+    "BcvRead.html": "ebe6962c"
+  },
+  "posts/BcvReader.qmd": {
+    "BcvReader.html": "1a2a6523"
+  },
+  "posts/OsisParser.qmd": {
+    "OsisParser.html": "fa510e74"
   }
 }

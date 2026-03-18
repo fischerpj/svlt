@@ -5,10 +5,6 @@
     <lastmod>2026-03-11T11:53:07.560Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/ButtonsBuildUp.html</loc>
-    <lastmod>2026-03-12T19:23:30.913Z</lastmod>
-  </url>
-  <url>
     <loc>https://your-website-url.example.com/posts/SharedSvelteCounter.html</loc>
     <lastmod>2026-03-13T19:46:35.215Z</lastmod>
   </url>
@@ -17,8 +13,8 @@
     <lastmod>2026-03-12T19:16:19.430Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/SvelteActionBar.html</loc>
-    <lastmod>2026-03-12T19:42:09.372Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/RefApp.html</loc>
+    <lastmod>2026-03-15T17:00:53.589Z</lastmod>
   </url>
   <url>
     <loc>https://your-website-url.example.com/posts/Historic-Circle-example.html</loc>
@@ -29,27 +25,23 @@
     <lastmod>2026-03-11T11:53:07.560Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/AccuWidget.html</loc>
-    <lastmod>2026-03-14T13:51:10.616Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/BcvReader.html</loc>
+    <lastmod>2026-03-18T14:49:45.308Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/RefApp.html</loc>
-    <lastmod>2026-03-15T17:00:53.589Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/OsisParser.html</loc>
+    <lastmod>2026-03-18T15:04:06.431Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/RefAppLegacy.html</loc>
-    <lastmod>2026-03-15T17:01:04.400Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/SvelteActionBar.html</loc>
+    <lastmod>2026-03-12T19:42:09.372Z</lastmod>
   </url>
   <url>
     <loc>https://your-website-url.example.com/posts/QuartoDashboard.html</loc>
     <lastmod>2026-03-12T19:19:02.117Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/Accu.html</loc>
-    <lastmod>2026-03-13T19:54:36.187Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/SvelteDashboard.html</loc>
-    <lastmod>2026-03-13T09:12:17.514Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/ButtonsBuildUp.html</loc>
+    <lastmod>2026-03-12T19:23:30.913Z</lastmod>
   </url>
 </urlset>

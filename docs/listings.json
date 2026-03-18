@@ -2,17 +2,15 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/AccuWidget.html",
+      "/posts/BcvReader.html",
       "/posts/Historic-Circle-example.html",
+      "/posts/OsisParser.html",
       "/posts/RefApp.html",
       "/posts/SvelteActionBar.html",
-      "/posts/RefAppLegacy.html",
       "/posts/BootstrapButtonCard.html",
       "/posts/QuartoDashboard.html",
       "/posts/SharedSvelteCounter.html",
-      "/posts/Accu.html",
-      "/posts/ButtonsBuildUp.html",
-      "/posts/SvelteDashboard.html"
+      "/posts/ButtonsBuildUp.html"
     ]
   }
 ]
