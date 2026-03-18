@@ -25,7 +25,7 @@
     "href": "posts/RefApp.html",
     "title": "RefApp",
     "section": "",
-    "text": "One Store, Two Widgets\n\n\nmyAccuWidget = html`&lt;my-refwidget&gt;&lt;/my-refwidget&gt;`\nmyAccuData = html`&lt;my-refdata&gt;&lt;/my-refdata&gt;`"
+    "text": "myAccuWidget = html`&lt;my-refwidget&gt;&lt;/my-refwidget&gt;`\nmyAccuData = html`&lt;my-refdata&gt;&lt;/my-refdata&gt;`"
   },
   {
     "objectID": "posts/Historic-Circle-example.html",

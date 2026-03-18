@@ -10,8 +10,6 @@ quarto-svelte:
     - ../components/RefData.svelte
 ---
 
-> One Store, Two Widgets
-
 ```{ojs}
 //| echo: false
 myAccuWidget = html`<my-refwidget></my-refwidget>`

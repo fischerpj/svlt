@@ -20,8 +20,6 @@
 
 <div class="RefAccu-widget">
   
-  <h4>RefData:</h4>
-
   <pre>{JSON.stringify($RefAccu.items, null, 0)}</pre>
 
 </div>

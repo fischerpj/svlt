@@ -37,6 +37,7 @@
       const data = await response.json();
       // Adjust 'data.text' based on your actual Worker JSON structure
       responseText = data.content || JSON.stringify(data);
+      responseText = responseText.replace(/\n\n\n\n/g, "\n\n");
     } catch (err) {
       responseText = "Error fetching data.";
     } finally {
