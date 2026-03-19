@@ -138,7 +138,7 @@
     
     <div class="flex-fill px-0">
       <button 
-        class="btn btn-primary w-100" 
+        class="btn btn-primary w-100 px-2 py-1" 
         type="button"
         on:click={() => { addValue(osisResult); text = "" }}
         >
@@ -151,7 +151,7 @@
 
     <div class="flex-fill px-0">
       <button 
-        class="btn btn-warning w-100" 
+        class="btn btn-warning w-100 px-2 py-1" 
         type="button"
         on:click={handleClip}
         disabled={!inputValue}
@@ -165,7 +165,7 @@
     
     <div class="flex-fill px-0">
       <button 
-        class="btn btn-danger w-100" 
+        class="btn btn-danger w-100 px-2 py-1" 
         type="button" 
         on:click={handleRaz}
       >
@@ -173,17 +173,6 @@
           <i class="bi bi-eraser me-1 d-none"></i>
           RAZ
         </span>
-      </button>
-    </div>
-    
-    <div class="flex-fill px-0">
-      <button 
-        class="btn btn-info w-100" 
-        type="button"
-        on:click={() => handleAction('HELP')}
-      >
-        <i class="bi bi-info me-1 d-none"></i>
-        HELP
       </button>
     </div>
     
