@@ -135,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
   
     <div class="flex-fill px-1">
       <div class="input-group h-100">
-        <span class="input-group-text bg-light">
+        <span class="input-group-text d-none d-md-flex bg-light">
           <i class="bi bi-search"></i>
         </span>
         <input id="search-input" type="text" class="form-control form-control-lg" placeholder="Type to echo..." bind:value="{inputValue}">
@@ -143,20 +143,20 @@ ul.task-list li input[type="checkbox"] {
     </div>
 
     <div class="flex-fill px-1">
-      <button class="btn btn-primary w-100 h-100" type="button">
+      <button class="btn btn-primary w-100 h-100 d-none d-md-flex " type="button">
         <i class="bi bi-folder-plus me-1"></i>
         ADD</button>
     </div>
     
     <div class="flex-fill px-1">
-      <button class="btn btn-warning w-100  h-100" type="button" on:click="{handleClip}" disabled="{!inputValue}">
+      <button class="btn btn-warning w-100  h-100 d-none d-md-flex" type="button" on:click="{handleClip}" disabled="{!inputValue}">
         <i class="bi bi-clipboard me-1"></i>
         CLIP
       </button>
     </div>
     
     <div class="flex-fill px-1">
-      <button class="btn btn-danger w-100  h-100" type="button" on:click="{handleRaz}">
+      <button class="btn btn-danger w-100  h-100 d-none d-md-flex" type="button" on:click="{handleRaz}">
         <i class="bi bi-eraser me-1"></i>
         RAZ
       </button>
