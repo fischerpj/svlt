@@ -86,8 +86,11 @@ subtitle: "keept'em slim"
         class="btn btn-primary w-100" 
         type="button"
         >
-        <i class="bi bi-folder-plus me-1"></i>
-        ADD</button>
+        <span  d-none d-md-flex>
+          <i class="bi bi-folder-plus me-1 "></i>
+          ADD
+        </span>
+      </button>
     </div>    
 
     <div class="flex-fill px-0">
@@ -97,8 +100,10 @@ subtitle: "keept'em slim"
         on:click={handleClip}
         disabled={!inputValue}
       >
-      <i class="bi bi-clipboard me-1"></i>
-        CLIP
+        <span  d-none d-md-flex>
+          <i class="bi bi-clipboard me-1"></i>
+          CLIP
+        </span>
       </button>
     </div>
     
@@ -108,8 +113,10 @@ subtitle: "keept'em slim"
         type="button" 
         on:click={handleRaz}
       >
-      <i class="bi bi-eraser me-1"></i>
-        RAZ
+        <span  d-none d-md-flex>
+          <i class="bi bi-eraser me-1"></i>
+          RAZ
+        </span>
       </button>
     </div>
     
