@@ -10,7 +10,7 @@
 <atom:link href="https://your-website-url.example.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>A blog built with Quarto</description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Thu, 19 Mar 2026 08:30:30 GMT</lastBuildDate>
+<lastBuildDate>Thu, 19 Mar 2026 08:37:55 GMT</lastBuildDate>
 <item>
   <title>BcvReader</title>
   <link>https://your-website-url.example.com/posts/BcvReader.html</link>
@@ -54,7 +54,7 @@ font-style: inherit;">`&lt;my-bcvreader&gt;&lt;/my-bcvreader&gt;`</span></span><
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/BcvReader.html</guid>
-  <pubDate>Thu, 19 Mar 2026 08:30:30 GMT</pubDate>
+  <pubDate>Thu, 19 Mar 2026 08:37:55 GMT</pubDate>
 </item>
 <item>
   <title>historic quarto-svelte example</title>
@@ -217,7 +217,7 @@ font-style: inherit;">=</span> selectedDataset</span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/Historic-Circle-example.html</guid>
-  <pubDate>Thu, 19 Mar 2026 08:30:30 GMT</pubDate>
+  <pubDate>Thu, 19 Mar 2026 08:37:55 GMT</pubDate>
 </item>
 <item>
   <title>OsisParser</title>
@@ -262,7 +262,7 @@ font-style: inherit;">`&lt;my-osisparser&gt;&lt;/my-osisparser&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/OsisParser.html</guid>
-  <pubDate>Thu, 19 Mar 2026 08:30:30 GMT</pubDate>
+  <pubDate>Thu, 19 Mar 2026 08:37:55 GMT</pubDate>
 </item>
 <item>
   <title>RefApp</title>
@@ -310,7 +310,7 @@ font-style: inherit;">`&lt;my-refdata&gt;&lt;/my-refdata&gt;`</span></span></cod
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/RefApp.html</guid>
-  <pubDate>Thu, 19 Mar 2026 08:30:30 GMT</pubDate>
+  <pubDate>Thu, 19 Mar 2026 08:37:55 GMT</pubDate>
 </item>
 <item>
   <title>SvelteActionBar</title>
@@ -355,7 +355,7 @@ font-style: inherit;">`&lt;my-actionbar2&gt;&lt;/my-actionbar2&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/SvelteActionBar.html</guid>
-  <pubDate>Thu, 19 Mar 2026 08:30:30 GMT</pubDate>
+  <pubDate>Thu, 19 Mar 2026 08:37:55 GMT</pubDate>
 </item>
 <item>
   <title>Bootstrap Button Card</title>
@@ -441,14 +441,14 @@ font-style: inherit;">`&lt;my-actionbar2&gt;&lt;/my-actionbar2&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/BootstrapButtonCard.html</guid>
-  <pubDate>Thu, 19 Mar 2026 08:30:30 GMT</pubDate>
+  <pubDate>Thu, 19 Mar 2026 08:37:55 GMT</pubDate>
 </item>
 <item>
   <title></title>
   <link>https://your-website-url.example.com/posts/QuartoDashboard.html</link>
   <description><![CDATA[ undefined ]]></description>
   <guid>https://your-website-url.example.com/posts/QuartoDashboard.html</guid>
-  <pubDate>Thu, 19 Mar 2026 08:30:30 GMT</pubDate>
+  <pubDate>Thu, 19 Mar 2026 08:37:55 GMT</pubDate>
 </item>
 <item>
   <title>SharedSvelteCounter</title>
@@ -499,7 +499,7 @@ font-style: inherit;">`&lt;my-componentb&gt;&lt;/my-componentb&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/SharedSvelteCounter.html</guid>
-  <pubDate>Thu, 19 Mar 2026 08:30:30 GMT</pubDate>
+  <pubDate>Thu, 19 Mar 2026 08:37:55 GMT</pubDate>
 </item>
 <item>
   <title>ButtonsBuildUp</title>
@@ -536,7 +536,7 @@ HTML Output: <span id="h-out"><em>placeholder output area</em></span>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/ButtonsBuildUp.html</guid>
-  <pubDate>Thu, 19 Mar 2026 08:30:30 GMT</pubDate>
+  <pubDate>Thu, 19 Mar 2026 08:37:55 GMT</pubDate>
 </item>
 <item>
   <title>ButtonsMobile</title>
@@ -551,13 +551,13 @@ HTML Output: <span id="h-out"><em>placeholder output area</em></span>
 <p>Buttons from Naked to Bootstrap styling</p>
 </blockquote>
 
-<div class="container-fluid d-flex flex-column w-100 p-3">
+<div class="container-fluid d-flex flex-column w-100 p-3" style="height: 60%">
   
   <div class="d-flex align-items-stretch w-100 mb-2">
   
     <div class="flex-fill px-1">
       <div class="input-group h-100">
-        <span class="input-group-text bg-light">
+        <span class="input-group-text bg-light d-none d-md-flex">
           <i class="bi bi-search"></i>
         </span>
         <input id="search-input" type="text" class="form-control form-control-lg" placeholder="Type to echo..." bind:value="{inputValue}">
@@ -592,7 +592,7 @@ HTML Output: <span id="h-out"><em>placeholder output area</em></span>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/ButtonsMobile.html</guid>
-  <pubDate>Thu, 19 Mar 2026 08:30:30 GMT</pubDate>
+  <pubDate>Thu, 19 Mar 2026 08:37:55 GMT</pubDate>
 </item>
 </channel>
 </rss>
