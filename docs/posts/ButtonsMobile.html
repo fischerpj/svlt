@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>svlt</title>
+<title>ButtonsMobile – svlt</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +23,20 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f97be9d92b12ba9d5c8d979cfab5d753.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-f97be9d92b12ba9d5c8d979cfab5d753.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -54,79 +52,21 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
-    };
+<link rel="stylesheet" href="../styles.css">
+</head>
 
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="svlt" href="index.xml" data-external="1"></head>
-
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">svlt</span>
     </a>
   </div>
@@ -136,7 +76,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -159,13 +99,14 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">svlt</h1>
+    <div class="quarto-title column-body">
+      <h1 class="title">ButtonsMobile</h1>
+            <p class="subtitle lead">keept’em slim</p>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
       
     
@@ -173,248 +114,61 @@ window.Quarto = {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(10)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<blockquote class="blockquote">
+<p>Buttons from Naked to Bootstrap styling</p>
+</blockquote>
+
+<div class="container-fluid d-flex flex-column w-100 p-3">
+  
+  <div class="d-flex align-items-stretch w-100 mb-2">
+  
+    <div class="flex-fill px-1">
+      <div class="input-group h-100">
+        <span class="input-group-text bg-light">
+          <i class="bi bi-search"></i>
+        </span>
+        <input id="search-input" type="text" class="form-control form-control-lg" placeholder="Type to echo..." bind:value="{inputValue}">
+      </div>
+    </div>
+
+    <div class="flex-fill px-1">
+      <button class="btn btn-primary w-100 h-100" type="button">
+        <i class="bi bi-folder-plus me-1"></i>
+        ADD</button>
+    </div>
+    
+    <div class="flex-fill px-1">
+      <button class="btn btn-warning w-100  h-100" type="button" on:click="{handleClip}" disabled="{!inputValue}">
+        <i class="bi bi-clipboard me-1"></i>
+        CLIP
+      </button>
+    </div>
+    
+    <div class="flex-fill px-1">
+      <button class="btn btn-danger w-100  h-100" type="button" on:click="{handleRaz}">
+        <i class="bi bi-eraser me-1"></i>
+        RAZ
+      </button>
+    </div>
+
+  </div>
+</div>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1773845385308" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
-<div class="thumbnail"><a href="./posts/BcvReader.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/BcvReader.html" class="no-external">BcvReader</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/BcvReader.html" class="no-external"></a>
-</div>
-<div class="delink listing-description"><a href="./posts/BcvReader.html" class="no-external">
-strict OSIS output for biblegateway.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/BcvReader.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1773343289764" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
-<div class="thumbnail"><a href="./posts/Historic-Circle-example.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Historic-Circle-example.html" class="no-external">historic quarto-svelte example</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Historic-Circle-example.html" class="no-external"></a>
-</div>
-<div class="delink listing-description"><a href="./posts/Historic-Circle-example.html" class="no-external">
-This document shows you how to use a basic example Svelte component called <code>Circles.svelte</code>.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/Historic-Circle-example.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1773846246431" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
-<div class="thumbnail"><a href="./posts/OsisParser.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/OsisParser.html" class="no-external">OsisParser</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/OsisParser.html" class="no-external"></a>
-</div>
-<div class="delink listing-description"><a href="./posts/OsisParser.html" class="no-external">
-strict OSIS output for biblegateway.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/OsisParser.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-file-modified-sort="1773854366237" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
-<div class="thumbnail"><a href="./posts/RefApp.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/RefApp.html" class="no-external">RefApp</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/RefApp.html" class="no-external"></a>
-</div>
-<div class="delink listing-description"><a href="./posts/RefApp.html" class="no-external">
-<p>two SvelteWidgets sharing a <strong>windows.SvelteStore</strong></p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/RefApp.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-file-modified-sort="1773344529372" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
-<div class="thumbnail"><a href="./posts/SvelteActionBar.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/SvelteActionBar.html" class="no-external">SvelteActionBar</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/SvelteActionBar.html" class="no-external"></a>
-</div>
-<div class="delink listing-description"><a href="./posts/SvelteActionBar.html" class="no-external">
-Reusable Svelte component with Styling
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/SvelteActionBar.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-file-modified-sort="1773342979430" data-listing-reading-time-sort="4" data-listing-word-count-sort="778">
-<div class="thumbnail"><a href="./posts/BootstrapButtonCard.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/BootstrapButtonCard.html" class="no-external">Bootstrap Button Card</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/BootstrapButtonCard.html" class="no-external">pure html</a>
-</div>
-<div class="delink listing-description"><a href="./posts/BootstrapButtonCard.html" class="no-external">
-Pure Bootstrap Divs classed with <em>container-fluid, d-flex, align-items-stretch, flex-fill</em>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/BootstrapButtonCard.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-listing-file-modified-sort="1773343142117" data-listing-reading-time-sort="1" data-listing-word-count-sort="76">
-<div class="thumbnail"><a href="./posts/QuartoDashboard.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/QuartoDashboard.html" class="no-external">QuartoDashboard</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/QuartoDashboard.html" class="no-external">Auto-Height Card Styling</a>
-</div>
-<div class="delink listing-description"><a href="./posts/QuartoDashboard.html" class="no-external">
-
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/QuartoDashboard.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-listing-file-modified-sort="1773431195215" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
-<div class="thumbnail"><a href="./posts/SharedSvelteCounter.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/SharedSvelteCounter.html" class="no-external">SharedSvelteCounter</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/SharedSvelteCounter.html" class="no-external"></a>
-</div>
-<div class="delink listing-description"><a href="./posts/SharedSvelteCounter.html" class="no-external">
-Share via window.__shared_counter__;
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/SharedSvelteCounter.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-listing-file-modified-sort="1773343410913" data-listing-reading-time-sort="1" data-listing-word-count-sort="67">
-<div class="thumbnail"><a href="./posts/ButtonsBuildUp.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/ButtonsBuildUp.html" class="no-external">ButtonsBuildUp</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/ButtonsBuildUp.html" class="no-external">Elaboration Ladder</a>
-</div>
-<div class="delink listing-description"><a href="./posts/ButtonsBuildUp.html" class="no-external">
-Buttons from Naked to Bootstrap styling
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/ButtonsBuildUp.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-listing-file-modified-sort="1773908249136" data-listing-reading-time-sort="2" data-listing-word-count-sort="386">
-<div class="thumbnail"><a href="./posts/ButtonsMobile.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/ButtonsMobile.html" class="no-external">ButtonsMobile</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/ButtonsMobile.html" class="no-external">keept’em slim</a>
-</div>
-<div class="delink listing-description"><a href="./posts/ButtonsMobile.html" class="no-external">
-Buttons from Naked to Bootstrap styling
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/ButtonsMobile.html" class="no-external">
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

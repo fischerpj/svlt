@@ -1,0 +1,65 @@
+---
+title: ButtonsMobile
+subtitle: "keept'em slim"
+---
+
+> Buttons from Naked to Bootstrap styling
+
+```{=html}
+
+<div class="container-fluid d-flex flex-column w-100 p-3">
+  
+  <div class="d-flex align-items-stretch w-100 mb-2">
+  
+    <div class="flex-fill px-1">
+      <div class="input-group h-100">
+        <span class="input-group-text bg-light">
+          <i class="bi bi-search"></i>
+        </span>
+        <input 
+          id="search-input"
+          type="text" 
+          class="form-control form-control-lg" 
+          placeholder="Type to echo..." 
+          bind:value={inputValue}
+        />
+      </div>
+    </div>
+
+    <div class="flex-fill px-1">
+      <button 
+        class="btn btn-primary w-100 h-100" 
+        type="button"
+        >
+        <i class="bi bi-folder-plus me-1"></i>
+        ADD</button>
+    </div>
+    
+    <div class="flex-fill px-1">
+      <button 
+        class="btn btn-warning w-100  h-100" 
+        type="button"
+        on:click={handleClip}
+        disabled={!inputValue}
+      >
+        <i class="bi bi-clipboard me-1"></i>
+        CLIP
+      </button>
+    </div>
+    
+    <div class="flex-fill px-1">
+      <button 
+        class="btn btn-danger w-100  h-100" 
+        type="button" 
+        on:click={handleRaz}
+      >
+        <i class="bi bi-eraser me-1"></i>
+        RAZ
+      </button>
+    </div>
+
+  </div>
+</div>
+
+```
+

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "svlt",
     "section": "",
-    "text": "BcvReader\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhistoric quarto-svelte example\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOsisParser\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRefApp\n\n\n\n\n\ntwo SvelteWidgets sharing a windows.SvelteStore\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSvelteActionBar\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBootstrap Button Card\n\n\npure html\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuartoDashboard\n\n\nAuto-Height Card Styling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSharedSvelteCounter\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nButtonsBuildUp\n\n\nElaboration Ladder\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "BcvReader\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhistoric quarto-svelte example\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOsisParser\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRefApp\n\n\n\n\n\ntwo SvelteWidgets sharing a windows.SvelteStore\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSvelteActionBar\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBootstrap Button Card\n\n\npure html\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuartoDashboard\n\n\nAuto-Height Card Styling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSharedSvelteCounter\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nButtonsBuildUp\n\n\nElaboration Ladder\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nButtonsMobile\n\n\nkeept’em slim\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/SharedSvelteCounter.html",
@@ -68,5 +68,12 @@
     "title": "ButtonsBuildUp",
     "section": "",
     "text": "Buttons from Naked to Bootstrap styling\n\n\n\nStore\n\n\n\nHTML Buttons Naked (no-attributes, no-styling)\nHTML Input:  HTML Button\n\n\nHTML Buttons with .btn.btn-primary (yields Bootstrap styling)\n\nPrimary Secondary Success Danger Warning Info Light Dark Link\n\n\nHTML Output: placeholder output area"
+  },
+  {
+    "objectID": "posts/ButtonsMobile.html",
+    "href": "posts/ButtonsMobile.html",
+    "title": "ButtonsMobile",
+    "section": "",
+    "text": "Buttons from Naked to Bootstrap styling\n\n\n\n  \n  \n  \n    \n      \n        \n          \n        \n        \n      \n    \n\n    \n      \n        \n        ADD\n    \n    \n    \n      \n        \n        CLIP\n      \n    \n    \n    \n      \n        \n        RAZ"
   }
 ]
