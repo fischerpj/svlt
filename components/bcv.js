@@ -29,15 +29,16 @@ export class bcv extends bcv_parser {
   } 
 }
 
-/*
+
 // Parser
 const bcv_std = new bcv(lang);
 
-const G4102 = 'Galatians 1:13, 2:16, 2:20, 3:2, 3:5'
+const G4102 = 'Galatians 1:13; 2:16; 2:20, 3:2; 3:5'
 console.log(G4102);
 
-console.log(  bcv_std.parse(G4102).osis() ); 
+console.log(  bcv_std.parse(G4102).osis_array() ); 
 
+/**
 console.log( bcv_std.parse(G4102).parsed_entities() ); 
 
 console.log( JSON.stringify( bcv_std.parse(G4102).osis(),null,0) ); // John.1

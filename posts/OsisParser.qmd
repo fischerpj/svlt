@@ -11,7 +11,7 @@ format: html
 <style>
 /* Adjust the height of the title block banner */
 quarto-title-banner {
-height: 100px; /* Increase or decrease as needed */
+height: 80px; /* Increase or decrease as needed */
 }
 
 /* Adjust the font size of the title */
@@ -20,9 +20,12 @@ font-size: 1.5rem; /* Adjust font size */
 }
 </style>
 
-> strict OSIS output for biblegateway.
+> strict OSIS conversion for biblegateway.
+
+- input:  userInput -> osisResult
+- output: 
 
 ```{ojs}
 //| echo: false
-myActionBar = html`<my-osisparser></my-osisparser>`
+myOsisParser = html`<my-osisparser></my-osisparser>`
 ```

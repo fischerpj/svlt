@@ -8,27 +8,33 @@
 }} />
 
 <script>
+  import { ParserRef } from "./parserref.js";
+
   import { bcv_parser } from "bible-passage-reference-parser/esm/bcv_parser.js";
-  import * as lang from "bible-passage-reference-parser/esm/lang/en.js";
-  
-  // 1. Initialize the parser
-  const bcv = new bcv_parser(lang);
+  import * as lang from "bible-passage-reference-parser/esm/lang/fr.js";
   
   // 2. Configure strategies to prevent skipping
-  bcv.set_options({
-    "consecutive_combination_strategy": "combine",
-    "sequence_combination_strategy": "combine",
-  });
+  const options = {
+          punctuation_strategy: "us",
+          "consecutive_combination_strategy": "combine",
+          "sequence_combination_strategy": "combine",
+        }
+        
+  // 1. Initialize the parser externally
+  const bcv = new bcv_parser(lang);
+  const parser = new ParserRef(bcv, options)
 
-  let userInput = "Galatians 1:16; 2:4";
+  let userInput = "Gal 1:16!SG21";
   let osisResult = "";
+  let hsubResult = "";
 
   /** 
   * 3. Reactive Statement
    * This re-runs automatically whenever 'userInput' changes.
    */
   $: {
-    osisResult = bcv.parse(userInput).osis();
+    osisResult = JSON.stringify(parser.parse(userInput).osis_entities(),null,0);
+    hsubResult = JSON.stringify(parser.parse(userInput).hsub_entities(),null,0);
     }
 </script>
 
@@ -44,7 +50,8 @@
   <hr/>
 
   <div class="output">
-    <strong>OSIS Echo:</strong> <span>{osisResult}</span>
+    <p><strong>OSIS Echo:</strong> <span>{osisResult}</span></p>
+    <p><strong>hsub Echo:</strong> <span>{hsubResult}</span></p>
   </div>
 
 </div>
@@ -97,4 +104,3 @@
     font-style: italic;
   }
 </style>
-

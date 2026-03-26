@@ -10,7 +10,7 @@
 <atom:link href="https://your-website-url.example.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>A blog built with Quarto</description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Thu, 19 Mar 2026 14:41:32 GMT</lastBuildDate>
+<lastBuildDate>Thu, 26 Mar 2026 18:22:02 GMT</lastBuildDate>
 <item>
   <title>BcvReader</title>
   <link>https://your-website-url.example.com/posts/BcvReader.html</link>
@@ -54,7 +54,7 @@ font-style: inherit;">`&lt;my-bcvreader&gt;&lt;/my-bcvreader&gt;`</span></span><
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/BcvReader.html</guid>
-  <pubDate>Thu, 19 Mar 2026 14:41:32 GMT</pubDate>
+  <pubDate>Thu, 26 Mar 2026 18:22:02 GMT</pubDate>
 </item>
 <item>
   <title>historic quarto-svelte example</title>
@@ -217,7 +217,7 @@ font-style: inherit;">=</span> selectedDataset</span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/Historic-Circle-example.html</guid>
-  <pubDate>Thu, 19 Mar 2026 14:41:32 GMT</pubDate>
+  <pubDate>Thu, 26 Mar 2026 18:22:02 GMT</pubDate>
 </item>
 <item>
   <title>OsisParser</title>
@@ -232,7 +232,7 @@ font-style: inherit;">=</span> selectedDataset</span></code></pre></div></div>
 <style>
 /* Adjust the height of the title block banner */
 quarto-title-banner {
-height: 100px; /* Increase or decrease as needed */
+height: 80px; /* Increase or decrease as needed */
 }
 
 /* Adjust the font size of the title */
@@ -241,10 +241,14 @@ font-size: 1.5rem; /* Adjust font size */
 }
 </style>
 <blockquote class="blockquote">
-<p>strict OSIS output for biblegateway.</p>
+<p>strict OSIS conversion for biblegateway.</p>
 </blockquote>
+<ul>
+<li>input: userInput -&gt; osisResult</li>
+<li>output:</li>
+</ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="26" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 25;"><span id="cb1-26">myActionBar <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="29" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 28;"><span id="cb1-29">myOsisParser <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -262,7 +266,7 @@ font-style: inherit;">`&lt;my-osisparser&gt;&lt;/my-osisparser&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/OsisParser.html</guid>
-  <pubDate>Thu, 19 Mar 2026 14:41:32 GMT</pubDate>
+  <pubDate>Thu, 26 Mar 2026 18:22:02 GMT</pubDate>
 </item>
 <item>
   <title>RefApp</title>
@@ -310,7 +314,7 @@ font-style: inherit;">`&lt;my-refdata&gt;&lt;/my-refdata&gt;`</span></span></cod
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/RefApp.html</guid>
-  <pubDate>Thu, 19 Mar 2026 14:41:32 GMT</pubDate>
+  <pubDate>Thu, 26 Mar 2026 18:22:02 GMT</pubDate>
 </item>
 <item>
   <title>SvelteActionBar</title>
@@ -355,7 +359,7 @@ font-style: inherit;">`&lt;my-actionbar2&gt;&lt;/my-actionbar2&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/SvelteActionBar.html</guid>
-  <pubDate>Thu, 19 Mar 2026 14:41:32 GMT</pubDate>
+  <pubDate>Thu, 26 Mar 2026 18:22:02 GMT</pubDate>
 </item>
 <item>
   <title>Bootstrap Button Card</title>
@@ -441,14 +445,14 @@ font-style: inherit;">`&lt;my-actionbar2&gt;&lt;/my-actionbar2&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/BootstrapButtonCard.html</guid>
-  <pubDate>Thu, 19 Mar 2026 14:41:32 GMT</pubDate>
+  <pubDate>Thu, 26 Mar 2026 18:22:02 GMT</pubDate>
 </item>
 <item>
   <title></title>
   <link>https://your-website-url.example.com/posts/QuartoDashboard.html</link>
   <description><![CDATA[ undefined ]]></description>
   <guid>https://your-website-url.example.com/posts/QuartoDashboard.html</guid>
-  <pubDate>Thu, 19 Mar 2026 14:41:32 GMT</pubDate>
+  <pubDate>Thu, 26 Mar 2026 18:22:02 GMT</pubDate>
 </item>
 <item>
   <title>SharedSvelteCounter</title>
@@ -499,7 +503,7 @@ font-style: inherit;">`&lt;my-componentb&gt;&lt;/my-componentb&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/SharedSvelteCounter.html</guid>
-  <pubDate>Thu, 19 Mar 2026 14:41:32 GMT</pubDate>
+  <pubDate>Thu, 26 Mar 2026 18:22:02 GMT</pubDate>
 </item>
 <item>
   <title>ButtonsBuildUp</title>
@@ -536,7 +540,7 @@ HTML Output: <span id="h-out"><em>placeholder output area</em></span>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/ButtonsBuildUp.html</guid>
-  <pubDate>Thu, 19 Mar 2026 14:41:32 GMT</pubDate>
+  <pubDate>Thu, 26 Mar 2026 18:22:02 GMT</pubDate>
 </item>
 <item>
   <title>ButtonsMobile</title>
@@ -632,7 +636,7 @@ HTML Output: <span id="h-out"><em>placeholder output area</em></span>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/ButtonsMobile.html</guid>
-  <pubDate>Thu, 19 Mar 2026 14:41:32 GMT</pubDate>
+  <pubDate>Thu, 26 Mar 2026 18:22:02 GMT</pubDate>
 </item>
 </channel>
 </rss>

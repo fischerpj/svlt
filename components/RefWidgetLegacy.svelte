@@ -16,10 +16,9 @@
 -->
 
 <script>
-  //-------- STORE 
   import { RefAccu, addValue, resetRefAccu } from './refstore.js'
   
-  //-------- BCV_PARSER
+  // BCV_PARSER
   import { bcv_parser } from "bible-passage-reference-parser/esm/bcv_parser.js";
   import * as lang from "bible-passage-reference-parser/esm/lang/en.js";
   
@@ -44,15 +43,58 @@
   let responseText = "";
   let loading = false;
   let timer;
+  
+    // The fetch function
+  async function getPassage(query) {
+    if (!query.length > 0) {
+      responseText ='yapas';
+      return;
+    }  
+    loading = true;
+    
+    const url = `https://hsub.pjafischer.workers.dev/bgw/api/?param=${encodeURIComponent(query)}`;
+    
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+      // Adjust 'data.text' based on your actual Worker JSON structure
+      responseText = data.content || JSON.stringify(data);
+    } catch (err) {
+      responseText = "Error fetching data.";
+    } finally {
+      loading = false;
+    }
+  }
 
-  // REACTIVE
+
   /** 
+  * 3. Reactive Statement
   * This re-runs automatically whenever 'userInput' changes.
   */
       $: {
         osisResult = bcv.parse(inputValue).osis();
       }
+      
+  /* REACTIVE LOGIC: 
+    Whenever 'userInput' changes, clear the old timer and start a new one.
+    This "debounces" the input so it only fetches 500ms after you STOP typing.
+  */
+  $: {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      getPassage(osisResult);
+    }, 100);
+  }
 
+  // Button Handlers
+  function handleAction(name) {
+    lastAction = name;
+    console.log(`Action triggered: ${name} with query: ${searchQuery}`);
+  }
+
+  // Reactive echo logic
+  $: echoText = inputValue.length > 0 ? inputValue : "Waiting for input...";
+  
   // Copy to clipboard logic (CLIP)
   async function handleClip() {
     if (inputValue) {
@@ -136,12 +178,25 @@
     
   </div>
 
-<hr/>
 
-<!--  VIEW RT Accu -->
-  <div class="RefAccu-widget">
-    <pre>{JSON.stringify(osisResult, null, 0)}</pre>
-  </div>
+  {#if inputValue}
+    <div class="d-flex w-100 px-1">
+      <div class="w-100 p-3 border rounded bg-white shadow-sm">
+        <strong class="text-muted small text-uppercase me-2">Last Valid Ref:</strong> {osisResult || "(Invalid)"} <br>
+      </div>
+    </div>
+  {/if}
+  
+  {#if loading}
+    <p>Loading...</p>
+  {:else}
+  
+     <div class="d-flex w-100 px-1">
+      <div class="w-100 p-3 border rounded bg-white shadow-sm">
+        <strong class="text-muted small text-uppercase me-2">Last Valid Response:</strong> {responseText || "(Invalid)"} <br>
+      </div>
+    </div>
+  {/if}
 
 </div>
 
@@ -158,6 +213,7 @@
     border-color: #dee2e6;
   }
 </style>
+
 
 <!--
 

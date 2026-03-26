@@ -18,8 +18,8 @@
   import { RefAccu, addValue, resetRefAccu } from './refstore.js'
 </script>
 
-<div class="RefAccu-widget">
-  
-  <pre>{JSON.stringify($RefAccu.items, null, 0)}</pre>
+<hr/>
 
+<div class="RefAccu-widget">
+  <pre>{JSON.stringify($RefAccu.items, null, 0)}</pre>
 </div>

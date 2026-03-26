@@ -165,7 +165,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <style>
 /* Adjust the height of the title block banner */
 quarto-title-banner {
-height: 100px; /* Increase or decrease as needed */
+height: 80px; /* Increase or decrease as needed */
 }
 
 /* Adjust the font size of the title */
@@ -174,10 +174,14 @@ font-size: 1.5rem; /* Adjust font size */
 }
 </style>
 <blockquote class="blockquote">
-<p>strict OSIS output for biblegateway.</p>
+<p>strict OSIS conversion for biblegateway.</p>
 </blockquote>
+<ul>
+<li>input: userInput -&gt; osisResult</li>
+<li>output:</li>
+</ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="26" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 25;"><span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>myActionBar <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;my-osisparser&gt;&lt;/my-osisparser&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="29" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 28;"><span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>myOsisParser <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;my-osisparser&gt;&lt;/my-osisparser&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="declaration">
 
@@ -189,7 +193,7 @@ font-size: 1.5rem; /* Adjust font size */
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Im15QWN0aW9uQmFyID0gaHRtbGA8bXktb3Npc3BhcnNlcj48L215LW9zaXNwYXJzZXI+YFxuIn1dfQ==
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Im15T3Npc1BhcnNlciA9IGh0bWxgPG15LW9zaXNwYXJzZXI+PC9teS1vc2lzcGFyc2VyPmBcbiJ9XX0=
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }

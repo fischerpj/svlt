@@ -25,7 +25,7 @@
     "href": "posts/OsisParser.html",
     "title": "OsisParser",
     "section": "",
-    "text": "strict OSIS output for biblegateway.\n\n\nmyActionBar = html`&lt;my-osisparser&gt;&lt;/my-osisparser&gt;`"
+    "text": "strict OSIS conversion for biblegateway.\n\n\ninput: userInput -&gt; osisResult\noutput:\n\n\nmyOsisParser = html`&lt;my-osisparser&gt;&lt;/my-osisparser&gt;`"
   },
   {
     "objectID": "posts/BcvReader.html",
