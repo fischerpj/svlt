@@ -8,7 +8,7 @@
 }} />
 
 <script>
-  import { ParserRef } from "./parserref.js";
+  import { ParserRef } from "./ParserRef.js";
 
   import { bcv_parser } from "bible-passage-reference-parser/esm/bcv_parser.js";
   import * as lang from "bible-passage-reference-parser/esm/lang/fr.js";
@@ -16,7 +16,7 @@
   // 2. Configure strategies to prevent skipping
   const options = {
           punctuation_strategy: "us",
-          "consecutive_combination_strategy": "combine",
+          "consecutive_combination_strategy": "separate",
           "sequence_combination_strategy": "combine",
         }
         
@@ -24,9 +24,10 @@
   const bcv = new bcv_parser(lang);
   const parser = new ParserRef(bcv, options)
 
-  let userInput = "Gal 1:16!SG21";
+  let userInput = "Gal 1:16!SG21 ge1:5 (2tim1:1!KJV) rom5:8 Ap4:2";
   let osisResult = "";
   let hsubResult = "";
+  let wrapResult = "";
 
   /** 
   * 3. Reactive Statement
@@ -35,6 +36,7 @@
   $: {
     osisResult = JSON.stringify(parser.parse(userInput).osis_entities(),null,0);
     hsubResult = JSON.stringify(parser.parse(userInput).hsub_entities(),null,0);
+    wrapResult = parser.parse(userInput).osis_idempotent();
     }
 </script>
 
@@ -50,8 +52,9 @@
   <hr/>
 
   <div class="output">
-    <p><strong>OSIS Echo:</strong> <span>{osisResult}</span></p>
-    <p><strong>hsub Echo:</strong> <span>{hsubResult}</span></p>
+    <div class='long-string'><strong>OSIS Echo:</strong> <span>{@html osisResult}</span></div>
+    <div class='long-string'><strong>hsub Echo:</strong> <span>{hsubResult}</span></div>
+    <div><strong>OSIS Idempotent:</strong> {@html wrapResult}</div>
   </div>
 
 </div>
@@ -90,6 +93,10 @@
 
   .output {
     margin-bottom: 0.75rem;
+  }
+
+  .long-string {
+    overflow-wrap : break-word;
   }
 
   code {

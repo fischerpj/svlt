@@ -71,6 +71,7 @@ export class ParserRef {
   return output_hsub 
   }
   
+  
   // OK NEW Method for this yields hsub formatting
   osis_entities() {
   // PARSING: OSIS + TRANS
@@ -78,11 +79,23 @@ export class ParserRef {
 
   // REFACTOR input
   const output_hsub = osis_translations
-    .map(([osis, translation]) => translation ? `${osis} ${translation}` : `${osis}` )
+    .map(([osis, translation]) => translation ? `${osis}&nbsp;${translation}` : `${osis}` )
 
   return output_hsub 
   }
 
+  // OK NEW Method for this yields hsub formatting
+  osis_idempotent() {
+  // PARSING: OSIS + TRANS
+  const osis_translations = this.osis_and_translations();
+
+  // REFACTOR input
+  const output_hsub = osis_translations
+    .map(([osis, translation]) => translation ? `(${osis}&nbsp;${translation})` : `(${osis})` )
+ 
+  const json = output_hsub.join("; ");
+  return json 
+  }
 }
 
 //------------------------------------------------------------------------------
@@ -104,6 +117,7 @@ myref = "Galates 1:16,2:4 (Hos14!LSG); rom5:8!SG21; Psaume 51:2!ESV, Ap 4:1 Rev2
 console.log(parser.parse(myref).osis_and_translations());      // example call
 console.log(parser.parse(myref).osis_entities());      // example call
 console.log(parser.parse(myref).hsub_entities());      // example call
+console.log(parser.parse(myref).osis_string());      // example call
 */
 
 /**
