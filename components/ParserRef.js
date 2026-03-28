@@ -25,9 +25,9 @@ export class ParserRef {
         }
   ) {
 //    this.parser = new bcv_parser(lang, options);
-    this.parser = bcv_instance;
-    this.parser.set_options(options);
-  }
+     this.parser = bcv_instance;
+     this.parser.set_options(options);
+    }
 
   // --- OK TRUE CHAINABLE PARSE ---
   parse(input) {
@@ -71,7 +71,6 @@ export class ParserRef {
   return output_hsub 
   }
   
-  
   // OK NEW Method for this yields hsub formatting
   osis_entities() {
   // PARSING: OSIS + TRANS
@@ -105,6 +104,7 @@ export class ParserRef {
 //.osis
 // osis_and_translations();
 
+
 /**
 // create instance outside
 const bcv = new bcv_parser(lang);              // uses French by default
@@ -112,12 +112,12 @@ const bcv = new bcv_parser(lang);              // uses French by default
 const parser = new ParserRef(bcv);              // uses French by default
 
 let myref = "Galates 1:16!SG21";
-myref = "Galates 1:16,2:4 (Hos14!LSG); rom5:8!SG21; Psaume 51:2!ESV, Ap 4:1 Rev22:4 KJV";
+myref = "(Galates 1:16),(Hos14!LSG); rom5:8!SG21; Psaume 51:2!ESV, Ap 4:1 KJV";
 
 console.log(parser.parse(myref).osis_and_translations());      // example call
-console.log(parser.parse(myref).osis_entities());      // example call
+//console.log(parser.parse(myref).osis_entities());      // example call
 console.log(parser.parse(myref).hsub_entities());      // example call
-console.log(parser.parse(myref).osis_string());      // example call
+//console.log(parser.parse(myref).osis_string());      // example call
 */
 
 /**

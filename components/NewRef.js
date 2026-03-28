@@ -89,9 +89,9 @@ class nRef {
 
 }
 
-const myRef1 = new nRef('Gen1!KJV;Act4:12:NGU');
-const myRef2 = new nRef();
-console.log(myRef1);                 // inspect upon completion
+//const myRef1 = new nRef('Gen1!KJV;Act4:12:NGU');
+//const myRef2 = new nRef();
+//console.log(myRef1);                 // inspect upon completion
 //console.log(myRef2);                 // inspect upon completion
 
 
@@ -127,11 +127,10 @@ export class NewRef {
 
 // ============================================================
 
-/**
+
 const myParam = ["Gal.1.21",'Hos14.5!SG21','Neh13.1!SG21','Rev22:4!KJV'] ;         // OSIS conform
 const myRef = new NewRef(myParam);
 await myRef.fetch_parallel();       // Wait for data fetched
 await myRef.data;
 
 console.log(myRef);                 // inspect upon completion
-*/

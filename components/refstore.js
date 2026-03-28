@@ -30,6 +30,15 @@ if (!window.myRefShare.accuStore) {
 export const RefAccu = window.myRefShare.accuStore
 
 // Update helpers
+
+export function setValue(x) {
+  RefAccu.update(acc => {
+    acc.reset()
+    acc.add(x)
+    return acc
+  })
+}
+
 export function addValue(x) {
   RefAccu.update(acc => {
     acc.add(x)

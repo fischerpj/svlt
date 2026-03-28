@@ -3,6 +3,7 @@
     "listing": "/index.html",
     "items": [
       "/posts/BcvReader.html",
+      "/posts/OsisParserUI.html",
       "/posts/Historic-Circle-example.html",
       "/posts/OsisParser.html",
       "/posts/NoteParser.html",

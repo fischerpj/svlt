@@ -52,6 +52,10 @@
       $: {
         osisResult = bcv.parse(inputValue).osis();
       }
+      
+      $: {
+        setValue(osisResult);
+      }
 
   // Copy to clipboard logic (CLIP)
   async function handleClip() {

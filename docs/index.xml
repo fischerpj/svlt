@@ -10,7 +10,7 @@
 <atom:link href="https://your-website-url.example.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>A blog built with Quarto</description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Sat, 28 Mar 2026 07:25:50 GMT</lastBuildDate>
+<lastBuildDate>Sat, 28 Mar 2026 19:03:56 GMT</lastBuildDate>
 <item>
   <title>BcvReader</title>
   <link>https://your-website-url.example.com/posts/BcvReader.html</link>
@@ -54,7 +54,52 @@ font-style: inherit;">`&lt;my-bcvreader&gt;&lt;/my-bcvreader&gt;`</span></span><
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/BcvReader.html</guid>
-  <pubDate>Sat, 28 Mar 2026 07:25:50 GMT</pubDate>
+  <pubDate>Sat, 28 Mar 2026 19:03:56 GMT</pubDate>
+</item>
+<item>
+  <title>OsisParserUI</title>
+  <link>https://your-website-url.example.com/posts/OsisParserUI.html</link>
+  <description><![CDATA[ 
+<script src="../components/OsisParserUI.js" type="module"></script>
+
+
+
+
+
+<style>
+/* Adjust the height of the title block banner */
+quarto-title-banner {
+height: 80px; /* Increase or decrease as needed */
+}
+
+/* Adjust the font size of the title */
+#title-block-header h3 {
+font-size: 1.5rem; /* Adjust font size */
+}
+</style>
+<blockquote class="blockquote">
+<p>strict idempotent OSIS conversion for biblegateway. <em>One component with windows.store transit.</em></p>
+</blockquote>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="26" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 25;"><span id="cb1-26">myOsisParser <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;my-osisparserui&gt;&lt;/my-osisparserui&gt;`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <guid>https://your-website-url.example.com/posts/OsisParserUI.html</guid>
+  <pubDate>Sat, 28 Mar 2026 19:03:56 GMT</pubDate>
 </item>
 <item>
   <title>historic quarto-svelte example</title>
@@ -217,7 +262,7 @@ font-style: inherit;">=</span> selectedDataset</span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/Historic-Circle-example.html</guid>
-  <pubDate>Sat, 28 Mar 2026 07:25:50 GMT</pubDate>
+  <pubDate>Sat, 28 Mar 2026 19:03:56 GMT</pubDate>
 </item>
 <item>
   <title>OsisParser</title>
@@ -262,7 +307,7 @@ font-style: inherit;">`&lt;my-osisparser&gt;&lt;/my-osisparser&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/OsisParser.html</guid>
-  <pubDate>Sat, 28 Mar 2026 07:25:50 GMT</pubDate>
+  <pubDate>Sat, 28 Mar 2026 19:03:56 GMT</pubDate>
 </item>
 <item>
   <title>NoteParser</title>
@@ -307,7 +352,7 @@ font-style: inherit;">`&lt;my-noteparser&gt;&lt;/my-noteparser&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/NoteParser.html</guid>
-  <pubDate>Sat, 28 Mar 2026 07:25:50 GMT</pubDate>
+  <pubDate>Sat, 28 Mar 2026 19:03:56 GMT</pubDate>
 </item>
 <item>
   <title>RefApp</title>
@@ -355,7 +400,7 @@ font-style: inherit;">`&lt;my-refdata&gt;&lt;/my-refdata&gt;`</span></span></cod
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/RefApp.html</guid>
-  <pubDate>Sat, 28 Mar 2026 07:25:50 GMT</pubDate>
+  <pubDate>Sat, 28 Mar 2026 19:03:56 GMT</pubDate>
 </item>
 <item>
   <title>SvelteActionBar</title>
@@ -400,7 +445,7 @@ font-style: inherit;">`&lt;my-actionbar2&gt;&lt;/my-actionbar2&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/SvelteActionBar.html</guid>
-  <pubDate>Sat, 28 Mar 2026 07:25:50 GMT</pubDate>
+  <pubDate>Sat, 28 Mar 2026 19:03:56 GMT</pubDate>
 </item>
 <item>
   <title>Bootstrap Button Card</title>
@@ -486,14 +531,14 @@ font-style: inherit;">`&lt;my-actionbar2&gt;&lt;/my-actionbar2&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/BootstrapButtonCard.html</guid>
-  <pubDate>Sat, 28 Mar 2026 07:25:50 GMT</pubDate>
+  <pubDate>Sat, 28 Mar 2026 19:03:56 GMT</pubDate>
 </item>
 <item>
   <title></title>
   <link>https://your-website-url.example.com/posts/QuartoDashboard.html</link>
   <description><![CDATA[ undefined ]]></description>
   <guid>https://your-website-url.example.com/posts/QuartoDashboard.html</guid>
-  <pubDate>Sat, 28 Mar 2026 07:25:50 GMT</pubDate>
+  <pubDate>Sat, 28 Mar 2026 19:03:56 GMT</pubDate>
 </item>
 <item>
   <title>SharedSvelteCounter</title>
@@ -544,7 +589,7 @@ font-style: inherit;">`&lt;my-componentb&gt;&lt;/my-componentb&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/SharedSvelteCounter.html</guid>
-  <pubDate>Sat, 28 Mar 2026 07:25:50 GMT</pubDate>
+  <pubDate>Sat, 28 Mar 2026 19:03:56 GMT</pubDate>
 </item>
 <item>
   <title>ButtonsBuildUp</title>
@@ -581,7 +626,7 @@ HTML Output: <span id="h-out"><em>placeholder output area</em></span>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/ButtonsBuildUp.html</guid>
-  <pubDate>Sat, 28 Mar 2026 07:25:50 GMT</pubDate>
+  <pubDate>Sat, 28 Mar 2026 19:03:56 GMT</pubDate>
 </item>
 <item>
   <title>ButtonsMobile</title>
@@ -677,7 +722,7 @@ HTML Output: <span id="h-out"><em>placeholder output area</em></span>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/ButtonsMobile.html</guid>
-  <pubDate>Sat, 28 Mar 2026 07:25:50 GMT</pubDate>
+  <pubDate>Sat, 28 Mar 2026 19:03:56 GMT</pubDate>
 </item>
 </channel>
 </rss>

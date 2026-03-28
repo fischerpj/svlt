@@ -19,8 +19,7 @@ export class RefAccumulator {
   }
   
   lastItem() {
-    
+    this.items.reverse()[0];
   }
 }  
-
 
