@@ -20,7 +20,7 @@ font-size: 1.5rem; /* Adjust font size */
 }
 </style>
 
-> strict idempotent OSIS conversion for biblegateway.
+> Handwriting Input parsed to strict idempotent OSIS.
 
 ```{ojs}
 //| echo: false

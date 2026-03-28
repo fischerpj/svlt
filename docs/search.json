@@ -25,7 +25,7 @@
     "href": "posts/NoteParser.html",
     "title": "NoteParser",
     "section": "",
-    "text": "strict idempotent OSIS conversion for biblegateway.\n\n\nmyOsisParser = html`&lt;my-noteparser&gt;&lt;/my-noteparser&gt;`"
+    "text": "Handwriting Input parsed to strict idempotent OSIS.\n\n\nmyOsisParser = html`&lt;my-noteparser&gt;&lt;/my-noteparser&gt;`"
   },
   {
     "objectID": "posts/Historic-Circle-example.html",
