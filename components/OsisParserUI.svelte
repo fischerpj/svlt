@@ -76,6 +76,25 @@
 <!-- ----------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------- UI ---- -->
 
+<div class='d-flex justify-content-evenly' gap-2>
+
+  <input 
+    class="form-control px-2 py-1" 
+    type="text" 
+    placeholder="bootstrap form-control padding" 
+    id="inputStd"
+  >
+
+  <button class="btn btn-primary  px-2 py-1">Add1</button>
+  <button class="btn btn-success  px-2 py-1">Clip1</button>
+  <button class="btn btn-info  px-2 py-1">Help1</button>
+
+</div>
+
+<hr/>
+
+
+
 <!-- --------------------------------------------------------------STORE_UI --->
 
 <div class="container-fluid d-flex flex-column w-100 p-1">
