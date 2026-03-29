@@ -76,12 +76,15 @@
 <!-- ----------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------- UI ---- -->
 
+
+<!-- ------------------------------------------------------------- UI_1 ---- -->
+
 <div class='d-flex justify-content-evenly' gap-2>
 
   <input 
     class="form-control px-2 py-1" 
     type="text" 
-    placeholder="bootstrap form-control padding" 
+    placeholder="UI_1 bootstrap form-control padding" 
     id="inputStd"
   >
 
@@ -96,6 +99,7 @@
 
 
 <!-- --------------------------------------------------------------STORE_UI --->
+<!-- ------------------------------------------------------------- UI_2 ---- -->
 
 <div class="container-fluid d-flex flex-column w-100 p-1">
   
@@ -109,7 +113,7 @@
         <input 
           class="form-control px-2 py-1" 
           type="text" 
-          placeholder="bootstrap form-control padding" 
+          placeholder="UI_2 bootstrap form-control padding" 
           id="inputStd2"
           bind:value={inputValue}
         />
@@ -161,12 +165,16 @@
 
 <hr/>
 
+<!-- ------------------------------------------------------------- UI_3 ---- -->
+
+div.d-flex > input + button Good Heights
+
 <div class='d-flex justify-content-evenly' gap-2>
 
   <input 
     class="form-control px-2 py-1" 
     type="text" 
-    placeholder="bootstrap form-control padding" 
+    placeholder="UI3 bootstrap form-control padding" 
     id="inputStd"
   >
 
@@ -176,6 +184,36 @@
 
 </div>
 
+
+<!-- ------------------------------------------------------------- UI_3b ---- -->
+
+<div class="container-fluid d-flex flex-column w-100 p-1">
+  <div class="d-flex align-items-stretch w-100 mb-2 gap-1">
+    
+    <div class="flex-fill px-0">
+     <div class="input-group">
+        <span class="input-group-text bg-light d-none d-md-flex">
+          <i class="bi bi-search"></i>
+        </span>
+        <input 
+          class="form-control px-2 py-1" 
+          type="text" 
+          placeholder="UI_3b bootstrap form-control padding" 
+          id="inputStd2"
+          bind:value={inputValue}
+        />
+      </div>
+    </div>
+    
+    <div class="flex-fill px-0">
+      <button class="btn btn-primary w-100 px-2 py-1">Add</button></div>
+    <div class="flex-fill px-0">
+      <button class="btn btn-success w-100 px-2 py-1">Clip</button></div>
+    <div class="flex-fill px-0">
+      <button class="btn btn-info w-100 px-2 py-1">Help</button></div>
+  
+  </div>
+</div>
 <hr/>
 
 <!-- ------------------------------------------------ end of BUTTONS_mobile --->
@@ -204,12 +242,15 @@
 
 <!-- BUTTONS -->
 
+<!-- ------------------------------------------------------------- UI_4 ---- -->
+
+div.d-flex > input + div.flex-fill button
 
 <div class="container-fluid d-flex flex-column w-100 p-3">
   
   <div class="d-flex justify-content-evenly mb-2">
   
-    <div class="flex-fill px-1">
+    <div class="flex-fill px-0">
       <div class="input-group h-100">
         <span class="input-group-text bg-light">
           <i class="bi bi-search"></i>
@@ -218,14 +259,14 @@
           id="search-input"
           type="text" 
           class="form-control px-2 py-1" 
-          placeholder="Type to echo..." 
+          placeholder="UI4 Type to echo..." 
           bind:value={inputValue}
         />
       </div>
     </div>
 
 <!--
-    <div class="flex-fill px-1">
+    <div class="flex-fill px-0">
       <button 
         class="btn btn-primary  px-2 py-1"
         type="button"
@@ -235,7 +276,7 @@
     </div>
 -->
 
-    <div class="flex-fill px-1">
+    <div class="flex-fill px-0">
       <button 
         class="btn btn-warning  px-2 py-1" 
         type="button"
@@ -247,7 +288,7 @@
       </button>
     </div>
     
-    <div class="flex-fill px-1">
+    <div class="flex-fill px-0">
       <button 
         class="btn btn-danger  px-2 py-1" 
         type="button" 
@@ -258,7 +299,7 @@
       </button>
     </div>
     
-    <div class="flex-fill px-1">
+    <div class="flex-fill px-0">
       <button 
         class="btn btn-info  px-2 py-1" 
         type="button"
