@@ -78,6 +78,70 @@
 
 <!-- --------------------------------------------------------------STORE_UI --->
 
+<div class="container-fluid d-flex flex-column w-100 p-1">
+  
+  <div class="d-flex align-items-stretch w-100 mb-2 gap-1">
+  
+    <div class="flex-fill px-0">
+      <div class="input-group">
+        <span class="input-group-text bg-light d-none d-md-flex">
+          <i class="bi bi-search"></i>
+        </span>
+        <input 
+          class="form-control px-2 py-1" 
+          type="text" 
+          placeholder="bootstrap form-control padding" 
+          id="inputStd2"
+          bind:value={inputValue}
+        />
+      </div>
+    </div>
+    
+    <div class="flex-fill px-0">
+      <button 
+        class="btn btn-primary w-100" 
+        type="button"
+        >
+        <span>
+          <i class="bi bi-folder-plus me-1 d-none "></i>
+          ADD
+        </span>
+      </button>
+    </div>    
+
+    <div class="flex-fill px-0">
+      <button 
+        class="btn btn-warning w-100" 
+        type="button"
+        on:click={handleClip}
+        disabled={!inputValue}
+      >
+        <span>
+          <i class="bi bi-clipboard me-1 d-none"></i>
+          CLIP
+        </span>
+      </button>
+    </div>
+    
+    <div class="flex-fill px-0">
+      <button 
+        class="btn btn-danger w-100" 
+        type="button" 
+        on:click={handleRaz}
+      >
+        <span>
+          <i class="bi bi-eraser me-1 d-none"></i>
+          RAZ
+        </span>
+      </button>
+    </div>
+    
+  </div>
+  
+</div>
+
+<hr/>
+
 <div class='d-flex justify-content-evenly' gap-2>
 
   <input 
@@ -121,9 +185,10 @@
 
 <!-- BUTTONS -->
 
+
 <div class="container-fluid d-flex flex-column w-100 p-3">
   
-  <div class="d-flex align-items-stretch w-100 mb-2">
+  <div class="d-flex justify-content-evenly w-100 mb-2">
   
     <div class="flex-fill px-1">
       <div class="input-group h-100">
@@ -133,7 +198,7 @@
         <input 
           id="search-input"
           type="text" 
-          class="form-control form-control-lg" 
+          class="form-control px-2 py-1" 
           placeholder="Type to echo..." 
           bind:value={inputValue}
         />
@@ -143,7 +208,7 @@
 <!--
     <div class="flex-fill px-1">
       <button 
-        class="btn btn-primary w-100 h-100" 
+        class="btn btn-primary  px-2 py-1"
         type="button"
         >
         <i class="bi bi-folder-plus me-1"></i>
@@ -153,7 +218,7 @@
 
     <div class="flex-fill px-1">
       <button 
-        class="btn btn-warning w-100 h-100" 
+        class="btn btn-warning  px-2 py-1" 
         type="button"
         on:click={handleClip}
         disabled={!inputValue}
@@ -165,7 +230,7 @@
     
     <div class="flex-fill px-1">
       <button 
-        class="btn btn-danger w-100 h-100" 
+        class="btn btn-danger  px-2 py-1" 
         type="button" 
         on:click={handleRaz}
       >
@@ -176,7 +241,7 @@
     
     <div class="flex-fill px-1">
       <button 
-        class="btn btn-info w-100 h-100" 
+        class="btn btn-info  px-2 py-1" 
         type="button"
         on:click={() => handleAction('HELP')}
       >
