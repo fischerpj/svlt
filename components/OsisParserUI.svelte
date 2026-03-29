@@ -188,7 +188,7 @@
 
 <div class="container-fluid d-flex flex-column w-100 p-3">
   
-  <div class="d-flex justify-content-evenly w-100 mb-2">
+  <div class="d-flex justify-content-evenly mb-2">
   
     <div class="flex-fill px-1">
       <div class="input-group h-100">
@@ -211,7 +211,7 @@
         class="btn btn-primary  px-2 py-1"
         type="button"
         >
-        <i class="bi bi-folder-plus me-1"></i>
+        <i class="bi bi-folder-plus me-1 d-none"></i>
         ADD</button>
     </div>
 -->
@@ -223,7 +223,7 @@
         on:click={handleClip}
         disabled={!inputValue}
       >
-        <i class="bi bi-clipboard me-1"></i>
+        <i class="bi bi-clipboard me-1 d-none"></i>
         CLIP
       </button>
     </div>
@@ -234,7 +234,7 @@
         type="button" 
         on:click={handleRaz}
       >
-        <i class="bi bi-eraser me-1"></i>
+        <i class="bi bi-eraser me-1 d-none"></i>
         RAZ
       </button>
     </div>
@@ -245,7 +245,7 @@
         type="button"
         on:click={() => handleAction('HELP')}
       >
-        <i class="bi bi-info me-1"></i>
+        <i class="bi bi-info me-1 d-none"></i>
         HELP
       </button>
     </div>
