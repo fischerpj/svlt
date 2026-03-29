@@ -188,7 +188,7 @@ div.d-flex > input + button Good Heights
 <!-- ------------------------------------------------------------- UI_3b ---- -->
 
 <div class="container-fluid d-flex flex-column w-100 p-1">
-  <div class="d-flex align-items-stretch w-100 mb-2 gap-1">
+  <div class="d-flex align-items-stretch w-100 mb-0 gap-1">
     
     <div class="flex-fill px-0">
      <div class="input-group">

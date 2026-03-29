@@ -10,7 +10,7 @@
 <atom:link href="https://your-website-url.example.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>A blog built with Quarto</description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Sun, 29 Mar 2026 17:49:28 GMT</lastBuildDate>
+<lastBuildDate>Sun, 29 Mar 2026 18:08:49 GMT</lastBuildDate>
 <item>
   <title>BcvReader</title>
   <link>https://your-website-url.example.com/posts/BcvReader.html</link>
@@ -54,7 +54,7 @@ font-style: inherit;">`&lt;my-bcvreader&gt;&lt;/my-bcvreader&gt;`</span></span><
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/BcvReader.html</guid>
-  <pubDate>Sun, 29 Mar 2026 17:49:28 GMT</pubDate>
+  <pubDate>Sun, 29 Mar 2026 18:08:49 GMT</pubDate>
 </item>
 <item>
   <title>OsisParserUI</title>
@@ -99,7 +99,7 @@ font-style: inherit;">`&lt;my-osisparserui&gt;&lt;/my-osisparserui&gt;`</span></
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/OsisParserUI.html</guid>
-  <pubDate>Sun, 29 Mar 2026 17:49:28 GMT</pubDate>
+  <pubDate>Sun, 29 Mar 2026 18:08:49 GMT</pubDate>
 </item>
 <item>
   <title>historic quarto-svelte example</title>
@@ -262,7 +262,7 @@ font-style: inherit;">=</span> selectedDataset</span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/Historic-Circle-example.html</guid>
-  <pubDate>Sun, 29 Mar 2026 17:49:28 GMT</pubDate>
+  <pubDate>Sun, 29 Mar 2026 18:08:49 GMT</pubDate>
 </item>
 <item>
   <title>OsisParser</title>
@@ -307,7 +307,7 @@ font-style: inherit;">`&lt;my-osisparser&gt;&lt;/my-osisparser&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/OsisParser.html</guid>
-  <pubDate>Sun, 29 Mar 2026 17:49:28 GMT</pubDate>
+  <pubDate>Sun, 29 Mar 2026 18:08:49 GMT</pubDate>
 </item>
 <item>
   <title>NoteParser</title>
@@ -352,7 +352,7 @@ font-style: inherit;">`&lt;my-noteparser&gt;&lt;/my-noteparser&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/NoteParser.html</guid>
-  <pubDate>Sun, 29 Mar 2026 17:49:28 GMT</pubDate>
+  <pubDate>Sun, 29 Mar 2026 18:08:49 GMT</pubDate>
 </item>
 <item>
   <title>RefApp</title>
@@ -400,7 +400,7 @@ font-style: inherit;">`&lt;my-refdata&gt;&lt;/my-refdata&gt;`</span></span></cod
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/RefApp.html</guid>
-  <pubDate>Sun, 29 Mar 2026 17:49:28 GMT</pubDate>
+  <pubDate>Sun, 29 Mar 2026 18:08:49 GMT</pubDate>
 </item>
 <item>
   <title>SvelteActionBar</title>
@@ -445,7 +445,7 @@ font-style: inherit;">`&lt;my-actionbar2&gt;&lt;/my-actionbar2&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/SvelteActionBar.html</guid>
-  <pubDate>Sun, 29 Mar 2026 17:49:28 GMT</pubDate>
+  <pubDate>Sun, 29 Mar 2026 18:08:49 GMT</pubDate>
 </item>
 <item>
   <title>Bootstrap Button Card</title>
@@ -531,14 +531,14 @@ font-style: inherit;">`&lt;my-actionbar2&gt;&lt;/my-actionbar2&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/BootstrapButtonCard.html</guid>
-  <pubDate>Sun, 29 Mar 2026 17:49:28 GMT</pubDate>
+  <pubDate>Sun, 29 Mar 2026 18:08:49 GMT</pubDate>
 </item>
 <item>
   <title></title>
   <link>https://your-website-url.example.com/posts/QuartoDashboard.html</link>
   <description><![CDATA[ undefined ]]></description>
   <guid>https://your-website-url.example.com/posts/QuartoDashboard.html</guid>
-  <pubDate>Sun, 29 Mar 2026 17:49:28 GMT</pubDate>
+  <pubDate>Sun, 29 Mar 2026 18:08:49 GMT</pubDate>
 </item>
 <item>
   <title>SharedSvelteCounter</title>
@@ -589,7 +589,7 @@ font-style: inherit;">`&lt;my-componentb&gt;&lt;/my-componentb&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/SharedSvelteCounter.html</guid>
-  <pubDate>Sun, 29 Mar 2026 17:49:28 GMT</pubDate>
+  <pubDate>Sun, 29 Mar 2026 18:08:49 GMT</pubDate>
 </item>
 <item>
   <title>ButtonsBuildUp</title>
@@ -626,7 +626,7 @@ HTML Output: <span id="h-out"><em>placeholder output area</em></span>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/ButtonsBuildUp.html</guid>
-  <pubDate>Sun, 29 Mar 2026 17:49:28 GMT</pubDate>
+  <pubDate>Sun, 29 Mar 2026 18:08:49 GMT</pubDate>
 </item>
 <item>
   <title>ButtonsMobile</title>
@@ -722,7 +722,7 @@ HTML Output: <span id="h-out"><em>placeholder output area</em></span>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/ButtonsMobile.html</guid>
-  <pubDate>Sun, 29 Mar 2026 17:49:28 GMT</pubDate>
+  <pubDate>Sun, 29 Mar 2026 18:08:49 GMT</pubDate>
 </item>
 </channel>
 </rss>
