@@ -78,6 +78,27 @@
 
 <!-- --------------------------------------------------------------STORE_UI --->
 
+<div class='d-flex justify-content-evenly' gap-2>
+
+  <input 
+    class="form-control px-2 py-1" 
+    type="text" 
+    placeholder="bootstrap form-control padding" 
+    id="inputStd"
+  >
+
+  <button class="btn btn-primary  px-2 py-1">Add</button>
+  <button class="btn btn-success  px-2 py-1">Clip</button>
+  <button class="btn btn-info  px-2 py-1">Help</button>
+
+</div>
+
+<hr/>
+
+<!-- ------------------------------------------------ end of BUTTONS_mobile --->
+
+
+
 <!--
 <div class="RefAccu-widget">
   <input type="number" bind:value={n} />
