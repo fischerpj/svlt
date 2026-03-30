@@ -76,41 +76,6 @@
 <!-- ----------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------- UI ---- -->
 
-
-<div class="btn-toolbar d-flex align-items-center" role="toolbar">
-  
-  <div class="input-group input-group-sm flex-grow-1 me-3">
-    <span class="input-group-text">Search</span>
-    <input type="text" class="form-control" placeholder="Input filling space...">
-  </div>
-
-  <div class="d-flex">
-    <button type="button" class="btn btn-sm btn-outline-primary flex-fill me-2">Add</button>
-    <button type="button" class="btn btn-sm btn-outline-primary flex-fill me-2">Edit</button>
-    <button type="button" class="btn btn-sm btn-outline-primary flex-fill">Delete</button>
-  </div>
-
-</div>
-
-<!-- ---------------------------------------------------------- UI_group ------>
-
-<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  
-  <div class="input-group input-group-sm flex-grow-1 me-2">
-    <span class="input-group-text" id="btnGroupAddon">
-      <i class="bi bi-search"></i>
-    </span>
-    <input type="text" class="form-control" placeholder="Search..." aria-label="Input group example" aria-describedby="btnGroupAddon">
-  </div>
-
-  <div class="btn-group" role="group" aria-label="Action group">
-    <button type="button" class="btn btn-sm btn-warning">CLIP</button>
-    <button type="button" class="btn btn-sm btn-danger">RAZ</button>
-    <button type="button" class="btn btn-sm btn-info">HELP</button>
-  </div>
-
-</div>s
-
 <!-- ------------------------------------------------------------- UI_1 ---- -->
 
 <div class='d-flex justify-content-evenly' gap-2>
@@ -130,9 +95,6 @@
 
 <hr/>
 
-
-
-<!-- --------------------------------------------------------------STORE_UI --->
 <!-- ------------------------------------------------------------- UI_2 ---- -->
 
 <div class="container-fluid d-flex flex-column w-100 p-1">
@@ -199,6 +161,67 @@
 
 <hr/>
 
+<!-- ------------------------------------------------------------- UI_3b ---- -->
+
+<div class="btn-toolbar d-flex align-items-center" role="toolbar">
+  
+  <div class="input-group input-group-sm flex-grow-1 me-3">
+    <span class="input-group-text">Search</span>
+    <input type="text" class="form-control" placeholder="UI_3B0">
+  </div>
+
+  <div class="d-flex">
+    <div class="flex-fill px-0">
+      <button type="button" class="btn btn-primary btn-sm w-100 px-1 py-1">Add</button></div>
+    <div class="flex-fill px-0">
+      <button type="button" class="btn btn-success btn-sm w-100 px-1 py-1">Clip</button></div>
+    <div class="flex-fill px-0">
+      <button type="button" class="btn btn-info w-100 btn-sm px-1 py-1">Help</button></div>
+  </div>
+
+</div>
+
+
+<div class="btn-toolbar d-flex align-items-center" role="toolbar">
+  
+  <div class="input-group input-group-sm flex-grow-1 me-3">
+    <span class="input-group-text">Search</span>
+    <input type="text" class="form-control" placeholder="Input filling space...">
+  </div>
+
+  <div class="d-flex">
+    <button type="button" class="btn btn-sm btn-outline-primary flex-fill me-2">Add</button>
+    <button type="button" class="btn btn-sm btn-outline-primary flex-fill me-2">Edit</button>
+    <button type="button" class="btn btn-sm btn-outline-primary flex-fill">Delete</button>
+  </div>
+
+</div>
+
+<!-- ---------------------------------------------------------- UI_group ------>
+
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  
+  <div class="input-group input-group-sm flex-grow-1 me-2">
+    <span class="input-group-text" id="btnGroupAddon">
+      <i class="bi bi-search"></i>
+    </span>
+    <input type="text" class="form-control" placeholder="Search..." aria-label="Input group example" aria-describedby="btnGroupAddon">
+  </div>
+
+  <div class="btn-group" role="group" aria-label="Action group">
+    <button type="button" class="btn btn-sm btn-warning">CLIP</button>
+    <button type="button" class="btn btn-sm btn-danger">RAZ</button>
+    <button type="button" class="btn btn-sm btn-info">HELP</button>
+  </div>
+
+</div>s
+
+
+
+
+
+<!-- --------------------------------------------------------------STORE_UI --->
+
 <!-- ------------------------------------------------------------- UI_3 ---- -->
 
 div.d-flex > input + button Good Heights
@@ -219,25 +242,7 @@ div.d-flex > input + button Good Heights
 </div>
 
 
-<!-- ------------------------------------------------------------- UI_3b ---- -->
 
-<div class="btn-toolbar d-flex align-items-center" role="toolbar">
-  
-  <div class="input-group input-group-sm flex-grow-1 me-3">
-    <span class="input-group-text">Search</span>
-    <input type="text" class="form-control" placeholder="UI_3B0">
-  </div>
-
-  <div class="d-flex">
-    <div class="flex-fill px-0">
-      <button type="button" class="btn btn-primary btn-sm w-100 px-1 py-1">Add</button></div>
-    <div class="flex-fill px-0">
-      <button type="button" class="btn btn-success btn-sm w-100 px-1 py-1">Clip</button></div>
-    <div class="flex-fill px-0">
-      <button type="button" class="btn btn-info w-100 btn-sm px-1 py-1">Help</button></div>
-  </div>
-
-</div>
 
 
 
