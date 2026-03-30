@@ -87,19 +87,10 @@
     <input 
       type="text" 
       class="form-control" 
-      placeholder="UI_1 d-flex +EqualHeight -NarrowButtons" 
+      placeholder="UI1.d-flex +EqualHeight -NarrowButtons" 
       aria-label="Input group example" 
       aria-describedby="btnGroupAddon">
   </div>
-
-<!--
-  <input 
-    class="form-control" 
-    type="text" 
-    placeholder="UI_1 +EqualHeight -NarrowButtons" 
-    id="inputStd"
-  >
--->
 
   <button class="btn btn-primary btn-sm me-1">Add1</button>
   <button class="btn btn-success btn-sm me-1">Clip1</button>
@@ -117,7 +108,7 @@
     <span class="input-group-text" id="btnGroupAddon">
       <i class="bi bi-search"></i>
     </span>
-    <input type="text" class="form-control" placeholder="UI toolbar Search..." aria-label="Input group example" aria-describedby="btnGroupAddon">
+    <input type="text" class="form-control" placeholder="UI.toolbar Search..." aria-label="Input group example" aria-describedby="btnGroupAddon">
   </div>
 
   <div class="btn-group" role="group" aria-label="Action group">
