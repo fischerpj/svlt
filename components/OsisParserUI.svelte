@@ -80,16 +80,51 @@
 
 <div class='d-flex justify-content-evenly' gap-2>
 
+  <div class="input-group input-group-sm flex-grow-1 me-1">
+    <span class="input-group-text" id="btnGroupAddon">
+      <i class="bi bi-search"></i>
+    </span>
+    <input 
+      type="text" 
+      class="form-control" 
+      placeholder="UI_1 d-flex +EqualHeight -NarrowButtons" 
+      aria-label="Input group example" 
+      aria-describedby="btnGroupAddon">
+  </div>
+
+<!--
   <input 
-    class="form-control px-2 py-1" 
+    class="form-control" 
     type="text" 
-    placeholder="UI_1 bootstrap form-control padding" 
+    placeholder="UI_1 +EqualHeight -NarrowButtons" 
     id="inputStd"
   >
+-->
 
-  <button class="btn btn-primary  px-2 py-1">Add1</button>
-  <button class="btn btn-success  px-2 py-1">Clip1</button>
-  <button class="btn btn-info  px-2 py-1">Help1</button>
+  <button class="btn btn-primary btn-sm me-1">Add1</button>
+  <button class="btn btn-success btn-sm me-1">Clip1</button>
+  <button class="btn btn-info btn-sm">Help1</button>
+
+</div>
+
+<hr/>
+
+<!-- ---------------------------------------------------------- UI_group ------>
+
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  
+  <div class="input-group input-group-sm flex-grow-1 me-1">
+    <span class="input-group-text" id="btnGroupAddon">
+      <i class="bi bi-search"></i>
+    </span>
+    <input type="text" class="form-control" placeholder="UI toolbar Search..." aria-label="Input group example" aria-describedby="btnGroupAddon">
+  </div>
+
+  <div class="btn-group" role="group" aria-label="Action group">
+    <button type="button" class="btn btn-sm btn-warning">CLIP</button>
+    <button type="button" class="btn btn-sm btn-danger">RAZ</button>
+    <button type="button" class="btn btn-sm btn-info">HELP</button>
+  </div>
 
 </div>
 
@@ -99,24 +134,24 @@
 
 <div class="container-fluid d-flex flex-column w-100 p-1">
   
-  <div class="d-flex align-items-stretch w-100 mb-2 gap-1">
+  <div class="d-flex align-items-stretch w-100 gap-1">
   
-    <div class="flex-fill px-0">
+    <div class="flex-fill">
       <div class="input-group">
         <span class="input-group-text bg-light d-none d-md-flex">
           <i class="bi bi-search"></i>
         </span>
         <input 
-          class="form-control px-2 py-1" 
+          class="form-control " 
           type="text" 
-          placeholder="UI_2 bootstrap form-control padding" 
+          placeholder="UI_2 +BalancedWidth -UnevenHeight" 
           id="inputStd2"
           bind:value={inputValue}
         />
       </div>
     </div>
     
-    <div class="flex-fill px-0">
+    <div class="flex-fill">
       <button 
         class="btn btn-primary w-100" 
         type="button"
@@ -128,7 +163,7 @@
       </button>
     </div>    
 
-    <div class="flex-fill px-0">
+    <div class="flex-fill">
       <button 
         class="btn btn-warning w-100" 
         type="button"
@@ -142,7 +177,7 @@
       </button>
     </div>
     
-    <div class="flex-fill px-0">
+    <div class="flex-fill">
       <button 
         class="btn btn-danger w-100" 
         type="button" 
@@ -161,22 +196,43 @@
 
 <hr/>
 
+
+
+<!-- ------------------------------------------------------------- UI_3 ---- -->
+
+div.d-flex > input + button Good Heights
+
+<div class='d-flex justify-content-evenly' gap-2>
+
+  <input 
+    class="form-control px-2 py-1" 
+    type="text" 
+    placeholder="UI3 bootstrap form-control padding" 
+    id="inputStd"
+  >
+
+  <button class="btn btn-primary  px-2 py-1">Add</button>
+  <button class="btn btn-success  px-2 py-1">Clip</button>
+  <button class="btn btn-info  px-2 py-1">Help</button>
+
+</div>
+
 <!-- ------------------------------------------------------------- UI_3b ---- -->
 
-<div class="btn-toolbar d-flex align-items-center" role="toolbar">
+<div class="btn-toolbar d-flex align-items-stretch" role="toolbar">
   
-  <div class="input-group input-group-sm flex-grow-1 me-3">
-    <span class="input-group-text">Search</span>
-    <input type="text" class="form-control" placeholder="UI_3B0">
+  <div class="input-group input-group-sm flex-grow-1 me-3 h-100">
+    <span class="input-group-text py-0 lh-1">Search</span>
+    <input type="text" class="form-control py-0 lh-1" placeholder="UI_3B0">
   </div>
 
-  <div class="d-flex">
+  <div class="d-flex h-100">
+    <div class="flex-fill h-100">
+      <button type="button" class="btn btn-primary btn-sm w-100 py-0 lh-1">Add</button></div>
+    <div class="flex-fill h-100">
+      <button type="button" class="btn btn-success btn-sm w-100 py-0 lh-1">Clip</button></div>
     <div class="flex-fill px-0">
-      <button type="button" class="btn btn-primary btn-sm w-100 px-1 py-1">Add</button></div>
-    <div class="flex-fill px-0">
-      <button type="button" class="btn btn-success btn-sm w-100 px-1 py-1">Clip</button></div>
-    <div class="flex-fill px-0">
-      <button type="button" class="btn btn-info w-100 btn-sm px-1 py-1">Help</button></div>
+      <button type="button" class="btn btn-info w-100 btn-sm py-0 lh-1">Help</button></div>
   </div>
 
 </div>
@@ -197,24 +253,7 @@
 
 </div>
 
-<!-- ---------------------------------------------------------- UI_group ------>
 
-<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  
-  <div class="input-group input-group-sm flex-grow-1 me-2">
-    <span class="input-group-text" id="btnGroupAddon">
-      <i class="bi bi-search"></i>
-    </span>
-    <input type="text" class="form-control" placeholder="Search..." aria-label="Input group example" aria-describedby="btnGroupAddon">
-  </div>
-
-  <div class="btn-group" role="group" aria-label="Action group">
-    <button type="button" class="btn btn-sm btn-warning">CLIP</button>
-    <button type="button" class="btn btn-sm btn-danger">RAZ</button>
-    <button type="button" class="btn btn-sm btn-info">HELP</button>
-  </div>
-
-</div>s
 
 
 
@@ -222,24 +261,6 @@
 
 <!-- --------------------------------------------------------------STORE_UI --->
 
-<!-- ------------------------------------------------------------- UI_3 ---- -->
-
-div.d-flex > input + button Good Heights
-
-<div class='d-flex justify-content-evenly' gap-2>
-
-  <input 
-    class="form-control px-2 py-1" 
-    type="text" 
-    placeholder="UI3 bootstrap form-control padding" 
-    id="inputStd"
-  >
-
-  <button class="btn btn-primary  px-2 py-1">Add</button>
-  <button class="btn btn-success  px-2 py-1">Clip</button>
-  <button class="btn btn-info  px-2 py-1">Help</button>
-
-</div>
 
 
 
