@@ -76,64 +76,44 @@
 <!-- ----------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------- UI ---- -->
 
-<!-- ------------------------------------------------------------- UI_1 ---- -->
-
-<div class='d-flex justify-content-evenly' gap-2>
-
-  <div class="input-group input-group-sm flex-grow-1 me-1">
-    <span class="input-group-text" id="btnGroupAddon">
-      <i class="bi bi-search"></i>
+<div class="input-group flex-grow-1 gap-0 mb-3">
+  <span class="input-group-text bg-light d-none d-md-flex">
+    <i class="bi bi-search"></i>
     </span>
-    <input 
-      type="text" 
-      class="form-control" 
-      placeholder="UI1.d-flex +EqualHeight -NarrowButtons" 
-      aria-label="Input group example" 
-      aria-describedby="btnGroupAddon">
-  </div>
+  <input 
+    type="text" 
+    class="form-control"
+    style="flex-basis:40%; max-width:50%;"
+    placeholder="UI-ltime"
+    >
 
-  <button class="btn btn-primary btn-sm me-1">Add1</button>
-  <button class="btn btn-success btn-sm me-1">Clip1</button>
-  <button class="btn btn-info btn-sm">Help1</button>
-
-</div>
-
-<hr/>
-
-<!-- ---------------------------------------------------------- UI_group ------>
-
-<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <button 
+    class="btn btn-success rounded flex-grow-1 ms-1" 
+    type="button">
+    <span>
+      <i class="bi bi-folder-plus me-1 d-none "></i>
+      CLIP</span>
+    </button>
   
-  <div class="input-group input-group-sm flex-grow-1 me-1">
-    <span class="input-group-text" id="btnGroupAddon">
-      <i class="bi bi-search"></i>
-    </span>
-    <input type="text" class="form-control" placeholder="UI.toolbar Search..." aria-label="Input group example" aria-describedby="btnGroupAddon">
-  </div>
-
-  <div class="btn-group" role="group" aria-label="Action group">
-    <button type="button" class="btn btn-sm btn-warning">CLIP</button>
-    <button type="button" class="btn btn-sm btn-danger">RAZ</button>
-    <button type="button" class="btn btn-sm btn-info">HELP</button>
-  </div>
-
+  <button class="btn btn-danger rounded flex-grow-1 ms-1">RAZ</button>
+  <button class="btn btn-info rounded flex-grow-1 ms-1">HELP</button>
 </div>
-
-<hr/>
 
 <!-- ------------------------------------------------------------- UI_2 ---- -->
 
-<div class="container-fluid d-flex flex-column w-100 p-1">
-  
+<!-- unnecessary
+<div class="container-fluid flex-column w-100">
+-->
+
   <div class="d-flex align-items-stretch w-100 gap-1">
   
     <div class="flex-fill">
-      <div class="input-group">
+      <div class="input-group flex-grow-1 me-2">
         <span class="input-group-text bg-light d-none d-md-flex">
           <i class="bi bi-search"></i>
         </span>
         <input 
-          class="form-control " 
+          class="form-control h-100" 
           type="text" 
           placeholder="UI_2 +BalancedWidth -UnevenHeight" 
           id="inputStd2"
@@ -144,7 +124,7 @@
     
     <div class="flex-fill">
       <button 
-        class="btn btn-primary w-100" 
+        class="btn btn-primary w-100 me-1" 
         type="button"
         >
         <span>
@@ -156,7 +136,7 @@
 
     <div class="flex-fill">
       <button 
-        class="btn btn-warning w-100" 
+        class="btn btn-warning w-100 me-1" 
         type="button"
         on:click={handleClip}
         disabled={!inputValue}
@@ -170,7 +150,7 @@
     
     <div class="flex-fill">
       <button 
-        class="btn btn-danger w-100" 
+        class="btn btn-danger w-100 me-1" 
         type="button" 
         on:click={handleRaz}
       >
@@ -183,9 +163,64 @@
     
   </div>
   
+
+<hr/>
+
+
+<!-- ------------------------------------------------------------- UI_1 ---- -->
+
+<div class='d-flex justify-content-evenly' gap-2>
+
+  <div class="input-group flex-grow-1 me-1">
+    <span class="input-group-text" id="btnGroupAddon">
+      <i class="bi bi-search"></i>
+    </span>
+    <input 
+      type="text" 
+      class="form-control" 
+      placeholder="UI1.d-flex +EqualHeight -NarrowButtons" 
+      aria-label="Input group example" 
+      aria-describedby="btnGroupAddon">
+  </div>
+
+  <div class="flex-fill">
+    <button class="btn btn-primary  w-100 me-1">Add1</button></div>
+  <div class="flex-fill">
+    <button class="btn btn-success   w-100 me-1">Clip1</button></div>
+  <div class="flex-fill">
+    <button class="btn btn-info  w-100 ">Help1</button></div>
+
+
 </div>
 
 <hr/>
+
+<!-- ---------------------------------------------------------- UI_group ------>
+
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  
+  <div class="input-group input-group-sm flex-grow-1 me-1">
+    <span class="input-group-text" id="btnGroupAddon">
+      <i class="bi bi-search"></i>
+    </span>
+    <input 
+      type="text" 
+      class="form-control" 
+      placeholder="UI.toolbar Search..." 
+      aria-label="Input group example" 
+      aria-describedby="btnGroupAddon">
+  </div>
+
+  <div class="btn-group" role="group" aria-label="Action group">
+    <button type="button" class="btn btn-sm btn-warning">CLIP</button>
+    <button type="button" class="btn btn-sm btn-danger">RAZ</button>
+    <button type="button" class="btn btn-sm btn-info">HELP</button>
+  </div>
+
+</div>
+
+<hr/>
+
 
 
 
@@ -253,12 +288,6 @@ div.d-flex > input + button Good Heights
 <!-- --------------------------------------------------------------STORE_UI --->
 
 
-
-
-
-
-
-
 <div class="container-fluid d-flex flex-column w-100 p-1">
   <div class="d-flex align-items-stretch w-100 mb-1 gap-1">
     
@@ -318,11 +347,11 @@ div.d-flex > input + button Good Heights
 
 div.d-flex > input + div.flex-fill button
 
-<div class="container-fluid d-flex flex-column w-100 p-3">
+<div class="container-fluid d-flex flex-column w-100">
   
   <div class="d-flex justify-content-evenly mb-2">
   
-    <div class="flex-fill px-0">
+    <div class="flex-fill">
       <div class="input-group h-100">
         <span class="input-group-text bg-light">
           <i class="bi bi-search"></i>
@@ -330,27 +359,16 @@ div.d-flex > input + div.flex-fill button
         <input 
           id="search-input"
           type="text" 
-          class="form-control px-2 py-1" 
+          class="form-control" 
           placeholder="UI4 Type to echo..." 
           bind:value={inputValue}
         />
       </div>
     </div>
 
-<!--
-    <div class="flex-fill px-0">
+    <div class="flex-fill">
       <button 
-        class="btn btn-primary  px-2 py-1"
-        type="button"
-        >
-        <i class="bi bi-folder-plus me-1 d-none"></i>
-        ADD</button>
-    </div>
--->
-
-    <div class="flex-fill px-0">
-      <button 
-        class="btn btn-warning  px-2 py-1" 
+        class="btn btn-warning" 
         type="button"
         on:click={handleClip}
         disabled={!inputValue}
@@ -360,9 +378,9 @@ div.d-flex > input + div.flex-fill button
       </button>
     </div>
     
-    <div class="flex-fill px-0">
+    <div class="flex-fill">
       <button 
-        class="btn btn-danger  px-2 py-1" 
+        class="btn btn-danger" 
         type="button" 
         on:click={handleRaz}
       >
@@ -371,9 +389,9 @@ div.d-flex > input + div.flex-fill button
       </button>
     </div>
     
-    <div class="flex-fill px-0">
+    <div class="flex-fill">
       <button 
-        class="btn btn-info  px-2 py-1" 
+        class="btn btn-info" 
         type="button"
         on:click={() => handleAction('HELP')}
       >
