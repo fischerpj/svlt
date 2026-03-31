@@ -108,146 +108,15 @@
             on:click={handleRaz}>
             RAZ
             </button>
-    <button type="button" class="btn btn-sm btn-info flex-grow-1 d-none d-sm-block">HELP</button>
+    <button type="button" 
+            class="btn btn-sm btn-info flex-grow-1 d-none d-sm-block"
+            on:click={() => handleAction('HELP')}>
+            HELP</button>
     
   </div>
 </div>
-<hr/>
-<!-- ---------------------------------------------------------- UI_group ------>
-
-<div class="input-group flex-grow-1 gap-0 ms-1">
-  <span class="input-group-text bg-light d-none d-md-flex">
-    <i class="bi bi-search"></i>
-    </span>
-  <input 
-    type="text" 
-    class="form-control"
-    style="flex-basis:40%; max-width:50%;"
-    placeholder="UI-ltime"
-    >
-    
-  <button 
-    class="btn btn-primary rounded flex-grow-1 ms-1 px-2 py-0" 
-    type="button">
-    <span>
-      <i class="bi bi-folder-plus me-1 d-none "></i>
-      ADD</span>
-    </button>
-
-  <button 
-    class="btn btn-success rounded flex-grow-1 ms-1 px-2 py-0" 
-    type="button">
-    <span>
-      <i class="bi bi-folder-plus me-1 d-none "></i>
-      CLIP</span>
-    </button>
-  
-  <button class="btn btn-danger rounded flex-grow-1 ms-1 px-2 py-0">RAZ</button>
-  <button class="btn btn-info rounded flex-grow-1 ms-1 px-2 py-0">HELP</button>
-</div>
-
-<hr/>
-
-<!-- ------------------------------------------------------------- UI_2 ---- -->
-
-<!-- unnecessary
-<div class="container-fluid flex-column w-100">
--->
-
-  <div class="d-flex align-items-stretch w-100 gap-1 ms-1">
-  
-    <div class="flex-fill">
-      <div class="input-group flex-grow-1 me-2">
-        <span class="input-group-text bg-light d-none d-md-flex">
-          <i class="bi bi-search"></i>
-        </span>
-        <input 
-          class="form-control h-100" 
-          type="text" 
-          placeholder="UI_2 +BalancedWidth -UnevenHeight" 
-          id="inputStd2"
-        />
-      </div>
-    </div>
-    
-    <div class="flex-fill">
-      <button 
-        class="btn btn-primary w-100 me-1" 
-        type="button"
-        >
-        <span>
-          <i class="bi bi-folder-plus me-1 d-none "></i>
-          ADD
-        </span>
-      </button>
-    </div>    
-
-    <div class="flex-fill">
-      <button 
-        class="btn btn-warning w-100 me-1" 
-        type="button"
-        on:click={handleClip}
-        disabled={!inputValue}
-      >
-        <span>
-          <i class="bi bi-clipboard me-1 d-none"></i>
-          CLIP
-        </span>
-      </button>
-    </div>
-    
-    <div class="flex-fill">
-      <button 
-        class="btn btn-danger w-100 me-1" 
-        type="button" 
-        on:click={handleRaz}
-      >
-        <span>
-          <i class="bi bi-eraser me-1 d-none"></i>
-          RAZ
-        </span>
-      </button>
-    </div>
-    
-  </div>
-  
-
-<hr/>
-
-
-<!-- ------------------------------------------------------------- UI_1 ---- -->
-
-<div class='d-flex justify-content-evenly' gap-2>
-
-  <div class="input-group flex-grow-1 me-1">
-    <span class="input-group-text" id="btnGroupAddon">
-      <i class="bi bi-search"></i>
-    </span>
-    <input 
-      type="text" 
-      class="form-control" 
-      placeholder="UI1.d-flex +EqualHeight -NarrowButtons" 
-      aria-label="Input group example" 
-      aria-describedby="btnGroupAddon">
-  </div>
-
-  <div class="flex-fill">
-    <button class="btn btn-primary  w-100 me-1">Add1</button></div>
-  <div class="flex-fill">
-    <button class="btn btn-success   w-100 me-1">Clip1</button></div>
-  <div class="flex-fill">
-    <button class="btn btn-info  w-100 ">Help1</button></div>
-
-
-</div>
-
-<hr/>
-
-
 
 <!-- ------------------------------------------------ end of BUTTONS_mobile --->
-
-
 
 <!--
 <div class="RefAccu-widget">
@@ -269,64 +138,6 @@
 </div>
 -->
 
-<!-- BUTTONS -->
-
-<!-- ------------------------------------------------------------- UI_4 ---- -->
-
-<div class="container-fluid d-flex flex-column w-100">
-  
-  <div class="d-flex justify-content-evenly mb-2">
-  
-    <div class="flex-fill">
-      <div class="input-group h-100">
-        <span class="input-group-text bg-light">
-          <i class="bi bi-search"></i>
-        </span>
-        <input 
-          id="search-input"
-          type="text" 
-          class="form-control" 
-          placeholder="UI4 Type to echo..." 
-        />
-      </div>
-    </div>
-
-    <div class="flex-fill">
-      <button 
-        class="btn btn-warning" 
-        type="button"
-        on:click={handleClip}
-        disabled={!inputValue}
-      >
-        <i class="bi bi-clipboard me-1 d-none"></i>
-        CLIP
-      </button>
-    </div>
-    
-    <div class="flex-fill">
-      <button 
-        class="btn btn-danger" 
-        type="button" 
-        on:click={handleRaz}
-      >
-        <i class="bi bi-eraser me-1 d-none"></i>
-        RAZ
-      </button>
-    </div>
-    
-    <div class="flex-fill">
-      <button 
-        class="btn btn-info" 
-        type="button"
-        on:click={() => handleAction('HELP')}
-      >
-        <i class="bi bi-info me-1 d-none"></i>
-        HELP
-      </button>
-    </div>
-
-  </div>
-
 <!-- ----------------------------------------------------- OUTPUT AREA  ---- -->
 
   {#if inputValue}
@@ -342,8 +153,6 @@
       </div>
     </div>
   {/if}
-
-</div>
 
 <!-- --------------------------------------------------------- STYLING  ---- -->
 
