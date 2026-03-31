@@ -77,9 +77,8 @@
 <!-- --------------------------------------------------------------- UI ---- -->
 
 <!-- ---------------------------------------------------------- UI_toolbar ------>
-<hr/>
 
-<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+<div class="btn-toolbar m-2" role="toolbar" aria-label="Toolbar with button groups">
   
   <div class="input-group input-group-sm flex-grow-1 me-1">
     <span class="input-group-text" id="btnGroupAddon">
@@ -97,11 +96,10 @@
     <button type="button" class="btn btn-sm btn-primary flex-grow-1">ADD</button>
     <button type="button" class="btn btn-sm btn-success flex-grow-1">CLIP</button>
     <button type="button" class="btn btn-sm btn-danger flex-grow-1" on:click={handleRaz}>RAZ</button>
-    <button type="button" class="btn btn-sm btn-info flex-grow-1">HELP</button>
+    <button type="button" class="btn btn-sm btn-info flex-grow-1 d-none d-sm-block">HELP</button>
     
   </div>
 </div>
-
 <hr/>
 <!-- ---------------------------------------------------------- UI_group ------>
 
