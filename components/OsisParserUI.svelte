@@ -76,6 +76,35 @@
 <!-- ----------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------- UI ---- -->
 
+<!-- ---------------------------------------------------------- UI_toolbar ------>
+<hr/>
+
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  
+  <div class="input-group input-group-sm flex-grow-1 me-1">
+    <span class="input-group-text" id="btnGroupAddon">
+      <i class="bi bi-search"></i>
+    </span>
+    <input 
+      type="text" 
+      class="form-control"
+      style="flex-basis:40%; max-width:50%;"
+      placeholder="UI.toolbar Search..." 
+      aria-label="Input group example" 
+      aria-describedby="btnGroupAddon"
+      bind:value={inputValue}
+    >
+    <button type="button" class="btn btn-sm btn-primary flex-grow-1">ADD</button>
+    <button type="button" class="btn btn-sm btn-success flex-grow-1">CLIP</button>
+    <button type="button" class="btn btn-sm btn-danger flex-grow-1">RAZ</button>
+    <button type="button" class="btn btn-sm btn-info flex-grow-1">HELP</button>
+  </div>
+
+</div>
+
+<hr/>
+<!-- ---------------------------------------------------------- UI_group ------>
+
 <div class="input-group flex-grow-1 gap-0 ms-1">
   <span class="input-group-text bg-light d-none d-md-flex">
     <i class="bi bi-search"></i>
@@ -85,7 +114,6 @@
     class="form-control"
     style="flex-basis:40%; max-width:50%;"
     placeholder="UI-ltime"
-    bind:value={inputValue}
     >
     
   <button 
@@ -205,51 +233,7 @@
 
 <hr/>
 
-<!-- ---------------------------------------------------------- UI_group ------>
 
-<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  
-  <div class="input-group input-group-sm flex-grow-1 me-1">
-    <span class="input-group-text" id="btnGroupAddon">
-      <i class="bi bi-search"></i>
-    </span>
-    <input 
-      type="text" 
-      class="form-control" 
-      placeholder="UI.toolbar Search..." 
-      aria-label="Input group example" 
-      aria-describedby="btnGroupAddon">
-    <button type="button" class="btn btn-sm btn-warning">CLIP</button>
-    <button type="button" class="btn btn-sm btn-danger">RAZ</button>
-    <button type="button" class="btn btn-sm btn-info">HELP</button>
-  </div>
-
-</div>
-
-<hr/>
-<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  
-  <div class="input-group input-group-sm flex-grow-1 me-1">
-    <span class="input-group-text" id="btnGroupAddon">
-      <i class="bi bi-search"></i>
-    </span>
-    <input 
-      type="text" 
-      class="form-control" 
-      placeholder="UI.toolbar Search..." 
-      aria-label="Input group example" 
-      aria-describedby="btnGroupAddon">
-  </div>
-
-  <div class="btn-group" role="group" aria-label="Action group">
-    <button type="button" class="btn btn-sm btn-warning">CLIP</button>
-    <button type="button" class="btn btn-sm btn-danger">RAZ</button>
-    <button type="button" class="btn btn-sm btn-info">HELP</button>
-  </div>
-
-</div>
-
-<hr/>
 
 <!-- ------------------------------------------------ end of BUTTONS_mobile --->
 
