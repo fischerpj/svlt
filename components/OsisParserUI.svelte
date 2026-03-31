@@ -96,10 +96,10 @@
     >
     <button type="button" class="btn btn-sm btn-primary flex-grow-1">ADD</button>
     <button type="button" class="btn btn-sm btn-success flex-grow-1">CLIP</button>
-    <button type="button" class="btn btn-sm btn-danger flex-grow-1">RAZ</button>
+    <button type="button" class="btn btn-sm btn-danger flex-grow-1" on:click={handleRaz}>RAZ</button>
     <button type="button" class="btn btn-sm btn-info flex-grow-1">HELP</button>
+    
   </div>
-
 </div>
 
 <hr/>
