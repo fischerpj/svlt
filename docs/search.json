@@ -53,7 +53,7 @@
     "href": "posts/OsisParserUI.html",
     "title": "OsisParserUI",
     "section": "",
-    "text": "strict idempotent OSIS conversion for biblegateway. One component with windows.store transit.\n\n\nmyOsisParser = html`&lt;my-osisparserui&gt;&lt;/my-osisparserui&gt;`"
+    "text": "strict idempotent OSIS conversion - Intra component communication via windows.store.\n\n\nmyOsisParser = html`&lt;my-osisparserui&gt;&lt;/my-osisparserui&gt;`"
   },
   {
     "objectID": "posts/OsisParser.html",

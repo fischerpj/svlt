@@ -20,7 +20,7 @@ font-size: 1.5rem; /* Adjust font size */
 }
 </style>
 
-> strict idempotent OSIS conversion for biblegateway. _One component with windows.store transit._
+> strict idempotent OSIS conversion - _Intra component communication via windows.store_. 
 
 ```{ojs}
 //| echo: false
