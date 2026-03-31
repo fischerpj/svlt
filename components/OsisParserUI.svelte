@@ -76,7 +76,7 @@
 <!-- ----------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------- UI ---- -->
 
-<div class="input-group flex-grow-1 gap-0 mb-3">
+<div class="input-group flex-grow-1 gap-0 ms-1">
   <span class="input-group-text bg-light d-none d-md-flex">
     <i class="bi bi-search"></i>
     </span>
@@ -85,19 +85,30 @@
     class="form-control"
     style="flex-basis:40%; max-width:50%;"
     placeholder="UI-ltime"
+    bind:value={inputValue}
     >
+    
+  <button 
+    class="btn btn-primary rounded flex-grow-1 ms-1 px-2 py-0" 
+    type="button">
+    <span>
+      <i class="bi bi-folder-plus me-1 d-none "></i>
+      ADD</span>
+    </button>
 
   <button 
-    class="btn btn-success rounded flex-grow-1 ms-1" 
+    class="btn btn-success rounded flex-grow-1 ms-1 px-2 py-0" 
     type="button">
     <span>
       <i class="bi bi-folder-plus me-1 d-none "></i>
       CLIP</span>
     </button>
   
-  <button class="btn btn-danger rounded flex-grow-1 ms-1">RAZ</button>
-  <button class="btn btn-info rounded flex-grow-1 ms-1">HELP</button>
+  <button class="btn btn-danger rounded flex-grow-1 ms-1 px-2 py-0">RAZ</button>
+  <button class="btn btn-info rounded flex-grow-1 ms-1 px-2 py-0">HELP</button>
 </div>
+
+<hr/>
 
 <!-- ------------------------------------------------------------- UI_2 ---- -->
 
@@ -117,7 +128,6 @@
           type="text" 
           placeholder="UI_2 +BalancedWidth -UnevenHeight" 
           id="inputStd2"
-          bind:value={inputValue}
         />
       </div>
     </div>
@@ -221,102 +231,6 @@
 
 <hr/>
 
-
-
-
-<!-- ------------------------------------------------------------- UI_3 ---- -->
-
-div.d-flex > input + button Good Heights
-
-<div class='d-flex justify-content-evenly' gap-2>
-
-  <input 
-    class="form-control px-2 py-1" 
-    type="text" 
-    placeholder="UI3 bootstrap form-control padding" 
-    id="inputStd"
-  >
-
-  <button class="btn btn-primary  px-2 py-1">Add</button>
-  <button class="btn btn-success  px-2 py-1">Clip</button>
-  <button class="btn btn-info  px-2 py-1">Help</button>
-
-</div>
-
-<!-- ------------------------------------------------------------- UI_3b ---- -->
-
-<div class="btn-toolbar d-flex align-items-stretch" role="toolbar">
-  
-  <div class="input-group input-group-sm flex-grow-1 me-3 h-100">
-    <span class="input-group-text py-0 lh-1">Search</span>
-    <input type="text" class="form-control py-0 lh-1" placeholder="UI_3B0">
-  </div>
-
-  <div class="d-flex h-100">
-    <div class="flex-fill h-100">
-      <button type="button" class="btn btn-primary btn-sm w-100 py-0 lh-1">Add</button></div>
-    <div class="flex-fill h-100">
-      <button type="button" class="btn btn-success btn-sm w-100 py-0 lh-1">Clip</button></div>
-    <div class="flex-fill px-0">
-      <button type="button" class="btn btn-info w-100 btn-sm py-0 lh-1">Help</button></div>
-  </div>
-
-</div>
-
-
-<div class="btn-toolbar d-flex align-items-center" role="toolbar">
-  
-  <div class="input-group input-group-sm flex-grow-1 me-3">
-    <span class="input-group-text">Search</span>
-    <input type="text" class="form-control" placeholder="Input filling space...">
-  </div>
-
-  <div class="d-flex">
-    <button type="button" class="btn btn-sm btn-outline-primary flex-fill me-2">Add</button>
-    <button type="button" class="btn btn-sm btn-outline-primary flex-fill me-2">Edit</button>
-    <button type="button" class="btn btn-sm btn-outline-primary flex-fill">Delete</button>
-  </div>
-
-</div>
-
-
-
-
-
-
-
-<!-- --------------------------------------------------------------STORE_UI --->
-
-
-<div class="container-fluid d-flex flex-column w-100 p-1">
-  <div class="d-flex align-items-stretch w-100 mb-1 gap-1">
-    
-    <div class="flex-fill px-0">
-     <div class="input-group">
-        <span class="input-group-text bg-light d-none d-md-flex">
-          <i class="bi bi-search"></i>
-        </span>
-        <input 
-          class="form-control px-2 py-1" 
-          type="text" 
-          placeholder="UI_3b bootstrap form-control padding" 
-          id="inputStd2"
-          bind:value={inputValue}
-        />
-      </div>
-    </div>
-    
-    <div class="flex-fill px-0">
-      <button class="btn btn-primary w-100 px-1 py-1">Add</button></div>
-    <div class="flex-fill px-0">
-      <button class="btn btn-success w-100 px-1 py-1">Clip</button></div>
-    <div class="flex-fill px-0">
-      <button class="btn btn-info w-100 px-1 py-1">Help</button></div>
-  
-  </div>
-</div>
-<hr/>
-
 <!-- ------------------------------------------------ end of BUTTONS_mobile --->
 
 
@@ -361,7 +275,6 @@ div.d-flex > input + div.flex-fill button
           type="text" 
           class="form-control" 
           placeholder="UI4 Type to echo..." 
-          bind:value={inputValue}
         />
       </div>
     </div>
