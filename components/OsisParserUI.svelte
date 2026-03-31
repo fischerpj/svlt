@@ -93,15 +93,18 @@
       aria-describedby="btnGroupAddon"
       bind:value={inputValue}
     >
-    <button type="button" class="btn btn-sm btn-primary flex-grow-1">ADD</button>
     <button type="button" 
-            class="btn btn-sm btn-success flex-grow-1" 
+            class="btn btn-sm btn-primary rounded flex-grow-1">
+            ADD
+            </button>
+    <button type="button" 
+            class="btn btn-sm btn-success rounded flex-grow-1" 
             on:click={handleClip}
             disabled={!inputValue}>
             CLIP
             </button>
     <button type="button" 
-            class="btn btn-sm btn-danger flex-grow-1" 
+            class="btn btn-sm btn-danger rounded flex-grow-1" 
             on:click={handleRaz}>
             RAZ
             </button>
