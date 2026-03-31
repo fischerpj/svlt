@@ -116,7 +116,7 @@
 <div class="container-fluid flex-column w-100">
 -->
 
-  <div class="d-flex align-items-stretch w-100 gap-1">
+  <div class="d-flex align-items-stretch w-100 gap-1 ms-1">
   
     <div class="flex-fill">
       <div class="input-group flex-grow-1 me-2">
@@ -219,6 +219,26 @@
       placeholder="UI.toolbar Search..." 
       aria-label="Input group example" 
       aria-describedby="btnGroupAddon">
+    <button type="button" class="btn btn-sm btn-warning">CLIP</button>
+    <button type="button" class="btn btn-sm btn-danger">RAZ</button>
+    <button type="button" class="btn btn-sm btn-info">HELP</button>
+  </div>
+
+</div>
+
+<hr/>
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  
+  <div class="input-group input-group-sm flex-grow-1 me-1">
+    <span class="input-group-text" id="btnGroupAddon">
+      <i class="bi bi-search"></i>
+    </span>
+    <input 
+      type="text" 
+      class="form-control" 
+      placeholder="UI.toolbar Search..." 
+      aria-label="Input group example" 
+      aria-describedby="btnGroupAddon">
   </div>
 
   <div class="btn-group" role="group" aria-label="Action group">
@@ -258,8 +278,6 @@
 <!-- BUTTONS -->
 
 <!-- ------------------------------------------------------------- UI_4 ---- -->
-
-div.d-flex > input + div.flex-fill button
 
 <div class="container-fluid d-flex flex-column w-100">
   
