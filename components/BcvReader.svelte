@@ -30,7 +30,7 @@
     if (!query) return;
     loading = true;
     
-    const url = `https://hsub.pjafischer.workers.dev/bgw/api/?param=${encodeURIComponent(query)}`;
+    const url = `https://hmi.pjafischer.workers.dev/bgw/cache/?param=${encodeURIComponent(query)}`;
     
     try {
       const response = await fetch(url);

@@ -20,7 +20,7 @@ font-size: 1.5rem; /* Adjust font size */
 }
 </style>
 
-> strict idempotent OSIS conversion - _Intra component communication via windows.store_. 
+> strict idempotent OSIS conversion - _Intra component communication via windows.store_. TODO:  H-store vs O-store
 
 ```{ojs}
 //| echo: false

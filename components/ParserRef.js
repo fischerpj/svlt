@@ -60,7 +60,8 @@ export class ParserRef {
   }
 
   // OK NEW Method for this yields hsub ! formatting
-  hsub_entities() {
+  //
+  hsub_refarray() {
   // PARSING: OSIS + TRANS
   const osis_translations = this.osis_and_translations();
 
@@ -72,7 +73,7 @@ export class ParserRef {
   }
   
   // OK NEW Method for this yields hsub formatting
-  osis_entities() {
+  osis_array() {
   // PARSING: OSIS + TRANS
   const osis_translations = this.osis_and_translations();
 
@@ -105,20 +106,22 @@ export class ParserRef {
 // osis_and_translations();
 
 
-/**
-// create instance outside
+// create bcv_parser instance outside
 const bcv = new bcv_parser(lang);              // uses French by default
-// pass it into 
+// pass it into proprietary ParserRef
 const parser = new ParserRef(bcv);              // uses French by default
 
-let myref = "Galates 1:16!SG21";
+// simulate some input text
+let myref = "hello Galates 1:16!SG21";
 myref = "(Galates 1:16),(Hos14!LSG); rom5:8!SG21; Psaume 51:2!ESV, Ap 4:1 KJV";
 
+// Array osis_and_translations
 console.log(parser.parse(myref).osis_and_translations());      // example call
-//console.log(parser.parse(myref).osis_entities());      // example call
-console.log(parser.parse(myref).hsub_entities());      // example call
+console.log(parser.parse(myref).osis_array());      // example call
+// ARRAY hsub_refarray
+console.log(parser.parse(myref).hsub_refarray());      // example call
 //console.log(parser.parse(myref).osis_string());      // example call
-*/
+
 
 /**
 const myosis = 'Gal.1.16,Gal.2.4 NIV; Hos.14 LSG; Rom.5.8 SG21; Ps.51.2 ESV; Rev.4.1,Rev.22.4 KJV';
@@ -126,8 +129,8 @@ console.log(myref)     // example call
 
 //console.log(bcv.parse(myref).osis());      // lacks value of translation info
 //console.log(bcv.parse(myosis).osis_string());      // example call
-console.log(bcv.parse(myref).osis_entities());      // example call
-//console.log(bcv.parse(myref).hsub_entities());      // example call
+console.log(bcv.parse(myref).osis_array());      // example call
+//console.log(bcv.parse(myref).hsub_refarray());      // example call
 //console.log(bcv.parse(myref).osis_and_translations());      // example call
 
 */

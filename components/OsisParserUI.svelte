@@ -32,8 +32,8 @@
 // ----------------------------------------------------------- VARIABLES -------
 
   let inputValue =  "Gal 1:16!SG21 ge1:5 (2tim1:1!KJV) rom5:8 Ap4:2";
-  let osisResult = "";
-  let hsubResult = "";
+  let osisArrayString = "";
+  let hsubArrayString = "";
   let wrapResult = "";
   let n = 0
 
@@ -43,14 +43,14 @@
    * This re-runs automatically whenever 'userInput' changes.
   */
   $: {
-    osisResult = JSON.stringify(parser.parse(inputValue).osis_entities(),null,0);
-    hsubResult = JSON.stringify(parser.parse(inputValue).hsub_entities(),null,0);
+    osisArrayString = JSON.stringify(parser.parse(inputValue).osis_array(),null,0);
+    hsubArrayString = JSON.stringify(parser.parse(inputValue).hsub_refarray(),null,0);
     wrapResult = parser.parse(inputValue).osis_idempotent();
     }
    
-   $: {
-    setValue(wrapResult);
-   }
+//   $: {
+//    setValue(wrapResult);
+//   }
 
 // --------------------------------------------------------------- FUNCTONS ----
 
@@ -94,7 +94,8 @@
       bind:value={inputValue}
     >
     <button type="button" 
-            class="btn btn-sm btn-primary rounded flex-grow-1">
+            class="btn btn-sm btn-primary rounded flex-grow-1"
+            on:click={() => addValue(wrapResult)}> 
             ADD
             </button>
     <button type="button" 
@@ -118,13 +119,34 @@
 
 <!-- ------------------------------------------------ end of BUTTONS_mobile --->
 
-<!--
-<div class="RefAccu-widget">
-  <input type="number" bind:value={n} />
 
-  <button on:click={() => addValue(+n)}>
-    Add
-  </button>
+
+<!-- ----------------------------------------------------- OUTPUT AREA  ---- -->
+
+<!-- ----------------------------------------------------- Input  ---- -->
+
+  {#if inputValue}
+    <div class="d-flex w-100 px-1">
+      <div class="w-100 p-3 border rounded bg-white shadow-sm">
+        <div><strong class="text-muted small text-uppercase me-2">OSIS:</strong>
+          {@html wrapResult}</div>
+        <div><strong class="text-muted small text-uppercase me-2">hsub:</strong>
+          {@html hsubArrayString}</div>
+<!-- this is refUI portion         --> 
+        <div><strong class="text-muted small text-uppercase me-2">store:</strong>
+          {@html JSON.stringify($RefAccu.items)}</div>
+      </div>
+    </div>
+  {/if}
+
+<!-- ----------------------------------------------------- Viewer  ---- -->
+
+<div class="RefAccu-widget">
+<!--  <input type="number" bind:value={n} />
+//  <button on:click={() => addValue(+n)}>
+//    Add
+//  </button>
+-->
 
   <button on:click={resetRefAccu}>
     Reset
@@ -136,23 +158,6 @@
     {/each}
   </ul>
 </div>
--->
-
-<!-- ----------------------------------------------------- OUTPUT AREA  ---- -->
-
-  {#if inputValue}
-    <div class="d-flex w-100 px-1">
-      <div class="w-100 p-3 border rounded bg-white shadow-sm">
-        <div><strong class="text-muted small text-uppercase me-2">OSIS:</strong>
-          {@html wrapResult}</div>
-        <div><strong class="text-muted small text-uppercase me-2">hsub:</strong>
-          {@html hsubResult}</div>
-<!-- this is refUI portion         --> 
-        <div><strong class="text-muted small text-uppercase me-2">store:</strong>
-          {@html JSON.stringify($RefAccu.items)}</div>
-      </div>
-    </div>
-  {/if}
 
 <!-- --------------------------------------------------------- STYLING  ---- -->
 

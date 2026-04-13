@@ -13,36 +13,40 @@
     <lastmod>2026-03-12T19:19:02.117Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/SvelteActionBar.html</loc>
-    <lastmod>2026-03-12T19:42:09.372Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/VerseWorkflow.html</loc>
+    <lastmod>2026-04-03T18:15:30.278Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/NoteParser.html</loc>
-    <lastmod>2026-03-28T07:25:19.516Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/Historic-Circle-example.html</loc>
-    <lastmod>2026-03-12T19:21:29.764Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/BcvReader.html</loc>
-    <lastmod>2026-03-18T14:49:45.308Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/about.html</loc>
-    <lastmod>2026-03-11T11:53:07.560Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/OsisParserUI.html</loc>
-    <lastmod>2026-03-31T12:04:41.859Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/RefApp.html</loc>
+    <lastmod>2026-03-18T17:19:26.237Z</lastmod>
   </url>
   <url>
     <loc>https://your-website-url.example.com/posts/OsisParser.html</loc>
     <lastmod>2026-03-27T19:14:39.879Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/RefApp.html</loc>
-    <lastmod>2026-03-18T17:19:26.237Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/OsisParserUI.html</loc>
+    <lastmod>2026-04-03T20:36:19.979Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/about.html</loc>
+    <lastmod>2026-03-11T11:53:07.560Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/BcvReader.html</loc>
+    <lastmod>2026-04-03T18:06:20.792Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/Historic-Circle-example.html</loc>
+    <lastmod>2026-03-12T19:21:29.764Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/NoteParser.html</loc>
+    <lastmod>2026-03-28T07:25:19.516Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/SvelteActionBar.html</loc>
+    <lastmod>2026-03-12T19:42:09.372Z</lastmod>
   </url>
   <url>
     <loc>https://your-website-url.example.com/posts/BootstrapButtonCard.html</loc>

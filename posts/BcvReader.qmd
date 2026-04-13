@@ -20,7 +20,7 @@ font-size: 1.5rem; /* Adjust font size */
 }
 </style>
 
-> strict OSIS output for biblegateway.
+> strict OSIS output for biblegateway. NB: rather use HSUB_RefArray element for fetch via hsubre
 
 ```{ojs}
 //| echo: false

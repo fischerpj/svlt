@@ -10,7 +10,7 @@
 <atom:link href="https://your-website-url.example.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>A blog built with Quarto</description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Tue, 31 Mar 2026 12:29:29 GMT</lastBuildDate>
+<lastBuildDate>Mon, 13 Apr 2026 09:44:03 GMT</lastBuildDate>
 <item>
   <title>BcvReader</title>
   <link>https://your-website-url.example.com/posts/BcvReader.html</link>
@@ -33,7 +33,7 @@ font-size: 1.5rem; /* Adjust font size */
 }
 </style>
 <blockquote class="blockquote">
-<p>strict OSIS output for biblegateway.</p>
+<p>strict OSIS output for biblegateway. NB: rather use HSUB_RefArray element for fetch via hsubre</p>
 </blockquote>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="26" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 25;"><span id="cb1-26">myActionBar <span class="op" style="color: #5E5E5E;
@@ -54,7 +54,7 @@ font-style: inherit;">`&lt;my-bcvreader&gt;&lt;/my-bcvreader&gt;`</span></span><
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/BcvReader.html</guid>
-  <pubDate>Tue, 31 Mar 2026 12:29:29 GMT</pubDate>
+  <pubDate>Mon, 13 Apr 2026 09:44:03 GMT</pubDate>
 </item>
 <item>
   <title>OsisParserUI</title>
@@ -78,7 +78,7 @@ font-size: 1.5rem; /* Adjust font size */
 }
 </style>
 <blockquote class="blockquote">
-<p>strict idempotent OSIS conversion - <em>Intra component communication via windows.store</em>.</p>
+<p>strict idempotent OSIS conversion - <em>Intra component communication via windows.store</em>. TODO: H-store vs O-store</p>
 </blockquote>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="26" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 25;"><span id="cb1-26">myOsisParser <span class="op" style="color: #5E5E5E;
@@ -99,7 +99,7 @@ font-style: inherit;">`&lt;my-osisparserui&gt;&lt;/my-osisparserui&gt;`</span></
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/OsisParserUI.html</guid>
-  <pubDate>Tue, 31 Mar 2026 12:29:29 GMT</pubDate>
+  <pubDate>Mon, 13 Apr 2026 09:44:03 GMT</pubDate>
 </item>
 <item>
   <title>historic quarto-svelte example</title>
@@ -262,7 +262,7 @@ font-style: inherit;">=</span> selectedDataset</span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/Historic-Circle-example.html</guid>
-  <pubDate>Tue, 31 Mar 2026 12:29:29 GMT</pubDate>
+  <pubDate>Mon, 13 Apr 2026 09:44:03 GMT</pubDate>
 </item>
 <item>
   <title>OsisParser</title>
@@ -307,7 +307,7 @@ font-style: inherit;">`&lt;my-osisparser&gt;&lt;/my-osisparser&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/OsisParser.html</guid>
-  <pubDate>Tue, 31 Mar 2026 12:29:29 GMT</pubDate>
+  <pubDate>Mon, 13 Apr 2026 09:44:03 GMT</pubDate>
 </item>
 <item>
   <title>NoteParser</title>
@@ -352,7 +352,7 @@ font-style: inherit;">`&lt;my-noteparser&gt;&lt;/my-noteparser&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/NoteParser.html</guid>
-  <pubDate>Tue, 31 Mar 2026 12:29:29 GMT</pubDate>
+  <pubDate>Mon, 13 Apr 2026 09:44:03 GMT</pubDate>
 </item>
 <item>
   <title>RefApp</title>
@@ -400,7 +400,7 @@ font-style: inherit;">`&lt;my-refdata&gt;&lt;/my-refdata&gt;`</span></span></cod
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/RefApp.html</guid>
-  <pubDate>Tue, 31 Mar 2026 12:29:29 GMT</pubDate>
+  <pubDate>Mon, 13 Apr 2026 09:44:03 GMT</pubDate>
 </item>
 <item>
   <title>SvelteActionBar</title>
@@ -445,7 +445,51 @@ font-style: inherit;">`&lt;my-actionbar2&gt;&lt;/my-actionbar2&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/SvelteActionBar.html</guid>
-  <pubDate>Tue, 31 Mar 2026 12:29:29 GMT</pubDate>
+  <pubDate>Mon, 13 Apr 2026 09:44:03 GMT</pubDate>
+</item>
+<item>
+  <title>Verse Workflow</title>
+  <link>https://your-website-url.example.com/posts/VerseWorkflow.html</link>
+  <description><![CDATA[ 
+<script src="../components/OsisParserUI.js" type="module"></script>
+
+
+
+
+
+<blockquote class="blockquote">
+<p>For Bible Reference From UserInput To Display</p>
+</blockquote>
+<ol type="1">
+<li>UserInput is Free Text Transformed to strict OSIS Then as_is_passthrough to service worker fetching. =&gt; parse.hsub_entities()</li>
+</ol>
+<ul>
+<li><p>UserInput accepts free text as does bcv_parser</p></li>
+<li><p>Parsing delivers Strict Idempotent String like (Gen.1.2 SG21); (Gal.2.8,Phil.4.6 KJV)</p></li>
+<li><p>and HSUB_RefArray aka hsub_entities() like [“Gen.1.2!SG21”,“Gal.2.8,Phil.4.6!KJV”] with elements acceptable to hsubre service worker.</p></li>
+<li><p>URL service worker</p></li>
+<li><p>where to put fetch ?</p></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="23" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 22;"><span id="cb1-23">myOsisParser <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;my-osisparserui&gt;&lt;/my-osisparserui&gt;`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <guid>https://your-website-url.example.com/posts/VerseWorkflow.html</guid>
+  <pubDate>Mon, 13 Apr 2026 09:44:03 GMT</pubDate>
 </item>
 <item>
   <title>Bootstrap Button Card</title>
@@ -531,14 +575,14 @@ font-style: inherit;">`&lt;my-actionbar2&gt;&lt;/my-actionbar2&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/BootstrapButtonCard.html</guid>
-  <pubDate>Tue, 31 Mar 2026 12:29:29 GMT</pubDate>
+  <pubDate>Mon, 13 Apr 2026 09:44:03 GMT</pubDate>
 </item>
 <item>
   <title></title>
   <link>https://your-website-url.example.com/posts/QuartoDashboard.html</link>
   <description><![CDATA[ undefined ]]></description>
   <guid>https://your-website-url.example.com/posts/QuartoDashboard.html</guid>
-  <pubDate>Tue, 31 Mar 2026 12:29:29 GMT</pubDate>
+  <pubDate>Mon, 13 Apr 2026 09:44:03 GMT</pubDate>
 </item>
 <item>
   <title>SharedSvelteCounter</title>
@@ -589,7 +633,7 @@ font-style: inherit;">`&lt;my-componentb&gt;&lt;/my-componentb&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/SharedSvelteCounter.html</guid>
-  <pubDate>Tue, 31 Mar 2026 12:29:29 GMT</pubDate>
+  <pubDate>Mon, 13 Apr 2026 09:44:03 GMT</pubDate>
 </item>
 <item>
   <title>ButtonsBuildUp</title>
@@ -626,7 +670,7 @@ HTML Output: <span id="h-out"><em>placeholder output area</em></span>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/ButtonsBuildUp.html</guid>
-  <pubDate>Tue, 31 Mar 2026 12:29:29 GMT</pubDate>
+  <pubDate>Mon, 13 Apr 2026 09:44:03 GMT</pubDate>
 </item>
 <item>
   <title>ButtonsMobile</title>
@@ -722,7 +766,7 @@ HTML Output: <span id="h-out"><em>placeholder output area</em></span>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/ButtonsMobile.html</guid>
-  <pubDate>Tue, 31 Mar 2026 12:29:29 GMT</pubDate>
+  <pubDate>Mon, 13 Apr 2026 09:44:03 GMT</pubDate>
 </item>
 </channel>
 </rss>

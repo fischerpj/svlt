@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BcvReader – svlt</title>
+<title>Verse Workflow – svlt</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -137,7 +137,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">BcvReader</h1>
+      <h1 class="title">Verse Workflow</h1>
                       </div>
   </div>
     
@@ -156,28 +156,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
-<script src="../components/BcvReader.js" type="module"></script>
+<script src="../components/OsisParserUI.js" type="module"></script>
 
 
 
 
 
-<style>
-/* Adjust the height of the title block banner */
-quarto-title-banner {
-height: 100px; /* Increase or decrease as needed */
-}
-
-/* Adjust the font size of the title */
-#title-block-header h3 {
-font-size: 1.5rem; /* Adjust font size */
-}
-</style>
 <blockquote class="blockquote">
-<p>strict OSIS output for biblegateway. NB: rather use HSUB_RefArray element for fetch via hsubre</p>
+<p>For Bible Reference From UserInput To Display</p>
 </blockquote>
+<ol type="1">
+<li>UserInput is Free Text Transformed to strict OSIS Then as_is_passthrough to service worker fetching. =&gt; parse.hsub_entities()</li>
+</ol>
+<ul>
+<li><p>UserInput accepts free text as does bcv_parser</p></li>
+<li><p>Parsing delivers Strict Idempotent String like (Gen.1.2 SG21); (Gal.2.8,Phil.4.6 KJV)</p></li>
+<li><p>and HSUB_RefArray aka hsub_entities() like [“Gen.1.2!SG21”,“Gal.2.8,Phil.4.6!KJV”] with elements acceptable to hsubre service worker.</p></li>
+<li><p>URL service worker</p></li>
+<li><p>where to put fetch ?</p></li>
+</ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="26" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 25;"><span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>myActionBar <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;my-bcvreader&gt;&lt;/my-bcvreader&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="23" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 22;"><span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>myOsisParser <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;my-osisparserui&gt;&lt;/my-osisparserui&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="declaration">
 
@@ -189,7 +188,7 @@ font-size: 1.5rem; /* Adjust font size */
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Im15QWN0aW9uQmFyID0gaHRtbGA8bXktYmN2cmVhZGVyPjwvbXktYmN2cmVhZGVyPmBcbiJ9XX0=
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Im15T3Npc1BhcnNlciA9IGh0bWxgPG15LW9zaXNwYXJzZXJ1aT48L215LW9zaXNwYXJzZXJ1aT5gXG4ifV19
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
