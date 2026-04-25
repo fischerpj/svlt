@@ -10,7 +10,7 @@
 <atom:link href="https://your-website-url.example.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>A blog built with Quarto</description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Sat, 25 Apr 2026 19:03:47 GMT</lastBuildDate>
+<lastBuildDate>Sat, 25 Apr 2026 19:06:49 GMT</lastBuildDate>
 <item>
   <title>BcvReader</title>
   <link>https://your-website-url.example.com/posts/BcvReader.html</link>
@@ -54,7 +54,7 @@ font-style: inherit;">`&lt;my-bcvreader&gt;&lt;/my-bcvreader&gt;`</span></span><
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/BcvReader.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title>OsisParserUI</title>
@@ -99,7 +99,7 @@ font-style: inherit;">`&lt;my-osisparserui&gt;&lt;/my-osisparserui&gt;`</span></
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/OsisParserUI.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title>historic quarto-svelte example</title>
@@ -262,7 +262,7 @@ font-style: inherit;">=</span> selectedDataset</span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/Historic-Circle-example.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title>OjsUi</title>
@@ -531,7 +531,7 @@ font-style: inherit;">;</span></span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/OjsUi.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title>OsisParser</title>
@@ -576,7 +576,7 @@ font-style: inherit;">`&lt;my-osisparser&gt;&lt;/my-osisparser&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/OsisParser.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title>MVC_ojs</title>
@@ -1017,7 +1017,7 @@ font-style: inherit;">&lt;/div&gt;`</span></span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/mvc_ojs.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title>BsUi</title>
@@ -1501,7 +1501,7 @@ font-style: inherit;">current</span></span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/BsUi.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title>NoteParser</title>
@@ -1546,7 +1546,7 @@ font-style: inherit;">`&lt;my-noteparser&gt;&lt;/my-noteparser&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/NoteParser.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title>RefApp</title>
@@ -1594,7 +1594,7 @@ font-style: inherit;">`&lt;my-refdata&gt;&lt;/my-refdata&gt;`</span></span></cod
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/RefApp.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title>SvelteActionBar</title>
@@ -1639,7 +1639,7 @@ font-style: inherit;">`&lt;my-actionbar2&gt;&lt;/my-actionbar2&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/SvelteActionBar.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title>Verse Workflow</title>
@@ -1683,7 +1683,7 @@ font-style: inherit;">`&lt;my-osisparserui&gt;&lt;/my-osisparserui&gt;`</span></
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/VerseWorkflow.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title>Bootstrap Button Card</title>
@@ -1769,14 +1769,14 @@ font-style: inherit;">`&lt;my-osisparserui&gt;&lt;/my-osisparserui&gt;`</span></
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/BootstrapButtonCard.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title></title>
   <link>https://your-website-url.example.com/posts/QuartoDashboard.html</link>
   <description><![CDATA[ undefined ]]></description>
   <guid>https://your-website-url.example.com/posts/QuartoDashboard.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title>ObjectFactory</title>
@@ -2378,7 +2378,7 @@ font-style: inherit;">;</span></span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/ObjFactory.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title>OJS-Group-Styling</title>
@@ -2443,7 +2443,7 @@ font-style: inherit;">"Add"</span></span>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/OjsBarStyling.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title>SharedSvelteCounter</title>
@@ -2494,7 +2494,7 @@ font-style: inherit;">`&lt;my-componentb&gt;&lt;/my-componentb&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/SharedSvelteCounter.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title>OJS-Restyling</title>
@@ -2945,7 +2945,7 @@ font-style: inherit;">;</span></span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/OjsRestyling.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title>ButtonsBuildUp</title>
@@ -3140,7 +3140,7 @@ font-style: inherit;">;</span></span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/ButtonsBuildUp.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title>ButtonsMobile</title>
@@ -3236,7 +3236,7 @@ font-style: inherit;">;</span></span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/ButtonsMobile.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 <item>
   <title>ButtonsFactory</title>
@@ -3362,7 +3362,7 @@ font-style: inherit;">;</span></span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/ButtonsFactory.html</guid>
-  <pubDate>Sat, 25 Apr 2026 19:03:47 GMT</pubDate>
+  <pubDate>Sat, 25 Apr 2026 19:06:49 GMT</pubDate>
 </item>
 </channel>
 </rss>
