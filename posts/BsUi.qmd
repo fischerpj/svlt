@@ -5,7 +5,7 @@ execute:
   echo: false
 ---
 
-> FIX OK .current and .accu OK restyle with queueMicrotask and MutationObserver
+> FIX OK .current, .accu OK restyle with queueMicrotask and MutationObserver OK transform
 
 ::: {#inputDiv}
 <!-- inputDiv is considered Void-->
@@ -73,4 +73,23 @@ viewof ig3 = new bsInputgroup3({
 ig3.current
 
 ig3
+```
+
+bsInputgroupTransform
+
+```{ojs}
+import { bsInputgroupTransform } from "./bsui.js"
+
+viewof ig_tfr = new bsInputgroupTransform({
+  placeholder: "Hi Type something tfrm…",
+  prefixHTML: '<i class="bi bi-search"></i>',
+  addLabel: "Add",
+  resetLabel: "RAZ",
+  clipLabel: "Clip",
+  variant: "primary"
+}).node()
+
+ig_tfr.current
+
+ig_tfr
 ```
