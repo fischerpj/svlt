@@ -1,0 +1,123 @@
+---
+title: ObjectFactory
+subtitle: "keept'em slim"
+execute:
+  echo: false
+---
+
+> Inspired by Svelte ButtonBar & verseRun: todo: style it add input
+
+::: {#inputDiv}
+<!-- inputDiv is considered Void-->
+:::
+
+> Todo: inlne row + Styling à la svlete
+<hr/>
+
+```{ojs}
+obj = ({
+  first: "Ada",
+  last: "Lovelace",
+  age: 36
+})
+```
+
+
+```{ojs}
+import {objectInput} from "./obj_ojs.js"
+
+viewof person = objectInput(obj);
+
+person
+
+```
+
+
+```{ojs}
+
+import { bootstrapNumberInput } from "./obj_ojs.js"
+
+viewof price = bootstrapNumberInput({
+  value: 10,
+  min: 0,
+  prefix: "€"
+})
+
+price
+
+
+```
+
+```{ojs}
+import { bootstrapAccumulatingTextInput } from "./obj_ojs.js"
+
+viewof items = bootstrapAccumulatingTextInput({
+  prefix: "➕",
+  placeholder: "Type something",
+  addLabel: "Add",
+  razLabel: "RAZ",
+  clipLabel: "Clip"
+})
+
+items
+```
+
+
+```{ojs}
+import { bootstrapAccumulatingTextInputBar } from "./obj_ojs.js"
+
+viewof itemsbar = bootstrapAccumulatingTextInputBar({
+  prefixHTML: "<i class='bi bi-search'></i>",
+  placeholder: "TextInputBar",
+  inputClass: "form-control",
+  addLabel: "Add",
+  razLabel: "RAZ",
+  clipLabel: "Clip"
+})
+
+itemsbar
+```
+
+```{ojs}
+import { bootstrapAccumulatingTextInputBar2 } from "./obj_ojs.js"
+
+viewof itemsbar2 = bootstrapAccumulatingTextInput({
+  prefixHTML: "<i class='bi bi-search'></i>",
+  placeholder: "Type something",
+  inputClass: "my-custom-input",
+  addLabel: "Add",
+  razLabel: "RAZ",
+  clipLabel: "Clip"
+})
+
+itemsbar2
+```
+
+
+```{ojs}
+import { bootstrapAccumulatingTextInput2 } from "./obj_ojs.js"
+
+viewof items2 = bootstrapAccumulatingTextInput2({
+  prefixHTML: "<i class='bi bi-search'></i>",
+  placeholder: "TextInput2",
+  addLabel: "Add",
+  razLabel: "RAZ",
+  clipLabel: "Clip"
+})
+
+items2
+
+items2.map((x, i) => `${i+1}. ${x}`)
+
+
+```
+
+```{ojs}
+restyling = {
+  // Very Great Restyling Side Effects
+const mib =   viewof items2.querySelectorAll('button.btn-quarto');
+if (mib) {
+    mib.forEach(btn => { btn.classList.remove("btn-quarto")});
+  }
+};
+```

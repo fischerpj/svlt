@@ -1,0 +1,89 @@
+---
+title: OJS-Restyling
+---
+
+> OJS Inputs are restyled
+
+### OJS Inputs.text
+
+```{ojs}
+viewof styledBtn2 = Inputs.button("Submit");
+```
+
+### OJS Inputs.button
+
+```{ojs}
+viewof mytext = Inputs.text({
+    placeholder: "say it",
+    value: ""
+    });
+
+html`<div>${viewof mytext}</div>`;
+
+html`<input type="text" class="form-control">`
+
+```
+
+### now Restyled
+
+```{ojs}
+restyling = {
+  // Very Great Restyling Side Effects
+  const mib = viewof styledBtn2.querySelector('button.btn-quarto');
+  if (mib) {
+    mib.classList.remove('btn-quarto');
+    mib.classList.add("btn", "btn-success", "btn-lg"); 
+  }
+};
+
+
+```
+
+```{ojs}
+// --- Reusable Bootstrap Input Group Factory --- //
+
+function InputGroup({ placeholder = "Type…", button = "Go" } = {}) {
+  // 1. Create the input
+  const input = html`<input type="text" class="form-control" placeholder="${placeholder}">`;
+
+  // 2. Create the button
+  const btn = html`<button class="btn btn-primary">${button}</button>`;
+
+  // 3. Create the input-group wrapper
+  const group = html`<div class="input-group"></div>`;
+  group.append(input, btn);
+
+  // 4. Reactive value
+  group.value = "";
+
+  // 5. Emit reactive updates on button click
+  btn.addEventListener("click", () => {
+    group.value = input.value;
+    group.dispatchEvent(new CustomEvent("input"));
+  });
+
+  return group;
+}
+
+
+```
+
+```{ojs}
+viewof myInput = InputGroup({ placeholder: "Search…", button: "Run" })
+
+myInput
+```
+
+```{ojs}
+restyling2 = {
+  // Very Great Restyling Side Effects
+  const mib = viewof myInput.querySelector('button.btn-quarto');
+  if (mib) {
+    mib.classList.remove('btn-quarto');
+    mib.classList.add("btn", "btn-success"); 
+  }
+};
+
+
+```
+

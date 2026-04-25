@@ -1,0 +1,20 @@
+---
+title: OJS-Group-Styling
+execute:
+  echo: false
+---
+
+> OJS Input-Group is restyled OK
+
+```{ojs}
+import { InputGroup } from "./ojsclass.js"
+
+viewof myInput = InputGroup({
+  placeholder: "Enter item…",
+  button: "Add"
+})
+
+
+```
+
+

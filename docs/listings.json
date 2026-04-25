@@ -5,16 +5,23 @@
       "/posts/BcvReader.html",
       "/posts/OsisParserUI.html",
       "/posts/Historic-Circle-example.html",
+      "/posts/OjsUi.html",
       "/posts/OsisParser.html",
+      "/posts/mvc_ojs.html",
+      "/posts/BsUi.html",
       "/posts/NoteParser.html",
       "/posts/RefApp.html",
       "/posts/SvelteActionBar.html",
       "/posts/VerseWorkflow.html",
       "/posts/BootstrapButtonCard.html",
       "/posts/QuartoDashboard.html",
+      "/posts/ObjFactory.html",
+      "/posts/OjsBarStyling.html",
       "/posts/SharedSvelteCounter.html",
+      "/posts/OjsRestyling.html",
       "/posts/ButtonsBuildUp.html",
-      "/posts/ButtonsMobile.html"
+      "/posts/ButtonsMobile.html",
+      "/posts/ButtonsFactory.html"
     ]
   }
 ]

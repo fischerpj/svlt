@@ -13,6 +13,9 @@
   
   // 1. Initialize the parser
   const bcv = new bcv_parser(lang);
+  // pass it into proprietary ParserRef
+  const parser = new ParserRef(bcv);    
+  
   
   // 2. Configure strategies to prevent skipping
   bcv.set_options({
@@ -49,7 +52,7 @@
   * 3. Reactive Statement
   * This re-runs automatically whenever 'userInput' changes.
   */
-  $: osisResult = bcv.parse(userInput).osis();
+  $: osisResult = parser.parse(userInput).osis_idempotent();
 
   /* REACTIVE LOGIC: 
     Whenever 'userInput' changes, clear the old timer and start a new one.

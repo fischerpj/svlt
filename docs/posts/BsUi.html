@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ButtonsBuildUp – svlt</title>
+<title>BsUi – svlt</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -137,8 +137,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">ButtonsBuildUp</h1>
-            <p class="subtitle lead">Elaboration Ladder</p>
+      <h1 class="title">BsUi</h1>
+            <p class="subtitle lead">emulat’em</p>
                       </div>
   </div>
     
@@ -163,53 +163,56 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <blockquote class="blockquote">
-<p>Buttons from Naked to Bootstrap styling</p>
+<p>FIX OK .current and .accu OK restyle with queueMicrotask and MutationObserver</p>
 </blockquote>
-<blockquote class="blockquote">
-<p>Make OJS Inputs and Reactive Restyling !</p>
-</blockquote>
-<form class="oi-3a86ea">
-<button class="btn btn-warning">
-Store
-</button>
-</form>
-<button class="btn btn-success">
-Store
-</button>
-<p>&lt;form class=“oi-3a86ea”&gt;&lt;button class=“btn btn-warning”&gt;Store&lt;/button&gt;&lt;/form&gt;</p>
-<section id="html-buttons-naked-no-attributes-no-styling" class="level3">
-<h3 class="anchored" data-anchor-id="html-buttons-naked-no-attributes-no-styling">HTML Buttons Naked (no-attributes, no-styling)</h3>
-<p><label for="h-in">HTML Input:</label> <input type="text" id="h-in"> <button id="h-btn">HTML Button</button></p>
-</section>
-<section id="html-buttons-with-.btn.btn-primary-yields-bootstrap-styling" class="level3">
-<h3 class="anchored" data-anchor-id="html-buttons-with-.btn.btn-primary-yields-bootstrap-styling">HTML Buttons with .btn.btn-primary (yields Bootstrap styling)</h3>
-<div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
-<p><button class="btn btn-primary">Primary</button> <button class="btn btn-secondary">Secondary</button> <button class="btn btn-success">Success</button> <button class="btn btn-danger">Danger</button> <button class="btn btn-warning">Warning</button> <button class="btn btn-info">Info</button> <button class="btn btn-light">Light</button> <button class="btn btn-dark">Dark</button> <button class="btn btn-link">Link</button></p>
+<div id="inputDiv">
+<!-- inputDiv is considered Void-->
 </div>
-<p>
-HTML Output: <span id="h-out"><em>placeholder output area</em></span>
-</p>
-</section>
-<section id="ojs-input.button" class="level3">
-<h3 class="anchored" data-anchor-id="ojs-input.button">OJS Input.button</h3>
+<p>// bsButton: Bootstrap-styled button, OJS-compatible, written as plain class javascript.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" data-startfrom="43" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 42;"><span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>viewof myButton <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">button</span>(<span class="st">"Clip"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="18" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 17;"><span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> {bsButton} <span class="im">from</span> <span class="st">"./bsui.js"</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>viewof run <span class="op">=</span> <span class="kw">new</span> <span class="fu">bsButton</span>({</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"RAZ"</span><span class="op">,</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="dt">variant</span><span class="op">:</span> <span class="st">"warning"</span><span class="op">,</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> { <span class="dt">action</span><span class="op">:</span> <span class="st">"run"</span> }</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>})<span class="op">.</span><span class="fu">node</span>()</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>run</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
-<div id="ojs-cell-1" data-nodetype="declaration">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<hr>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" data-startfrom="48" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 47;"><span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>viewof styledBtn <span class="op">=</span> {</span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> btn <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">button</span>(<span class="st">"Submit"</span>)<span class="op">;</span></span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Find the button element inside the generated div and add classes</span></span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="co">//  const inputElement = btn.querySelector("button");</span></span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="co">//  inputElement.classList.add("btn", "btn-success", "btn-lg"); </span></span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> btn<span class="op">;</span></span>
-<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>viewof styledBtn2 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">button</span>(<span class="st">"Submit"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="32" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 31;"><span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { bsInput } <span class="im">from</span> <span class="st">"./bsui.js"</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>viewof name <span class="op">=</span> <span class="kw">new</span> <span class="fu">bsInput</span>({</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Your name"</span><span class="op">,</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"Type here…"</span><span class="op">,</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>  <span class="dt">description</span><span class="op">:</span> <span class="st">"bsInput: Bootstrap-styled text input, OJS-compatible as plain js class"</span><span class="op">,</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="st">"Pier"</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>})<span class="op">.</span><span class="fu">node</span>()</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>name</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-2-1" data-nodetype="declaration">
@@ -224,29 +227,104 @@ HTML Output: <span id="h-out"><em>placeholder output area</em></span>
 </div>
 </div>
 </div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="48" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 47;"><span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { bsInputgroup } <span class="im">from</span> <span class="st">"./bsui.js"</span></span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>viewof ig <span class="op">=</span> <span class="kw">new</span> <span class="fu">bsInputgroup</span>({</span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a>  <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"Type something…"</span><span class="op">,</span></span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a>  <span class="dt">buttonLabel</span><span class="op">:</span> <span class="st">"Accumulate"</span><span class="op">,</span></span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a>  <span class="dt">variant</span><span class="op">:</span> <span class="st">"success"</span></span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a>})<span class="op">.</span><span class="fu">node</span>()</span>
+<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a>ig<span class="op">.</span><span class="at">current</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="58" data-source-offset="-180"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 57;"><span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>ig</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-4" data-nodetype="expression">
+
+</div>
+</div>
+</div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" data-startfrom="59" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 58;"><span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a>restyling <span class="op">=</span> {</span>
-<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Very Great Restyling Side Effects</span></span>
-<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> mib <span class="op">=</span> viewof styledBtn2<span class="op">.</span><span class="fu">querySelector</span>(<span class="st">'button.btn-quarto'</span>)<span class="op">;</span></span>
-<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (mib) {</span>
-<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a>    mib<span class="op">.</span><span class="at">classList</span><span class="op">.</span><span class="fu">remove</span>(<span class="st">'btn-quarto'</span>)<span class="op">;</span></span>
-<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a>    mib<span class="op">.</span><span class="at">classList</span><span class="op">.</span><span class="fu">add</span>(<span class="st">"btn"</span><span class="op">,</span> <span class="st">"btn-success"</span><span class="op">,</span> <span class="st">"btn-lg"</span>)<span class="op">;</span> </span>
-<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="62" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 61;"><span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { bsInputgroup3 } <span class="im">from</span> <span class="st">"./bsui.js"</span></span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a>viewof ig3 <span class="op">=</span> <span class="kw">new</span> <span class="fu">bsInputgroup3</span>({</span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a>  <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"Hi Type something3…"</span><span class="op">,</span></span>
+<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a>  <span class="dt">prefixHTML</span><span class="op">:</span> <span class="st">'&lt;i class="bi bi-search"&gt;&lt;/i&gt;'</span><span class="op">,</span></span>
+<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a>  <span class="dt">addLabel</span><span class="op">:</span> <span class="st">"Add"</span><span class="op">,</span></span>
+<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a>  <span class="dt">resetLabel</span><span class="op">:</span> <span class="st">"RAZ"</span><span class="op">,</span></span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a>  <span class="dt">clipLabel</span><span class="op">:</span> <span class="st">"Clip"</span><span class="op">,</span></span>
+<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a>  <span class="dt">variant</span><span class="op">:</span> <span class="st">"primary"</span></span>
+<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a>})<span class="op">.</span><span class="fu">node</span>()</span>
+<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a>ig3<span class="op">.</span><span class="at">current</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
-<div id="ojs-cell-3" data-nodetype="declaration">
+<div>
+<div id="ojs-cell-4-1" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-4-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-4-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="75" data-source-offset="-266"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 74;"><span id="cb6-75"><a href="#cb6-75" aria-hidden="true" tabindex="-1"></a>ig3</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-4-4" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBteUJ1dHRvbiA9IElucHV0cy5idXR0b24oXCJDbGlwXCIpO1xuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIHN0eWxlZEJ0biA9IHtcbiAgY29uc3QgYnRuID0gSW5wdXRzLmJ1dHRvbihcIlN1Ym1pdFwiKTtcbiAgLy8gRmluZCB0aGUgYnV0dG9uIGVsZW1lbnQgaW5zaWRlIHRoZSBnZW5lcmF0ZWQgZGl2IGFuZCBhZGQgY2xhc3Nlc1xuLy8gIGNvbnN0IGlucHV0RWxlbWVudCA9IGJ0bi5xdWVyeVNlbGVjdG9yKFwiYnV0dG9uXCIpO1xuLy8gIGlucHV0RWxlbWVudC5jbGFzc0xpc3QuYWRkKFwiYnRuXCIsIFwiYnRuLXN1Y2Nlc3NcIiwgXCJidG4tbGdcIik7IFxuICByZXR1cm4gYnRuO1xufVxuXG52aWV3b2Ygc3R5bGVkQnRuMiA9IElucHV0cy5idXR0b24oXCJTdWJtaXRcIik7XG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJyZXN0eWxpbmcgPSB7XG4gIC8vIFZlcnkgR3JlYXQgUmVzdHlsaW5nIFNpZGUgRWZmZWN0c1xuICBjb25zdCBtaWIgPSB2aWV3b2Ygc3R5bGVkQnRuMi5xdWVyeVNlbGVjdG9yKCdidXR0b24uYnRuLXF1YXJ0bycpO1xuICBpZiAobWliKSB7XG4gICAgbWliLmNsYXNzTGlzdC5yZW1vdmUoJ2J0bi1xdWFydG8nKTtcbiAgICBtaWIuY2xhc3NMaXN0LmFkZChcImJ0blwiLCBcImJ0bi1zdWNjZXNzXCIsIFwiYnRuLWxnXCIpOyBcbiAgfVxufTtcblxuXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ215QnV0dG9uJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3N0eWxlZEJ0bicpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzdHlsZWRCdG4yJykifV19
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImltcG9ydCB7YnNCdXR0b259IGZyb20gXCIuL2JzdWkuanNcIlxuXG52aWV3b2YgcnVuID0gbmV3IGJzQnV0dG9uKHtcbiAgbGFiZWw6IFwiUkFaXCIsXG4gIHZhcmlhbnQ6IFwid2FybmluZ1wiLFxuICB2YWx1ZTogeyBhY3Rpb246IFwicnVuXCIgfVxufSkubm9kZSgpXG5cbnJ1blxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiaW1wb3J0IHsgYnNJbnB1dCB9IGZyb20gXCIuL2JzdWkuanNcIlxuXG52aWV3b2YgbmFtZSA9IG5ldyBic0lucHV0KHtcbiAgbGFiZWw6IFwiWW91ciBuYW1lXCIsXG4gIHBsYWNlaG9sZGVyOiBcIlR5cGUgaGVyZeKAplwiLFxuICBkZXNjcmlwdGlvbjogXCJic0lucHV0OiBCb290c3RyYXAtc3R5bGVkIHRleHQgaW5wdXQsIE9KUy1jb21wYXRpYmxlIGFzIHBsYWluIGpzIGNsYXNzXCIsXG4gIHZhbHVlOiBcIlBpZXJcIlxufSkubm9kZSgpXG5cbm5hbWVcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImltcG9ydCB7IGJzSW5wdXRncm91cCB9IGZyb20gXCIuL2JzdWkuanNcIlxuXG52aWV3b2YgaWcgPSBuZXcgYnNJbnB1dGdyb3VwKHtcbiAgcGxhY2Vob2xkZXI6IFwiVHlwZSBzb21ldGhpbmfigKZcIixcbiAgYnV0dG9uTGFiZWw6IFwiQWNjdW11bGF0ZVwiLFxuICB2YXJpYW50OiBcInN1Y2Nlc3NcIlxufSkubm9kZSgpXG5cbmlnLmN1cnJlbnRcblxuaWdcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNCIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImltcG9ydCB7IGJzSW5wdXRncm91cDMgfSBmcm9tIFwiLi9ic3VpLmpzXCJcblxudmlld29mIGlnMyA9IG5ldyBic0lucHV0Z3JvdXAzKHtcbiAgcGxhY2Vob2xkZXI6IFwiSGkgVHlwZSBzb21ldGhpbmcz4oCmXCIsXG4gIHByZWZpeEhUTUw6ICc8aSBjbGFzcz1cImJpIGJpLXNlYXJjaFwiPjwvaT4nLFxuICBhZGRMYWJlbDogXCJBZGRcIixcbiAgcmVzZXRMYWJlbDogXCJSQVpcIixcbiAgY2xpcExhYmVsOiBcIkNsaXBcIixcbiAgdmFyaWFudDogXCJwcmltYXJ5XCJcbn0pLm5vZGUoKVxuXG5pZzMuY3VycmVudFxuXG5pZzNcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgncnVuJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ25hbWUnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnaWcnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnaWczJykifV19
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }

@@ -120,7 +120,7 @@ console.log(parser.parse(myref).osis_and_translations());      // example call
 console.log(parser.parse(myref).osis_array());      // example call
 // ARRAY hsub_refarray
 console.log(parser.parse(myref).hsub_refarray());      // example call
-//console.log(parser.parse(myref).osis_string());      // example call
+console.log(parser.parse(myref).osis_idempotent());      // example call
 
 
 /**

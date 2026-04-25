@@ -1,0 +1,75 @@
+---
+title: MVC_ojs
+subtitle: "keept'em slim"
+execute:
+  echo: false
+---
+
+> How to separate MVC concerns and Master styling
+
+::: {#inputDiv}
+<!-- inputDiv is considered Void-->
+:::
+
+
+
+```{ojs}
+viewof amount = Inputs.range([0, 100], {
+  label: "Amount",
+  step: 1,
+  value: 20
+})
+
+double = amount * 2
+
+
+html`
+  <div class="card p-3 my-3">
+    <h5>Demo</h5>
+    <div class="mb-3">${viewof amount}</div>
+    <p>Double: <strong>${double}</strong></p>
+  </div>
+`  
+```
+
+```{ojs}
+myNumberInput = (label, value = 0) => {
+  const input = Inputs.number({label, value})
+  const box = html`<div class="my-2">${input}</div>`
+  Object.defineProperty(box, "value", {
+    get: () => input.value
+  })
+  box.addEventListener("input", () =>
+    box.dispatchEvent(new Event("input", {bubbles: true}))
+  )
+  return box
+}
+
+viewof qty = myNumberInput("Quantity", 3)
+qty
+
+
+html`<p>Total: ${qty * 10}</p>`
+```
+
+```{ojs}
+InputGroupWithButton = (placeholder = "here", label = "Go", variant = "primary") => {
+  const group = html`<div class="input-group"></div>`
+
+  const input = html`<input class="form-control" placeholder="${placeholder}">`
+
+  // Quarto-safe wrapper around the button
+  const btnWrap = html`<div class="ojs-safe"></div>`
+  const btn = html`<button class="btn btn-${variant}">${label}</button>`
+  btnWrap.append(btn)
+
+  group.append(input, btnWrap)
+  return group
+}
+
+viewof igwb = InputGroupWithButton();
+
+html`<div>Total: ${igwb}</div>`
+
+```
+

@@ -160,5 +160,26 @@
   },
   "posts/VerseWorkflow.qmd": {
     "VerseWorkflow.html": "edfc1603"
+  },
+  "posts/ButtonsFactory.qmd": {
+    "ButtonsFactory.html": "7a859734"
+  },
+  "posts/ObjFactory.qmd": {
+    "ObjFactory.html": "a2a703ab"
+  },
+  "posts/mvc_ojs.qmd": {
+    "mvc_ojs.html": "022862a7"
+  },
+  "posts/OjsRestyling.qmd": {
+    "OjsRestyling.html": "6a4bd444"
+  },
+  "posts/OjsBarStyling.qmd": {
+    "OjsBarStyling.html": "9801fd35"
+  },
+  "posts/OjsUi.qmd": {
+    "OjsUi.html": "a6f27593"
+  },
+  "posts/BsUi.qmd": {
+    "BsUi.html": "20ce1cdb"
   }
 }

@@ -1,0 +1,31 @@
+---
+title: ButtonsFactory
+subtitle: "keept'em slim"
+execute:
+  echo: false
+---
+
+> Inspired by Svelte ButtonBar & verseRun: todo: style it add input
+
+::: {#inputDiv}
+<!-- inputDiv is considered Void-->
+:::
+
+> Todo: inlne row + Styling à la svlete
+<hr/>
+
+```{ojs}
+import {TextInput, ButtonInput, bsTextInput, bsButton, inputWithButton, btnbar} from "./Input_again.js"
+
+viewof bsname = bsTextInput().el;
+bsname;
+
+viewof bsbutton = bsButton().el;
+
+viewof bsRow = inputWithButton();
+```
+
+```{ojs}
+btnbar();
+```
+

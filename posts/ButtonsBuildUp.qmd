@@ -5,7 +5,14 @@ subtitle: "Elaboration Ladder"
 
 > Buttons from Naked to Bootstrap styling
 
+> Make OJS Inputs and Reactive Restyling !
+
 <form class="oi-3a86ea"><button class="btn btn-warning">Store</button></form>
+
+<button class="btn btn-success">Store</button>
+
+&lt;form class="oi-3a86ea"&gt;&lt;button class="btn btn-warning"&gt;Store&lt;/button&gt;&lt;/form&gt;
+
 
 ### HTML Buttons Naked (no-attributes, no-styling)
 
@@ -30,3 +37,35 @@ subtitle: "Elaboration Ladder"
 </div>
 
 <p>HTML Output: <span id="h-out">_placeholder output area_</span></p>
+
+### OJS Input.button
+
+```{ojs}
+viewof myButton = Inputs.button("Clip");
+```
+
+```{ojs}
+viewof styledBtn = {
+  const btn = Inputs.button("Submit");
+  // Find the button element inside the generated div and add classes
+//  const inputElement = btn.querySelector("button");
+//  inputElement.classList.add("btn", "btn-success", "btn-lg"); 
+  return btn;
+}
+
+viewof styledBtn2 = Inputs.button("Submit");
+```
+
+```{ojs}
+restyling = {
+  // Very Great Restyling Side Effects
+  const mib = viewof styledBtn2.querySelector('button.btn-quarto');
+  if (mib) {
+    mib.classList.remove('btn-quarto');
+    mib.classList.add("btn", "btn-success", "btn-lg"); 
+  }
+};
+
+
+```
+

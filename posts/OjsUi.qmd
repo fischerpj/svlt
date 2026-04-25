@@ -1,0 +1,61 @@
+---
+title: OjsUi
+subtitle: "emulat'em"
+execute:
+  echo: false
+---
+
+> FIX KO btn.value is an Object
+
+::: {#inputDiv}
+<!-- inputDiv is considered Void-->
+:::
+
+
+```{ojs}
+viewof myButton = {
+  const btn = html`<button>Click for Data</button>`;
+  btn.onclick = () => {
+    btn.value = { timestamp: Date.now(), user: "Admin", action: "Verify" };
+    btn.dispatchEvent(new CustomEvent("input")); // Tells OJS to update
+  };
+  return btn;
+}
+
+// Access the object in a different cell
+myButton // returns the object: { timestamp: ..., user: "Admin", ... }
+
+```
+
+
+```{ojs}
+import {viewofHello} from "./ojsui.js"
+viewof mihello = viewofHello();
+mihello;
+```
+
+
+```{ojs}
+import {bsButton} from "./ojsui.js"
+
+viewof mibutton = bsButton("HiBs");
+
+html`<pre>${JSON.stringify(mibutton,null,2)}</pre>`
+
+```
+
+
+
+
+```{ojs}
+restyling = {
+  // Very Great Restyling Side Effects
+//const mib =   viewof mibutton.querySelectorAll('button.btn-quarto');
+//if (mib) {
+//    mib.forEach(btn => { btn.classList.remove("btn-quarto")});
+//  }
+//
+0};
+```
+
+

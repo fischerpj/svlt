@@ -4,14 +4,28 @@
     "href": "index.html",
     "title": "svlt",
     "section": "",
-    "text": "BcvReader\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOsisParserUI\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhistoric quarto-svelte example\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOsisParser\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteParser\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRefApp\n\n\n\n\n\ntwo SvelteWidgets sharing a windows.SvelteStore\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSvelteActionBar\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVerse Workflow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBootstrap Button Card\n\n\npure html\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuartoDashboard\n\n\nAuto-Height Card Styling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSharedSvelteCounter\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nButtonsBuildUp\n\n\nElaboration Ladder\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nButtonsMobile\n\n\nkeept’em slim\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "BcvReader\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOsisParserUI\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhistoric quarto-svelte example\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOjsUi\n\n\nemulat’em\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOsisParser\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMVC_ojs\n\n\nkeept’em slim\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBsUi\n\n\nemulat’em\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteParser\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRefApp\n\n\n\n\n\ntwo SvelteWidgets sharing a windows.SvelteStore\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSvelteActionBar\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVerse Workflow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBootstrap Button Card\n\n\npure html\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuartoDashboard\n\n\nAuto-Height Card Styling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nObjectFactory\n\n\nkeept’em slim\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOJS-Group-Styling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSharedSvelteCounter\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOJS-Restyling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nButtonsBuildUp\n\n\nElaboration Ladder\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nButtonsMobile\n\n\nkeept’em slim\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nButtonsFactory\n\n\nkeept’em slim\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/ButtonsBuildUp.html",
-    "href": "posts/ButtonsBuildUp.html",
-    "title": "ButtonsBuildUp",
+    "objectID": "posts/ButtonsMobile.html",
+    "href": "posts/ButtonsMobile.html",
+    "title": "ButtonsMobile",
     "section": "",
-    "text": "Buttons from Naked to Bootstrap styling\n\n\n\nStore\n\n\n\nHTML Buttons Naked (no-attributes, no-styling)\nHTML Input:  HTML Button\n\n\nHTML Buttons with .btn.btn-primary (yields Bootstrap styling)\n\nPrimary Secondary Success Danger Warning Info Light Dark Link\n\n\nHTML Output: placeholder output area"
+    "text": "Buttons from Naked to Bootstrap styling\n\n\n\n      \n\n\n\n\n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n  Add\n  Clip\n  Help\n\n\n\n\n\n\n  \n  \n  \n    \n      \n        \n          \n        \n        \n      \n    \n    \n    \n      \n        \n          \n          ADD\n        \n      \n        \n\n    \n      \n        \n          \n          CLIP\n        \n      \n    \n    \n    \n      \n        \n          \n          RAZ"
+  },
+  {
+    "objectID": "posts/OjsRestyling.html",
+    "href": "posts/OjsRestyling.html",
+    "title": "OJS-Restyling",
+    "section": "",
+    "text": "OJS Inputs are restyled\n\n\nOJS Inputs.text\n\nviewof styledBtn2 = Inputs.button(\"Submit\");\n\n\n\n\n\n\n\n\nOJS Inputs.button\n\nviewof mytext = Inputs.text({\n    placeholder: \"say it\",\n    value: \"\"\n    });\n\nhtml`&lt;div&gt;${viewof mytext}&lt;/div&gt;`;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhtml`&lt;input type=\"text\" class=\"form-control\"&gt;`\n\n\n\n\n\n\n\n\n\n\nnow Restyled\n\nrestyling = {\n  // Very Great Restyling Side Effects\n  const mib = viewof styledBtn2.querySelector('button.btn-quarto');\n  if (mib) {\n    mib.classList.remove('btn-quarto');\n    mib.classList.add(\"btn\", \"btn-success\", \"btn-lg\"); \n  }\n};\n\n\n\n\n\n\n\n// --- Reusable Bootstrap Input Group Factory --- //\n\nfunction InputGroup({ placeholder = \"Type…\", button = \"Go\" } = {}) {\n  // 1. Create the input\n  const input = html`&lt;input type=\"text\" class=\"form-control\" placeholder=\"${placeholder}\"&gt;`;\n\n  // 2. Create the button\n  const btn = html`&lt;button class=\"btn btn-primary\"&gt;${button}&lt;/button&gt;`;\n\n  // 3. Create the input-group wrapper\n  const group = html`&lt;div class=\"input-group\"&gt;&lt;/div&gt;`;\n  group.append(input, btn);\n\n  // 4. Reactive value\n  group.value = \"\";\n\n  // 5. Emit reactive updates on button click\n  btn.addEventListener(\"click\", () =&gt; {\n    group.value = input.value;\n    group.dispatchEvent(new CustomEvent(\"input\"));\n  });\n\n  return group;\n}\n\n\n\n\n\n\n\nviewof myInput = InputGroup({ placeholder: \"Search…\", button: \"Run\" })\n\nmyInput\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nrestyling2 = {\n  // Very Great Restyling Side Effects\n  const mib = viewof myInput.querySelector('button.btn-quarto');\n  if (mib) {\n    mib.classList.remove('btn-quarto');\n    mib.classList.add(\"btn\", \"btn-success\"); \n  }\n};"
+  },
+  {
+    "objectID": "posts/OjsBarStyling.html",
+    "href": "posts/OjsBarStyling.html",
+    "title": "OJS-Group-Styling",
+    "section": "",
+    "text": "OJS Input-Group is restyled OK\n\n\nimport { InputGroup } from \"./ojsclass.js\"\n\nviewof myInput = InputGroup({\n  placeholder: \"Enter item…\",\n  button: \"Add\"\n})"
   },
   {
     "objectID": "posts/VerseWorkflow.html",
@@ -28,6 +42,13 @@
     "text": "myAccuWidget = html`&lt;my-refwidget&gt;&lt;/my-refwidget&gt;`\nmyAccuData = html`&lt;my-refdata&gt;&lt;/my-refdata&gt;`"
   },
   {
+    "objectID": "posts/BsUi.html",
+    "href": "posts/BsUi.html",
+    "title": "BsUi",
+    "section": "",
+    "text": "FIX OK .current and .accu OK restyle with queueMicrotask and MutationObserver\n\n\n\n\n// bsButton: Bootstrap-styled button, OJS-compatible, written as plain class javascript.\n\nimport {bsButton} from \"./bsui.js\"\n\nviewof run = new bsButton({\n  label: \"RAZ\",\n  variant: \"warning\",\n  value: { action: \"run\" }\n}).node()\n\nrun\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimport { bsInput } from \"./bsui.js\"\n\nviewof name = new bsInput({\n  label: \"Your name\",\n  placeholder: \"Type here…\",\n  description: \"bsInput: Bootstrap-styled text input, OJS-compatible as plain js class\",\n  value: \"Pier\"\n}).node()\n\nname\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimport { bsInputgroup } from \"./bsui.js\"\n\nviewof ig = new bsInputgroup({\n  placeholder: \"Type something…\",\n  buttonLabel: \"Accumulate\",\n  variant: \"success\"\n}).node()\n\nig.current\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nig\n\n\n\n\n\n\n\n\n\nimport { bsInputgroup3 } from \"./bsui.js\"\n\nviewof ig3 = new bsInputgroup3({\n  placeholder: \"Hi Type something3…\",\n  prefixHTML: '&lt;i class=\"bi bi-search\"&gt;&lt;/i&gt;',\n  addLabel: \"Add\",\n  resetLabel: \"RAZ\",\n  clipLabel: \"Clip\",\n  variant: \"primary\"\n}).node()\n\nig3.current\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nig3"
+  },
+  {
     "objectID": "posts/OsisParser.html",
     "href": "posts/OsisParser.html",
     "title": "OsisParser",
@@ -35,18 +56,11 @@
     "text": "strict idempotent OSIS conversion for biblegateway.\n\n\nmyOsisParser = html`&lt;my-osisparser&gt;&lt;/my-osisparser&gt;`"
   },
   {
-    "objectID": "posts/OsisParserUI.html",
-    "href": "posts/OsisParserUI.html",
-    "title": "OsisParserUI",
+    "objectID": "posts/Historic-Circle-example.html",
+    "href": "posts/Historic-Circle-example.html",
+    "title": "historic quarto-svelte example",
     "section": "",
-    "text": "strict idempotent OSIS conversion - Intra component communication via windows.store. TODO: H-store vs O-store\n\n\nmyOsisParser = html`&lt;my-osisparserui&gt;&lt;/my-osisparserui&gt;`"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog\nwebsite: search: false\n\nfix search disabled\nfix posts & components\nssh-keygen -t ed25519 -C “fischer.pj@gmail.com”"
+    "text": "This document shows you how to use a basic example Svelte component called Circles.svelte.\nCreate one using an HTML template:\n\nmyCircles = html`&lt;my-circles&gt;&lt;/my-circles&gt;`\n\n\n\n\n\n\nNow the fun part - updating our visual when our document changes. It’s as simple as changing the prop using componentName.propName =.\nFor example, here are three datasets and an Observable Inputs dropdown menu that lets you select one of three datasets:\n\n// here are some datasets...\nallDatasets = new Map([\n    [\"Dataset A\", [5, 15, 25, 17, 8]],\n    [\"Dataset B\", [25, 5, 5]],\n    [\"Dataset C\", [12, 5, 8, 21, 5]]\n  ]);\n\n\n\n\n\n\n\nviewof selectedDataset =\n  Inputs.select(allDatasets, { label: \"Selected dataset\" });\n\n\n\n\n\n\nNow we can update the prop data of the visual myCircles using:\n\nmyCircles.data = selectedDataset\n\n\n\n\n\n\nAnd there you go! 🚀\nFor more help writing Svelte components, check out the Svelte tutorial or take look at some of the examples in the quarto-svelte documentation."
   },
   {
     "objectID": "posts/BcvReader.html",
@@ -56,11 +70,32 @@
     "text": "strict OSIS output for biblegateway. NB: rather use HSUB_RefArray element for fetch via hsubre\n\n\nmyActionBar = html`&lt;my-bcvreader&gt;&lt;/my-bcvreader&gt;`"
   },
   {
-    "objectID": "posts/Historic-Circle-example.html",
-    "href": "posts/Historic-Circle-example.html",
-    "title": "historic quarto-svelte example",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "This document shows you how to use a basic example Svelte component called Circles.svelte.\nCreate one using an HTML template:\n\nmyCircles = html`&lt;my-circles&gt;&lt;/my-circles&gt;`\n\n\n\n\n\n\nNow the fun part - updating our visual when our document changes. It’s as simple as changing the prop using componentName.propName =.\nFor example, here are three datasets and an Observable Inputs dropdown menu that lets you select one of three datasets:\n\n// here are some datasets...\nallDatasets = new Map([\n    [\"Dataset A\", [5, 15, 25, 17, 8]],\n    [\"Dataset B\", [25, 5, 5]],\n    [\"Dataset C\", [12, 5, 8, 21, 5]]\n  ]);\n\n\n\n\n\n\n\nviewof selectedDataset =\n  Inputs.select(allDatasets, { label: \"Selected dataset\" });\n\n\n\n\n\n\nNow we can update the prop data of the visual myCircles using:\n\nmyCircles.data = selectedDataset\n\n\n\n\n\n\nAnd there you go! 🚀\nFor more help writing Svelte components, check out the Svelte tutorial or take look at some of the examples in the quarto-svelte documentation."
+    "text": "About this blog\nwebsite: search: false\n\nfix search disabled\nfix posts & components\nssh-keygen -t ed25519 -C “fischer.pj@gmail.com”"
+  },
+  {
+    "objectID": "posts/OsisParserUI.html",
+    "href": "posts/OsisParserUI.html",
+    "title": "OsisParserUI",
+    "section": "",
+    "text": "strict idempotent OSIS conversion - Intra component communication via windows.store. TODO: H-store vs O-store\n\n\nmyOsisParser = html`&lt;my-osisparserui&gt;&lt;/my-osisparserui&gt;`"
+  },
+  {
+    "objectID": "posts/OjsUi.html",
+    "href": "posts/OjsUi.html",
+    "title": "OjsUi",
+    "section": "",
+    "text": "FIX KO btn.value is an Object\n\n\n\n\n\nviewof myButton = {\n  const btn = html`&lt;button&gt;Click for Data&lt;/button&gt;`;\n  btn.onclick = () =&gt; {\n    btn.value = { timestamp: Date.now(), user: \"Admin\", action: \"Verify\" };\n    btn.dispatchEvent(new CustomEvent(\"input\")); // Tells OJS to update\n  };\n  return btn;\n}\n\n// Access the object in a different cell\nmyButton\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimport {viewofHello} from \"./ojsui.js\"\nviewof mihello = viewofHello();\nmihello;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimport {bsButton} from \"./ojsui.js\"\n\nviewof mibutton = bsButton(\"HiBs\");\n\nhtml`&lt;pre&gt;${JSON.stringify(mibutton,null,2)}&lt;/pre&gt;`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nrestyling = {\n  // Very Great Restyling Side Effects\n//const mib =   viewof mibutton.querySelectorAll('button.btn-quarto');\n//if (mib) {\n//    mib.forEach(btn =&gt; { btn.classList.remove(\"btn-quarto\")});\n//  }\n//\n0};"
+  },
+  {
+    "objectID": "posts/mvc_ojs.html",
+    "href": "posts/mvc_ojs.html",
+    "title": "MVC_ojs",
+    "section": "",
+    "text": "How to separate MVC concerns and Master styling\n\n\n\n\n\nviewof amount = Inputs.range([0, 100], {\n  label: \"Amount\",\n  step: 1,\n  value: 20\n})\n\ndouble = amount * 2\n\n\nhtml`\n  &lt;div class=\"card p-3 my-3\"&gt;\n    &lt;h5&gt;Demo&lt;/h5&gt;\n    &lt;div class=\"mb-3\"&gt;${viewof amount}&lt;/div&gt;\n    &lt;p&gt;Double: &lt;strong&gt;${double}&lt;/strong&gt;&lt;/p&gt;\n  &lt;/div&gt;\n`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmyNumberInput = (label, value = 0) =&gt; {\n  const input = Inputs.number({label, value})\n  const box = html`&lt;div class=\"my-2\"&gt;${input}&lt;/div&gt;`\n  Object.defineProperty(box, \"value\", {\n    get: () =&gt; input.value\n  })\n  box.addEventListener(\"input\", () =&gt;\n    box.dispatchEvent(new Event(\"input\", {bubbles: true}))\n  )\n  return box\n}\n\nviewof qty = myNumberInput(\"Quantity\", 3)\nqty\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhtml`&lt;p&gt;Total: ${qty * 10}&lt;/p&gt;`\n\n\n\n\n\n\n\n\n\nInputGroupWithButton = (placeholder = \"here\", label = \"Go\", variant = \"primary\") =&gt; {\n  const group = html`&lt;div class=\"input-group\"&gt;&lt;/div&gt;`\n\n  const input = html`&lt;input class=\"form-control\" placeholder=\"${placeholder}\"&gt;`\n\n  // Quarto-safe wrapper around the button\n  const btnWrap = html`&lt;div class=\"ojs-safe\"&gt;&lt;/div&gt;`\n  const btn = html`&lt;button class=\"btn btn-${variant}\"&gt;${label}&lt;/button&gt;`\n  btnWrap.append(btn)\n\n  group.append(input, btnWrap)\n  return group\n}\n\nviewof igwb = InputGroupWithButton();\n\nhtml`&lt;div&gt;Total: ${igwb}&lt;/div&gt;`"
   },
   {
     "objectID": "posts/NoteParser.html",
@@ -84,6 +119,13 @@
     "text": "Pure Bootstrap Divs classed with container-fluid, d-flex, align-items-stretch, flex-fill\n\n\nPure Divs à la Bootstrap\n\n  \n    \n    \n      \n        \n           \n        \n      \n    \n    \n    \n      Action 1\n    \n    \n    \n      Action 2\n    \n    \n    \n      RAZ\n    \n\n  \n\n\n\nWith surrounding .card\n\n    \n        \n            \n                \n                \n                    \n                        \n                            \n                        \n                        \n                    \n                \n                \n                \n                    \n                         Add New\n                    \n                \n                \n                \n                    \n                         Filters\n                    \n                \n                \n                \n                    \n                         Export"
   },
   {
+    "objectID": "posts/ObjFactory.html",
+    "href": "posts/ObjFactory.html",
+    "title": "ObjectFactory",
+    "section": "",
+    "text": "Inspired by Svelte ButtonBar & verseRun: todo: style it add input\n\n\n\n\n\nTodo: inlne row + Styling à la svlete\n\n\n\nobj = ({\n  first: \"Ada\",\n  last: \"Lovelace\",\n  age: 36\n})\n\n\n\n\n\n\n\nimport {objectInput} from \"./obj_ojs.js\"\n\nviewof person = objectInput(obj);\n\nperson\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimport { bootstrapNumberInput } from \"./obj_ojs.js\"\n\nviewof price = bootstrapNumberInput({\n  value: 10,\n  min: 0,\n  prefix: \"€\"\n})\n\nprice\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimport { bootstrapAccumulatingTextInput } from \"./obj_ojs.js\"\n\nviewof items = bootstrapAccumulatingTextInput({\n  prefix: \"➕\",\n  placeholder: \"Type something\",\n  addLabel: \"Add\",\n  razLabel: \"RAZ\",\n  clipLabel: \"Clip\"\n})\n\nitems\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimport { bootstrapAccumulatingTextInputBar } from \"./obj_ojs.js\"\n\nviewof itemsbar = bootstrapAccumulatingTextInputBar({\n  prefixHTML: \"&lt;i class='bi bi-search'&gt;&lt;/i&gt;\",\n  placeholder: \"TextInputBar\",\n  inputClass: \"form-control\",\n  addLabel: \"Add\",\n  razLabel: \"RAZ\",\n  clipLabel: \"Clip\"\n})\n\nitemsbar\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimport { bootstrapAccumulatingTextInputBar2 } from \"./obj_ojs.js\"\n\nviewof itemsbar2 = bootstrapAccumulatingTextInput({\n  prefixHTML: \"&lt;i class='bi bi-search'&gt;&lt;/i&gt;\",\n  placeholder: \"Type something\",\n  inputClass: \"my-custom-input\",\n  addLabel: \"Add\",\n  razLabel: \"RAZ\",\n  clipLabel: \"Clip\"\n})\n\nitemsbar2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimport { bootstrapAccumulatingTextInput2 } from \"./obj_ojs.js\"\n\nviewof items2 = bootstrapAccumulatingTextInput2({\n  prefixHTML: \"&lt;i class='bi bi-search'&gt;&lt;/i&gt;\",\n  placeholder: \"TextInput2\",\n  addLabel: \"Add\",\n  razLabel: \"RAZ\",\n  clipLabel: \"Clip\"\n})\n\nitems2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nitems2.map((x, i) =&gt; `${i+1}. ${x}`)\n\n\n\n\n\n\n\n\n\nrestyling = {\n  // Very Great Restyling Side Effects\nconst mib =   viewof items2.querySelectorAll('button.btn-quarto');\nif (mib) {\n    mib.forEach(btn =&gt; { btn.classList.remove(\"btn-quarto\")});\n  }\n};"
+  },
+  {
     "objectID": "posts/SharedSvelteCounter.html",
     "href": "posts/SharedSvelteCounter.html",
     "title": "SharedSvelteCounter",
@@ -91,10 +133,17 @@
     "text": "Share via window.__shared_counter__;\n\n\nmyCompA = html`&lt;my-componenta&gt;&lt;/my-componenta&gt;`\nmyCompB = html`&lt;my-componentb&gt;&lt;/my-componentb&gt;`"
   },
   {
-    "objectID": "posts/ButtonsMobile.html",
-    "href": "posts/ButtonsMobile.html",
-    "title": "ButtonsMobile",
+    "objectID": "posts/ButtonsBuildUp.html",
+    "href": "posts/ButtonsBuildUp.html",
+    "title": "ButtonsBuildUp",
     "section": "",
-    "text": "Buttons from Naked to Bootstrap styling\n\n\n\n      \n\n\n\n\n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n  Add\n  Clip\n  Help\n\n\n\n\n\n\n  \n  \n  \n    \n      \n        \n          \n        \n        \n      \n    \n    \n    \n      \n        \n          \n          ADD\n        \n      \n        \n\n    \n      \n        \n          \n          CLIP\n        \n      \n    \n    \n    \n      \n        \n          \n          RAZ"
+    "text": "Buttons from Naked to Bootstrap styling\n\n\nMake OJS Inputs and Reactive Restyling !\n\n\n\nStore\n\n\n\nStore\n\n&lt;form class=“oi-3a86ea”&gt;&lt;button class=“btn btn-warning”&gt;Store&lt;/button&gt;&lt;/form&gt;\n\nHTML Buttons Naked (no-attributes, no-styling)\nHTML Input:  HTML Button\n\n\nHTML Buttons with .btn.btn-primary (yields Bootstrap styling)\n\nPrimary Secondary Success Danger Warning Info Light Dark Link\n\n\nHTML Output: placeholder output area\n\n\n\nOJS Input.button\n\nviewof myButton = Inputs.button(\"Clip\");\n\n\n\n\n\n\n\nviewof styledBtn = {\n  const btn = Inputs.button(\"Submit\");\n  // Find the button element inside the generated div and add classes\n//  const inputElement = btn.querySelector(\"button\");\n//  inputElement.classList.add(\"btn\", \"btn-success\", \"btn-lg\"); \n  return btn;\n}\n\nviewof styledBtn2 = Inputs.button(\"Submit\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nrestyling = {\n  // Very Great Restyling Side Effects\n  const mib = viewof styledBtn2.querySelector('button.btn-quarto');\n  if (mib) {\n    mib.classList.remove('btn-quarto');\n    mib.classList.add(\"btn\", \"btn-success\", \"btn-lg\"); \n  }\n};"
+  },
+  {
+    "objectID": "posts/ButtonsFactory.html",
+    "href": "posts/ButtonsFactory.html",
+    "title": "ButtonsFactory",
+    "section": "",
+    "text": "Inspired by Svelte ButtonBar & verseRun: todo: style it add input\n\n\n\n\n\nTodo: inlne row + Styling à la svlete\n\n\n\nimport {TextInput, ButtonInput, bsTextInput, bsButton, inputWithButton, btnbar} from \"./Input_again.js\"\n\nviewof bsname = bsTextInput().el;\nbsname;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nviewof bsbutton = bsButton().el;\n\nviewof bsRow = inputWithButton();\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nbtnbar();"
   }
 ]
