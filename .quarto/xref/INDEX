@@ -181,5 +181,11 @@
   },
   "posts/BsUi.qmd": {
     "BsUi.html": "20ce1cdb"
+  },
+  "posts/BsParser.qmd": {
+    "BsParser.html": "541c0ba2"
+  },
+  "static/bible-passage-reference-parser/LICENSE.md": {
+    "LICENSE.html": "ad077810"
   }
 }

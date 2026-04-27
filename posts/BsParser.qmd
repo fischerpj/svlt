@@ -1,0 +1,38 @@
+---
+title: BsParser
+subtitle: "valid'em"
+execute:
+  echo: false
+---
+
+> Validate an bsInput with bcv_wrapper
+
+::: {#inputDiv}
+<!-- inputDiv is considered Void-->
+:::
+
+```{ojs}
+import { bsInputgroupTransform } from "./bsui.js"
+
+import { BCVWrapper } from "./bsBcv.js";
+//parser_lang = new BcvParserLang(); // native bcv_parser with lang
+//parser_ref = new SuperParserRef(parser_lang.instance);
+//parser_ref = new SuperParserRef();
+//parser_ref.parse(ig_tfr.current).osis_array();
+
+bcv = new BCVWrapper() // singleton parser
+
+viewof refInput = new bsInputgroupTransform({
+  prefixHTML: "<i class='bi bi-book'></i>",
+  placeholder: "Enter Bible reference…",
+  transform: bcv.parseOsis,     // <---- HERE
+  addLabel: "Add",
+  resetLabel: "RAZ",
+  clipLabel: "CLIP"
+}).node()
+
+refInput.current
+refInput
+```
+
+

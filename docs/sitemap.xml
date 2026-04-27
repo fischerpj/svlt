@@ -88,4 +88,12 @@
     <loc>https://your-website-url.example.com/posts/ButtonsFactory.html</loc>
     <lastmod>2026-04-18T10:52:50.352Z</lastmod>
   </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/BsParser.html</loc>
+    <lastmod>2026-04-27T19:21:20.118Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/static/bible-passage-reference-parser/LICENSE.html</loc>
+    <lastmod>2026-04-26T13:08:06.404Z</lastmod>
+  </url>
 </urlset>
