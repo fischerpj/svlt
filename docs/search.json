@@ -151,7 +151,7 @@
     "href": "posts/BsParser.html",
     "title": "BsParser",
     "section": "",
-    "text": "Validate an bsInput with bcv_wrapper\n\n\n\n\n\nimport { bsInputgroupTransform } from \"./bsui.js\"\n\nimport { BCVWrapper } from \"./bsBcv.js\";\n//parser_lang = new BcvParserLang(); // native bcv_parser with lang\n//parser_ref = new SuperParserRef(parser_lang.instance);\n//parser_ref = new SuperParserRef();\n//parser_ref.parse(ig_tfr.current).osis_array();\n\nbcv = new BCVWrapper() // singleton parser\n\nviewof refInput = new bsInputgroupTransform({\n  prefixHTML: \"&lt;i class='bi bi-book'&gt;&lt;/i&gt;\",\n  placeholder: \"Enter Bible reference…\",\n  transform: bcv.parseOsis,     // &lt;---- HERE\n  addLabel: \"Add\",\n  resetLabel: \"RAZ\",\n  clipLabel: \"CLIP\"\n}).node()\n\nrefInput.current\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nrefInput"
+    "text": "Validate an bsInput with one super_bcv_wrapper\n\n\n\n\n\nimport { bsInputgroupTransform } from \"./bsui.js\"\nimport { super_bcv_parser } from \"./bsBcv.js\";\n\nsuperBCV = new super_bcv_parser() // instance of singleton parser\n\nviewof refInput = new bsInputgroupTransform({\n  prefixHTML: \"&lt;i class='bi bi-book'&gt;&lt;/i&gt;\",\n  placeholder: \"Enter Bible reference…\",\n//  transform: s =&gt; superBCV.osis_array(s),     // &lt;---- HERE\n  transform: superBCV.osis_array,     // &lt;---- HERE\n  addLabel: \"Add\",\n  resetLabel: \"RAZ\",\n  clipLabel: \"CLIP\"\n}).node()\n\nrefInput.current\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nrefInput"
   },
   {
     "objectID": "static/bible-passage-reference-parser/LICENSE.html",

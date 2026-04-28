@@ -163,32 +163,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <blockquote class="blockquote">
-<p>Validate an bsInput with bcv_wrapper</p>
+<p>Validate an bsInput with one super_bcv_wrapper</p>
 </blockquote>
 <div id="inputDiv">
 <!-- inputDiv is considered Void-->
 </div>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="15" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 14;"><span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { bsInputgroupTransform } <span class="im">from</span> <span class="st">"./bsui.js"</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { BCVWrapper } <span class="im">from</span> <span class="st">"./bsBcv.js"</span><span class="op">;</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">//parser_lang = new BcvParserLang(); // native bcv_parser with lang</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">//parser_ref = new SuperParserRef(parser_lang.instance);</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">//parser_ref = new SuperParserRef();</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">//parser_ref.parse(ig_tfr.current).osis_array();</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>bcv <span class="op">=</span> <span class="kw">new</span> <span class="fu">BCVWrapper</span>() <span class="co">// singleton parser</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>viewof refInput <span class="op">=</span> <span class="kw">new</span> <span class="fu">bsInputgroupTransform</span>({</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  <span class="dt">prefixHTML</span><span class="op">:</span> <span class="st">"&lt;i class='bi bi-book'&gt;&lt;/i&gt;"</span><span class="op">,</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"Enter Bible reference…"</span><span class="op">,</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="dt">transform</span><span class="op">:</span> bcv<span class="op">.</span><span class="at">parseOsis</span><span class="op">,</span>     <span class="co">// &lt;---- HERE</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="dt">addLabel</span><span class="op">:</span> <span class="st">"Add"</span><span class="op">,</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  <span class="dt">resetLabel</span><span class="op">:</span> <span class="st">"RAZ"</span><span class="op">,</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  <span class="dt">clipLabel</span><span class="op">:</span> <span class="st">"CLIP"</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>})<span class="op">.</span><span class="fu">node</span>()</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>refInput<span class="op">.</span><span class="at">current</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { super_bcv_parser } <span class="im">from</span> <span class="st">"./bsBcv.js"</span><span class="op">;</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>superBCV <span class="op">=</span> <span class="kw">new</span> <span class="fu">super_bcv_parser</span>() <span class="co">// instance of singleton parser</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>viewof refInput <span class="op">=</span> <span class="kw">new</span> <span class="fu">bsInputgroupTransform</span>({</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="dt">prefixHTML</span><span class="op">:</span> <span class="st">"&lt;i class='bi bi-book'&gt;&lt;/i&gt;"</span><span class="op">,</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"Enter Bible reference…"</span><span class="op">,</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">//  transform: s =&gt; superBCV.osis_array(s),     // &lt;---- HERE</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="dt">transform</span><span class="op">:</span> superBCV<span class="op">.</span><span class="at">osis_array</span><span class="op">,</span>     <span class="co">// &lt;---- HERE</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="dt">addLabel</span><span class="op">:</span> <span class="st">"Add"</span><span class="op">,</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  <span class="dt">resetLabel</span><span class="op">:</span> <span class="st">"RAZ"</span><span class="op">,</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="dt">clipLabel</span><span class="op">:</span> <span class="st">"CLIP"</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>})<span class="op">.</span><span class="fu">node</span>()</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>refInput<span class="op">.</span><span class="at">current</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -224,7 +220,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="35" data-source-offset="-613"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 34;"><span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>refInput</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="31" data-source-offset="-498"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 30;"><span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>refInput</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-6" data-nodetype="expression">
@@ -238,7 +234,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImltcG9ydCB7IGJzSW5wdXRncm91cFRyYW5zZm9ybSB9IGZyb20gXCIuL2JzdWkuanNcIlxuXG5pbXBvcnQgeyBCQ1ZXcmFwcGVyIH0gZnJvbSBcIi4vYnNCY3YuanNcIjtcbi8vcGFyc2VyX2xhbmcgPSBuZXcgQmN2UGFyc2VyTGFuZygpOyAvLyBuYXRpdmUgYmN2X3BhcnNlciB3aXRoIGxhbmdcbi8vcGFyc2VyX3JlZiA9IG5ldyBTdXBlclBhcnNlclJlZihwYXJzZXJfbGFuZy5pbnN0YW5jZSk7XG4vL3BhcnNlcl9yZWYgPSBuZXcgU3VwZXJQYXJzZXJSZWYoKTtcbi8vcGFyc2VyX3JlZi5wYXJzZShpZ190ZnIuY3VycmVudCkub3Npc19hcnJheSgpO1xuXG5iY3YgPSBuZXcgQkNWV3JhcHBlcigpIC8vIHNpbmdsZXRvbiBwYXJzZXJcblxudmlld29mIHJlZklucHV0ID0gbmV3IGJzSW5wdXRncm91cFRyYW5zZm9ybSh7XG4gIHByZWZpeEhUTUw6IFwiPGkgY2xhc3M9J2JpIGJpLWJvb2snPjwvaT5cIixcbiAgcGxhY2Vob2xkZXI6IFwiRW50ZXIgQmlibGUgcmVmZXJlbmNl4oCmXCIsXG4gIHRyYW5zZm9ybTogYmN2LnBhcnNlT3NpcywgICAgIC8vIDwtLS0tIEhFUkVcbiAgYWRkTGFiZWw6IFwiQWRkXCIsXG4gIHJlc2V0TGFiZWw6IFwiUkFaXCIsXG4gIGNsaXBMYWJlbDogXCJDTElQXCJcbn0pLm5vZGUoKVxuXG5yZWZJbnB1dC5jdXJyZW50XG5yZWZJbnB1dFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdyZWZJbnB1dCcpIn1dfQ==
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImltcG9ydCB7IGJzSW5wdXRncm91cFRyYW5zZm9ybSB9IGZyb20gXCIuL2JzdWkuanNcIlxuaW1wb3J0IHsgc3VwZXJfYmN2X3BhcnNlciB9IGZyb20gXCIuL2JzQmN2LmpzXCI7XG5cbnN1cGVyQkNWID0gbmV3IHN1cGVyX2Jjdl9wYXJzZXIoKSAvLyBpbnN0YW5jZSBvZiBzaW5nbGV0b24gcGFyc2VyXG5cbnZpZXdvZiByZWZJbnB1dCA9IG5ldyBic0lucHV0Z3JvdXBUcmFuc2Zvcm0oe1xuICBwcmVmaXhIVE1MOiBcIjxpIGNsYXNzPSdiaSBiaS1ib29rJz48L2k+XCIsXG4gIHBsYWNlaG9sZGVyOiBcIkVudGVyIEJpYmxlIHJlZmVyZW5jZeKAplwiLFxuLy8gIHRyYW5zZm9ybTogcyA9PiBzdXBlckJDVi5vc2lzX2FycmF5KHMpLCAgICAgLy8gPC0tLS0gSEVSRVxuICB0cmFuc2Zvcm06IHN1cGVyQkNWLm9zaXNfYXJyYXksICAgICAvLyA8LS0tLSBIRVJFXG4gIGFkZExhYmVsOiBcIkFkZFwiLFxuICByZXNldExhYmVsOiBcIlJBWlwiLFxuICBjbGlwTGFiZWw6IFwiQ0xJUFwiXG59KS5ub2RlKClcblxucmVmSW5wdXQuY3VycmVudFxucmVmSW5wdXRcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgncmVmSW5wdXQnKSJ9XX0=
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }

@@ -1,8 +1,11 @@
 // BcvParserRef.js
 import { bcv_parser } from "./bcv_parser.js";
-import { grammar_options, regexps, translations }
+// Import default language tables directly here
+import {   
+  grammar_options as default_grammar_options,
+  regexps as default_regexps,
+  translations as default_translations }
   from "./lang/fr.js";
-  
   
 // bcvWrapper.js — minimal safe wrapper around bcv_parser
 export class BCVWrapper {
@@ -11,6 +14,7 @@ export class BCVWrapper {
 
     // Bind methods so they can be passed as standalone functions
     this.parseOsis = this.parseOsis.bind(this);
+    this.parseOsisArray = this.parseOsisArray.bind(this);
   }
 
   // Parse a Bible reference and return OSIS or null
@@ -22,6 +26,17 @@ export class BCVWrapper {
       return null;              // invalid reference
     }
   }
+  
+    // Parse a Bible reference and return an OSIS ARRAY or null
+  parseOsisArray(input) {
+    try {
+      const result = this.bcv.parse(input);
+      return result.osis_array();     // normalized OSIS string
+    } catch (err) {
+      return null;              // invalid reference
+    }
+  }
+  
 }
 
 // creates a bcv_parser with lang
@@ -125,5 +140,112 @@ export class SuperParserRef {
  
   const json = output_hsub.join("; ");
   return json 
+  }
+}
+
+
+////====================================================
+
+// super_bcv_parser.js
+
+export class super_bcv_parser_legacy {
+  constructor({
+    grammar_options = default_grammar_options,
+    regexps = default_regexps,
+    translations = default_translations
+  } = {}) {
+
+    this._bcv = new bcv_parser({
+      grammar_options,
+      regexps,
+      translations
+    });
+  }
+
+  parse(input) {
+    return this._bcv.parse(input);
+  }
+  
+  
+  osis(input) {
+    return this._bcv.parse(input).osis();
+  }
+
+  osis_and_translations(input) {
+    return this._bcv.parse(input).osis_and_translations();
+  }
+
+  /**
+   * Returns:
+   *   ["John.3.16 KJV", "John.3.17 KJV", ...]
+   * Safe for transform pipelines.
+   */
+  osis_array(input) {
+    try {
+      const arr = this._bcv.parse(input).osis_and_translations();
+      return arr.map(([osis, translation]) => translation ? `${osis} ${translation}` : `${osis}` );
+    } catch {
+      return [];
+    }
+  }
+}
+
+////====================================================================
+// super_bcv_parser.js
+
+export class super_bcv_parser {
+  constructor({
+    grammar_options = default_grammar_options,
+    regexps = default_regexps,
+    translations = default_translations
+  } = {}) {
+
+    this._bcv = new bcv_parser({
+      grammar_options,
+      regexps,
+      translations
+    });
+
+    // Optional: auto-bind if you want to pass methods directly
+    this.osis_array = this.osis_array.bind(this);
+    this.parse = this.parse.bind(this);
+    this.osis_and_translations = this.osis_and_translations.bind(this);
+  }
+
+  // ------------------------------------------------------------
+  // PRIVATE PREPROCESS HOOK
+  // ------------------------------------------------------------
+    _preprocess(text) {
+    // just convert hsub ! to osis whitespace
+    const hsub = text.trim().replaceAll('!',' ');
+    return hsub;
+  }
+
+  // ------------------------------------------------------------
+  // PUBLIC API (all go through preprocess)
+  // ------------------------------------------------------------
+  parse(input) {
+    const cleaned = this._preprocess(input);
+    return this._bcv.parse(cleaned);
+  }
+
+  osis_and_translations(input) {
+    const cleaned = this._preprocess(input);
+    return this._bcv.parse(cleaned).osis_and_translations();
+  }
+
+  /**
+   * Returns:
+   *   ["John.3.16 KJV", "John.3.17 KJV", ...]
+   * Safe for transform pipelines.
+   */
+  osis_array(input) {
+    try {
+      const cleaned = this._preprocess(input);
+      const arr = this._bcv.parse(cleaned).osis_and_translations();
+      return arr.map(([osis, translation]) => translation ? `${osis} ${translation}` : `${osis}` );
+    } catch {
+      return [];
+    }
   }
 }

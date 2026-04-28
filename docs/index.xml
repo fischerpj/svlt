@@ -10,7 +10,7 @@
 <atom:link href="https://your-website-url.example.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>A blog built with Quarto</description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Mon, 27 Apr 2026 19:21:22 GMT</lastBuildDate>
+<lastBuildDate>Tue, 28 Apr 2026 20:33:18 GMT</lastBuildDate>
 <item>
   <title>BcvReader</title>
   <link>https://your-website-url.example.com/posts/BcvReader.html</link>
@@ -54,7 +54,7 @@ font-style: inherit;">`&lt;my-bcvreader&gt;&lt;/my-bcvreader&gt;`</span></span><
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/BcvReader.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title>OsisParserUI</title>
@@ -99,7 +99,7 @@ font-style: inherit;">`&lt;my-osisparserui&gt;&lt;/my-osisparserui&gt;`</span></
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/OsisParserUI.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title>historic quarto-svelte example</title>
@@ -262,7 +262,7 @@ font-style: inherit;">=</span> selectedDataset</span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/Historic-Circle-example.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title>OjsUi</title>
@@ -531,7 +531,7 @@ font-style: inherit;">;</span></span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/OjsUi.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title>OsisParser</title>
@@ -576,7 +576,7 @@ font-style: inherit;">`&lt;my-osisparser&gt;&lt;/my-osisparser&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/OsisParser.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title>MVC_ojs</title>
@@ -1017,7 +1017,7 @@ font-style: inherit;">&lt;/div&gt;`</span></span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/mvc_ojs.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title>BsUi</title>
@@ -1501,7 +1501,7 @@ font-style: inherit;">current</span></span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/BsUi.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title>NoteParser</title>
@@ -1546,7 +1546,7 @@ font-style: inherit;">`&lt;my-noteparser&gt;&lt;/my-noteparser&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/NoteParser.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title>RefApp</title>
@@ -1594,7 +1594,7 @@ font-style: inherit;">`&lt;my-refdata&gt;&lt;/my-refdata&gt;`</span></span></cod
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/RefApp.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title>SvelteActionBar</title>
@@ -1639,7 +1639,7 @@ font-style: inherit;">`&lt;my-actionbar2&gt;&lt;/my-actionbar2&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/SvelteActionBar.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title>Verse Workflow</title>
@@ -1683,7 +1683,7 @@ font-style: inherit;">`&lt;my-osisparserui&gt;&lt;/my-osisparserui&gt;`</span></
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/VerseWorkflow.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title>Bootstrap Button Card</title>
@@ -1769,14 +1769,14 @@ font-style: inherit;">`&lt;my-osisparserui&gt;&lt;/my-osisparserui&gt;`</span></
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/BootstrapButtonCard.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title></title>
   <link>https://your-website-url.example.com/posts/QuartoDashboard.html</link>
   <description><![CDATA[ undefined ]]></description>
   <guid>https://your-website-url.example.com/posts/QuartoDashboard.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title>ObjectFactory</title>
@@ -2378,7 +2378,7 @@ font-style: inherit;">;</span></span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/ObjFactory.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title>OJS-Group-Styling</title>
@@ -2443,7 +2443,7 @@ font-style: inherit;">"Add"</span></span>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/OjsBarStyling.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title>SharedSvelteCounter</title>
@@ -2494,7 +2494,7 @@ font-style: inherit;">`&lt;my-componentb&gt;&lt;/my-componentb&gt;`</span></span
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/SharedSvelteCounter.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title>OJS-Restyling</title>
@@ -2945,7 +2945,7 @@ font-style: inherit;">;</span></span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/OjsRestyling.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title>ButtonsBuildUp</title>
@@ -3140,7 +3140,7 @@ font-style: inherit;">;</span></span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/ButtonsBuildUp.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title>BsParser</title>
@@ -3152,7 +3152,7 @@ font-style: inherit;">;</span></span></code></pre></div></div>
 
 
 <blockquote class="blockquote">
-<p>Validate an bsInput with bcv_wrapper</p>
+<p>Validate an bsInput with one super_bcv_wrapper</p>
 </blockquote>
 <div id="inputDiv">
 <!-- inputDiv is considered Void-->
@@ -3165,41 +3165,28 @@ background-color: null;
 font-style: inherit;">from</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"./bsui.js"</span></span>
-<span id="cb1-16"></span>
-<span id="cb1-17"><span class="im" style="color: #00769E;
+<span id="cb1-16"><span class="im" style="color: #00769E;
 background-color: null;
-font-style: inherit;">import</span> { BCVWrapper } <span class="im" style="color: #00769E;
+font-style: inherit;">import</span> { super_bcv_parser } <span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"./bsBcv.js"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb1-18"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">//parser_lang = new BcvParserLang(); // native bcv_parser with lang</span></span>
-<span id="cb1-19"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">//parser_ref = new SuperParserRef(parser_lang.instance);</span></span>
-<span id="cb1-20"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">//parser_ref = new SuperParserRef();</span></span>
-<span id="cb1-21"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">//parser_ref.parse(ig_tfr.current).osis_array();</span></span>
-<span id="cb1-22"></span>
-<span id="cb1-23">bcv <span class="op" style="color: #5E5E5E;
+<span id="cb1-17"></span>
+<span id="cb1-18">superBCV <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">new</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">BCVWrapper</span>() <span class="co" style="color: #5E5E5E;
+font-style: inherit;">super_bcv_parser</span>() <span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">// singleton parser</span></span>
-<span id="cb1-24"></span>
-<span id="cb1-25">viewof refInput <span class="op" style="color: #5E5E5E;
+font-style: inherit;">// instance of singleton parser</span></span>
+<span id="cb1-19"></span>
+<span id="cb1-20">viewof refInput <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="kw" style="color: #003B4F;
 background-color: null;
@@ -3207,7 +3194,7 @@ font-weight: bold;
 font-style: inherit;">new</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">bsInputgroupTransform</span>({</span>
-<span id="cb1-26">  <span class="dt" style="color: #AD0000;
+<span id="cb1-21">  <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">prefixHTML</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -3216,7 +3203,7 @@ background-color: null;
 font-style: inherit;">"&lt;i class='bi bi-book'&gt;&lt;/i&gt;"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-27">  <span class="dt" style="color: #AD0000;
+<span id="cb1-22">  <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">placeholder</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -3225,20 +3212,23 @@ background-color: null;
 font-style: inherit;">"Enter Bible reference…"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-28">  <span class="dt" style="color: #AD0000;
+<span id="cb1-23"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">//  transform: s =&gt; superBCV.osis_array(s),     // &lt;---- HERE</span></span>
+<span id="cb1-24">  <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">transform</span><span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">:</span> bcv<span class="op" style="color: #5E5E5E;
+font-style: inherit;">:</span> superBCV<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="at" style="color: #657422;
 background-color: null;
-font-style: inherit;">parseOsis</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">osis_array</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span>     <span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">// &lt;---- HERE</span></span>
-<span id="cb1-29">  <span class="dt" style="color: #AD0000;
+<span id="cb1-25">  <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">addLabel</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -3247,7 +3237,7 @@ background-color: null;
 font-style: inherit;">"Add"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-30">  <span class="dt" style="color: #AD0000;
+<span id="cb1-26">  <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">resetLabel</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -3256,20 +3246,20 @@ background-color: null;
 font-style: inherit;">"RAZ"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-31">  <span class="dt" style="color: #AD0000;
+<span id="cb1-27">  <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">clipLabel</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"CLIP"</span></span>
-<span id="cb1-32">})<span class="op" style="color: #5E5E5E;
+<span id="cb1-28">})<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">node</span>()</span>
-<span id="cb1-33"></span>
-<span id="cb1-34">refInput<span class="op" style="color: #5E5E5E;
+<span id="cb1-29"></span>
+<span id="cb1-30">refInput<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="at" style="color: #657422;
 background-color: null;
@@ -3309,7 +3299,7 @@ font-style: inherit;">current</span></span></code></pre></div></div>
 </div>
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="35" data-source-offset="-613" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 34;"><span id="cb2-35">refInput</span></code></pre></div></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="31" data-source-offset="-498" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 30;"><span id="cb2-31">refInput</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-6" data-nodetype="expression">
@@ -3323,7 +3313,7 @@ font-style: inherit;">current</span></span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/BsParser.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 <item>
   <title>ButtonsMobile</title>
@@ -3419,7 +3409,7 @@ font-style: inherit;">current</span></span></code></pre></div></div>
 
  ]]></description>
   <guid>https://your-website-url.example.com/posts/ButtonsMobile.html</guid>
-  <pubDate>Mon, 27 Apr 2026 19:21:22 GMT</pubDate>
+  <pubDate>Tue, 28 Apr 2026 20:33:18 GMT</pubDate>
 </item>
 </channel>
 </rss>

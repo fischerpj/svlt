@@ -5,7 +5,7 @@ execute:
   echo: false
 ---
 
-> Validate an bsInput with bcv_wrapper
+> Validate an bsInput with one super_bcv_wrapper
 
 ::: {#inputDiv}
 <!-- inputDiv is considered Void-->
@@ -13,19 +13,15 @@ execute:
 
 ```{ojs}
 import { bsInputgroupTransform } from "./bsui.js"
+import { super_bcv_parser } from "./bsBcv.js";
 
-import { BCVWrapper } from "./bsBcv.js";
-//parser_lang = new BcvParserLang(); // native bcv_parser with lang
-//parser_ref = new SuperParserRef(parser_lang.instance);
-//parser_ref = new SuperParserRef();
-//parser_ref.parse(ig_tfr.current).osis_array();
-
-bcv = new BCVWrapper() // singleton parser
+superBCV = new super_bcv_parser() // instance of singleton parser
 
 viewof refInput = new bsInputgroupTransform({
   prefixHTML: "<i class='bi bi-book'></i>",
   placeholder: "Enter Bible reference…",
-  transform: bcv.parseOsis,     // <---- HERE
+//  transform: s => superBCV.osis_array(s),     // <---- HERE
+  transform: superBCV.osis_array,     // <---- HERE
   addLabel: "Add",
   resetLabel: "RAZ",
   clipLabel: "CLIP"
