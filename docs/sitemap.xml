@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://your-website-url.example.com/index.html</loc>
-    <lastmod>2026-03-11T11:53:07.560Z</lastmod>
+    <loc>https://your-website-url.example.com/static/bible-passage-reference-parser/LICENSE.html</loc>
+    <lastmod>2026-04-26T13:08:06.404Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/ButtonsMobile.html</loc>
-    <lastmod>2026-03-19T14:18:00.478Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/ButtonsFactory.html</loc>
+    <lastmod>2026-04-18T10:52:50.352Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/BsParser.html</loc>
+    <lastmod>2026-05-01T20:18:30.722Z</lastmod>
   </url>
   <url>
     <loc>https://your-website-url.example.com/posts/OjsRestyling.html</loc>
-    <lastmod>2026-04-21T05:19:44.008Z</lastmod>
+    <lastmod>2026-05-01T17:41:55.635Z</lastmod>
   </url>
   <url>
     <loc>https://your-website-url.example.com/posts/OjsBarStyling.html</loc>
@@ -21,56 +25,60 @@
     <lastmod>2026-03-12T19:19:02.117Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/VerseWorkflow.html</loc>
-    <lastmod>2026-04-03T18:15:30.278Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/RefApp.html</loc>
-    <lastmod>2026-03-18T17:19:26.237Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/BsUi.html</loc>
-    <lastmod>2026-04-25T19:02:45.409Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/OsisParser.html</loc>
-    <lastmod>2026-03-27T19:14:39.879Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/Historic-Circle-example.html</loc>
-    <lastmod>2026-03-12T19:21:29.764Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/BcvReader.html</loc>
-    <lastmod>2026-04-03T18:06:20.792Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/about.html</loc>
-    <lastmod>2026-03-11T11:53:07.560Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/OsisParserUI.html</loc>
-    <lastmod>2026-04-03T20:36:19.979Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/OjsUi.html</loc>
-    <lastmod>2026-04-22T20:46:33.036Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/mvc_ojs.html</loc>
-    <lastmod>2026-04-21T04:48:41.735Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/NoteParser.html</loc>
-    <lastmod>2026-03-28T07:25:19.516Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/BootstrapButtonCard.html</loc>
+    <lastmod>2026-03-12T19:16:19.430Z</lastmod>
   </url>
   <url>
     <loc>https://your-website-url.example.com/posts/SvelteActionBar.html</loc>
     <lastmod>2026-03-12T19:42:09.372Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/BootstrapButtonCard.html</loc>
-    <lastmod>2026-03-12T19:16:19.430Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/NoteParser.html</loc>
+    <lastmod>2026-03-28T07:25:19.516Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/mvc_ojs.html</loc>
+    <lastmod>2026-04-21T04:48:41.735Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/OjsUi.html</loc>
+    <lastmod>2026-04-22T20:46:33.036Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/OsisParserUI.html</loc>
+    <lastmod>2026-04-03T20:36:19.979Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/about.html</loc>
+    <lastmod>2026-03-11T11:53:07.560Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/BcvReader.html</loc>
+    <lastmod>2026-04-03T18:06:20.792Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/Historic-Circle-example.html</loc>
+    <lastmod>2026-03-12T19:21:29.764Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/OsisParser.html</loc>
+    <lastmod>2026-03-27T19:14:39.879Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/BsUi.html</loc>
+    <lastmod>2026-04-25T19:02:45.409Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/RefApp.html</loc>
+    <lastmod>2026-03-18T17:19:26.237Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/VerseWorkflow.html</loc>
+    <lastmod>2026-04-03T18:15:30.278Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/BsParserOne.html</loc>
+    <lastmod>2026-05-01T18:21:02.621Z</lastmod>
   </url>
   <url>
     <loc>https://your-website-url.example.com/posts/ObjFactory.html</loc>
@@ -85,15 +93,11 @@
     <lastmod>2026-04-20T15:50:42.713Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/ButtonsFactory.html</loc>
-    <lastmod>2026-04-18T10:52:50.352Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/ButtonsMobile.html</loc>
+    <lastmod>2026-03-19T14:18:00.478Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/BsParser.html</loc>
-    <lastmod>2026-04-28T20:32:59.206Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/static/bible-passage-reference-parser/LICENSE.html</loc>
-    <lastmod>2026-04-26T13:08:06.404Z</lastmod>
+    <loc>https://your-website-url.example.com/index.html</loc>
+    <lastmod>2026-03-11T11:53:07.560Z</lastmod>
   </url>
 </urlset>

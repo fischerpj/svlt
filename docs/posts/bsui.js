@@ -446,6 +446,7 @@ export class bsInputgroupTransform {
 
     // Root node (OJS observes this)
     this.root = document.createElement("div");
+    this.root.id = "mine";
     this.root.className = "input-group";
 
     // ---- Prefix HTML (optional) ----
@@ -528,6 +529,11 @@ export class bsInputgroupTransform {
     });
 
     this.root.appendChild(this.btnClip);
+    
+    document.addEventListener("ojs-loaded", () => {
+      const container = document.querySelector("div.input-group");
+      console.log("AFTER hydration:", container);
+    });
 
     // ---- Quarto rewrite defense ----
     const allButtons = [this.btnAdd, this.btnReset, this.btnClip];
@@ -560,6 +566,459 @@ export class bsInputgroupTransform {
   }
 
   // OJS expects a node() method
+  node() {
+    return this.root;
+  }
+}
+
+//===============================================================
+export class bsInputgroupFetch_legacy {
+  constructor(options = {}) {
+    this.options = {
+      placeholder: "",
+      prefixHTML: null,
+      addLabel: "Add",
+      resetLabel: "Reset",
+      clipLabel: "Clip",
+      variant: "primary",
+      size: undefined,
+      transform: x => x,     // must return cleaned OSIS or null
+      fetcher: null,         // async (cleanedOsis) => passage_html
+      ...options
+    };
+
+    // Internal state
+    this._current = "";
+    this._accum = [];
+    this._content = null;     // <---- NEW: fetched passage_html
+
+    // Root node
+    this.root = document.createElement("div");
+    this.root.className = "input-group";
+
+    // ---- Prefix HTML ----
+    if (this.options.prefixHTML) {
+      this.prefix = document.createElement("span");
+      this.prefix.className = "input-group-text";
+      this.prefix.innerHTML = this.options.prefixHTML;
+      this.root.appendChild(this.prefix);
+    }
+
+    // ---- Input ----
+    this.input = document.createElement("input");
+    this.input.type = "text";
+    this.input.className = "form-control";
+    this.input.placeholder = this.options.placeholder;
+
+    if (this.options.size === "sm") this.input.classList.add("form-control-sm");
+    if (this.options.size === "lg") this.input.classList.add("form-control-lg");
+
+    this.input.addEventListener("input", async () => {
+      const raw = this.input.value;
+      const cleaned = this.options.transform(raw);   // OSIS or null
+      this._current = cleaned;
+
+      // Auto-fetch content if fetcher exists and cleaned is valid
+      if (this.options.fetcher && cleaned) {
+        this._content = await this.options.fetcher(cleaned);
+      } else {
+        this._content = null;
+      }
+
+      this._emit();
+    });
+
+    this.root.appendChild(this.input);
+
+    // ---- Add button ----
+    this.btnAdd = document.createElement("button");
+    this.btnAdd.type = "button";
+    this.btnAdd.className = `btn btn-${this.options.variant}`;
+    this.btnAdd.textContent = this.options.addLabel;
+
+    if (this.options.size === "sm") this.btnAdd.classList.add("btn-sm");
+    if (this.options.size === "lg") this.btnAdd.classList.add("btn-lg");
+
+    this.btnAdd.addEventListener("click", () => {
+      if (this._current) {
+        this._accum.push(this._current);
+      }
+      this._emit();
+    });
+
+    this.root.appendChild(this.btnAdd);
+
+    // ---- Reset button ----
+    this.btnReset = document.createElement("button");
+    this.btnReset.type = "button";
+    this.btnReset.className = `btn btn-outline-secondary`;
+    this.btnReset.textContent = this.options.resetLabel;
+
+    if (this.options.size === "sm") this.btnReset.classList.add("btn-sm");
+    if (this.options.size === "lg") this.btnReset.classList.add("btn-lg");
+
+    this.btnReset.addEventListener("click", () => {
+      this._current = "";
+      this._accum = [];
+      this._content = null;
+      this.input.value = "";
+      this._emit();
+    });
+
+    this.root.appendChild(this.btnReset);
+
+    // ---- Clip button ----
+    this.btnClip = document.createElement("button");
+    this.btnClip.type = "button";
+    this.btnClip.className = `btn btn-outline-secondary`;
+    this.btnClip.textContent = this.options.clipLabel;
+
+    if (this.options.size === "sm") this.btnClip.classList.add("btn-sm");
+    if (this.options.size === "lg") this.btnClip.classList.add("btn-lg");
+
+    this.btnClip.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(JSON.stringify(this._accum));
+      } catch (err) {
+        console.error("Clipboard error:", err);
+      }
+    });
+
+    this.root.appendChild(this.btnClip);
+
+    // ---- Quarto rewrite defense ----
+    const allButtons = [this.btnAdd, this.btnReset, this.btnClip];
+
+    queueMicrotask(() => {
+      for (const b of allButtons) b.classList.remove("btn-quarto");
+    });
+
+    for (const b of allButtons) {
+      new MutationObserver((mut, obs) => {
+        if (b.classList.contains("btn-quarto")) {
+          b.classList.remove("btn-quarto");
+          obs.disconnect();
+        }
+      }).observe(b, { attributes: true });
+    }
+
+    // ---- OJS .value ----
+    Object.defineProperty(this.root, "value", {
+      get: () => ({
+        current: this._current,
+        accum: this._accum.slice(),
+        content: this._content     // <---- NEW
+      })
+    });
+  }
+
+  _emit() {
+    this.root.dispatchEvent(new Event("input", { bubbles: true }));
+  }
+
+  node() {
+    return this.root;
+  }
+}
+
+//=========================================================================
+export class bsInputgroupFetch {
+  constructor(options = {}) {
+    this.options = {
+      placeholder: "",
+      prefixHTML: null,
+      addLabel: "Add",
+      resetLabel: "Reset",
+      clipLabel: "Clip",
+      variant: "primary",
+      size: undefined,
+      transform: x => x,     // must return cleaned OSIS or null
+      fetcher: null,         // async (cleanedOsis) => passage_html
+      ...options
+    };
+
+    // Internal state
+    this._current = "";
+    this._accum = [];
+    this._content = null;     // <---- NEW: fetched passage_html
+
+    // Root node
+    this.root = document.createElement("div");
+    this.root.className = "input-group";
+
+    // ---- Prefix HTML ----
+    if (this.options.prefixHTML) {
+      this.prefix = document.createElement("span");
+      this.prefix.className = "input-group-text";
+      this.prefix.innerHTML = this.options.prefixHTML;
+      this.root.appendChild(this.prefix);
+    }
+
+    // ---- Input ----
+    this.input = document.createElement("input");
+    this.input.type = "text";
+    this.input.className = "form-control";
+    this.input.placeholder = this.options.placeholder;
+
+    if (this.options.size === "sm") this.input.classList.add("form-control-sm");
+    if (this.options.size === "lg") this.input.classList.add("form-control-lg");
+
+    this.input.addEventListener("input", async () => {
+      const raw = this.input.value;
+      const cleaned = this.options.transform(raw);   // OSIS or null
+      this._current = cleaned;
+
+      // Auto-fetch content if fetcher exists and cleaned is valid
+      if (this.options.fetcher && cleaned) {
+        this._content = await this.options.fetcher(cleaned);
+      } else {
+        this._content = null;
+      }
+
+      this._emit();
+    });
+
+    this.root.appendChild(this.input);
+
+    // ---- Add button ----
+    this.btnAdd = document.createElement("button");
+    this.btnAdd.type = "button";
+    this.btnAdd.className = `btn btn-${this.options.variant}`;
+    this.btnAdd.textContent = this.options.addLabel;
+
+    if (this.options.size === "sm") this.btnAdd.classList.add("btn-sm");
+    if (this.options.size === "lg") this.btnAdd.classList.add("btn-lg");
+
+    this.btnAdd.addEventListener("click", () => {
+      if (this._current) {
+        this._accum.push(this._current);
+      }
+      this._emit();
+    });
+
+    this.root.appendChild(this.btnAdd);
+
+    // ---- Reset button ----
+    this.btnReset = document.createElement("button");
+    this.btnReset.type = "button";
+    this.btnReset.className = `btn btn-outline-secondary`;
+    this.btnReset.textContent = this.options.resetLabel;
+
+    if (this.options.size === "sm") this.btnReset.classList.add("btn-sm");
+    if (this.options.size === "lg") this.btnReset.classList.add("btn-lg");
+
+    this.btnReset.addEventListener("click", () => {
+      this._current = "";
+      this._accum = [];
+      this._content = null;
+      this.input.value = "";
+      this._emit();
+    });
+
+    this.root.appendChild(this.btnReset);
+
+    // ---- Clip button ----
+    this.btnClip = document.createElement("button");
+    this.btnClip.type = "button";
+    this.btnClip.className = `btn btn-outline-secondary`;
+    this.btnClip.textContent = this.options.clipLabel;
+
+    if (this.options.size === "sm") this.btnClip.classList.add("btn-sm");
+    if (this.options.size === "lg") this.btnClip.classList.add("btn-lg");
+
+    this.btnClip.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(JSON.stringify(this._accum));
+      } catch (err) {
+        console.error("Clipboard error:", err);
+      }
+    });
+
+    this.root.appendChild(this.btnClip);
+
+    // ---- Quarto rewrite defense ----
+    const allButtons = [this.btnAdd, this.btnReset, this.btnClip];
+
+    queueMicrotask(() => {
+      for (const b of allButtons) {
+        b.classList.remove("btn-quarto");
+        console.log("yeah-too");      }
+    });
+
+    // ---- OJS .value ----
+    Object.defineProperty(this.root, "value", {
+      get: () => ({
+        current: this._current,
+        accum: this._accum.slice(),
+        content: this._content     // <---- NEW
+      })
+    });
+  }
+
+  _emit() {
+    this.root.dispatchEvent(new Event("input", { bubbles: true }));
+  }
+
+  node() {
+    return this.root;
+  }
+}
+
+//======================================================================
+export class bsInputgroupRoot {
+  constructor(options = {}) {
+    this.options = {
+      placeholder: "",
+      prefixHTML: null,
+      addLabel: "Add",
+      resetLabel: "Reset",
+      clipLabel: "Clip",
+      variant: "primary",
+      size: undefined,
+      transform: x => x,     // must return cleaned OSIS or null
+      fetcher: null,         // async (cleanedOsis) => passage_html
+      ...options
+    };
+
+    // Internal state
+    this._current = "";
+    this._accum = [];
+    this._content = null;
+
+    // ---- QUARTO-SAFE ROOT CONTAINER ----
+    // Quarto does NOT rewrite DOM inside this container.
+    this.root = document.createElement("div");
+    this.root.classList.add("bs-inputgroup-container");
+
+    // Inner wrapper for the actual input group
+    this.group = document.createElement("div");
+    this.group.className = "input-group";
+    this.root.appendChild(this.group);
+
+    // ---- Prefix HTML ----
+    if (this.options.prefixHTML) {
+      this.prefix = document.createElement("span");
+      this.prefix.className = "input-group-text";
+      this.prefix.innerHTML = this.options.prefixHTML;
+      this.group.appendChild(this.prefix);
+    }
+
+    // ---- Input ----
+    this.input = document.createElement("input");
+    this.input.type = "text";
+    this.input.className = "form-control";
+    this.input.placeholder = this.options.placeholder;
+
+    if (this.options.size === "sm") this.input.classList.add("form-control-sm");
+    if (this.options.size === "lg") this.input.classList.add("form-control-lg");
+
+    this.input.addEventListener("input", async () => {
+      const raw = this.input.value;
+      const cleaned = this.options.transform(raw);   // OSIS or null
+      this._current = cleaned;
+
+      // Auto-fetch content if fetcher exists and cleaned is valid
+      if (this.options.fetcher && cleaned) {
+        this._content = await this.options.fetcher(cleaned);
+      } else {
+        this._content = null;
+      }
+
+      this._emit();
+    });
+
+    this.group.appendChild(this.input);
+
+    // ---- Add button ----
+    this.btnAdd = document.createElement("button");
+    this.btnAdd.type = "button";
+    this.btnAdd.className = `btn btn-${this.options.variant}`;
+    this.btnAdd.textContent = this.options.addLabel;
+
+    if (this.options.size === "sm") this.btnAdd.classList.add("btn-sm");
+    if (this.options.size === "lg") this.btnAdd.classList.add("btn-lg");
+
+    this.btnAdd.addEventListener("click", () => {
+      if (this._current) {
+        this._accum.push(this._current);
+      }
+      this._emit();
+    });
+
+    this.group.appendChild(this.btnAdd);
+
+    // ---- Reset button ----
+    this.btnReset = document.createElement("button");
+    this.btnReset.type = "button";
+    this.btnReset.className = `btn btn-outline-secondary`;
+    this.btnReset.textContent = this.options.resetLabel;
+
+    if (this.options.size === "sm") this.btnReset.classList.add("btn-sm");
+    if (this.options.size === "lg") this.btnReset.classList.add("btn-lg");
+
+    this.btnReset.addEventListener("click", () => {
+      this._current = "";
+      this._accum = [];
+      this._content = null;
+      this.input.value = "";
+      this._emit();
+    });
+
+    this.group.appendChild(this.btnReset);
+
+    // ---- Clip button ----
+    this.btnClip = document.createElement("button");
+    this.btnClip.type = "button";
+    this.btnClip.className = `btn btn-outline-secondary`;
+    this.btnClip.textContent = this.options.clipLabel;
+
+    if (this.options.size === "sm") this.btnClip.classList.add("btn-sm");
+    if (this.options.size === "lg") this.btnClip.classList.add("btn-lg");
+
+    this.btnClip.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(JSON.stringify(this._accum));
+      } catch (err) {
+        console.error("Clipboard error:", err);
+      }
+    });
+
+    this.group.appendChild(this.btnClip);
+    
+    // ---- OJS .value ----
+    Object.defineProperty(this.root, "value", {
+      get: () => ({
+        current: this._current,
+        accum: this._accum.slice(),
+        content: this._content
+      })
+    });
+    
+    // Attempt a temporisation
+//    await new Promise(resolve => setTimeout(resolve, 1));
+        // ---- Quarto rewrite defense: microtask + one-shot observer ----
+   // ---- Quarto rewrite defense ----
+//    const allButtons = [this.group.btnAdd, this.group.btnReset, this.group.btnClip];
+    const allButtons = this.group.querySelectorAll("button");
+    
+    queueMicrotask(() => {
+      for (const b of allButtons) {
+        b.classList.remove("btn-quarto");
+        console.log("yeah-too");      }
+    });
+
+    const obs = new MutationObserver(() => {
+      this.group.querySelectorAll("button").forEach(btn => {
+        btn.classList.remove("btn-quarto");
+        });
+    });
+    obs.observe(this.group, { childList: true, subtree: true });
+  }
+
+  _emit() {
+    this.root.dispatchEvent(new Event("input", { bubbles: true }));
+  }
+
   node() {
     return this.root;
   }

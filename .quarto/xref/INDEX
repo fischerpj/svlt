@@ -187,5 +187,8 @@
   },
   "static/bible-passage-reference-parser/LICENSE.md": {
     "LICENSE.html": "ad077810"
+  },
+  "posts/BsParserOne.qmd": {
+    "BsParserOne.html": "ad4c9afe"
   }
 }

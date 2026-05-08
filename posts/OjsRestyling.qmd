@@ -29,11 +29,10 @@ html`<input type="text" class="form-control">`
 ```{ojs}
 restyling = {
   // Very Great Restyling Side Effects
-  const mib = viewof styledBtn2.querySelector('button.btn-quarto');
+  const mib = viewof styledBtn2.querySelectorAll('button.btn-quarto');
   if (mib) {
-    mib.classList.remove('btn-quarto');
-    mib.classList.add("btn", "btn-success", "btn-lg"); 
-  }
+    mib.forEach(btn => {btn.classList.remove('btn-quarto')})
+    }
 };
 
 

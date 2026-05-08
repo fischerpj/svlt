@@ -1,0 +1,42 @@
+---
+title: BsParserOne
+subtitle: "valid'em"
+execute:
+  echo: false
+---
+
+> Validate an bsInput with one super_bcv_wrapper
+
+::: {#inputDiv}
+<!-- inputDiv is considered Void-->
+:::
+
+```{ojs}
+import { super_bcv_parser } from "./bsBcv.js";
+
+superBCV = new super_bcv_parser() // instance of singleton parser
+
+```
+
+
+
+
+```{ojs}
+import { bsInputgroupRoot } from "./bsui.js"
+
+viewof refInput2 = new bsInputgroupRoot({
+  prefixHTML: "<i class='bi bi-book'></i>",
+  placeholder: "Enter Bible reference…",
+  transform: superBCV.osis_array,     // <---- HERE
+  fetcher: superBCV.fetchPassage,
+  addLabel: "Add",
+  resetLabel: "RAZ",
+  clipLabel: "CLIP"
+}).node()
+
+refInput2.current   // "John.3.16"
+//refInput.accum     // ["John.3.16", ...]
+refInput2.content   // sanitized passage_html from your Worker
+
+```
+
